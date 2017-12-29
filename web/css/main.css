@@ -3,7 +3,8 @@
 	src:url(HelveticaNarrow.ttf);
 }
 body{
-    /* place background here */
+    background-color:#000000;
+    color:#ffffff;
 }
 h1{
     font-family: Narrow, Arial, Helvetica, sans-serif;
