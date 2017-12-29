@@ -7,5 +7,11 @@ app.controller("mail",function($scope,$compile,$http){
             zoom:3,
         };
         $scope.map=new google.maps.Map(document.getElementById("map"),mapProp);
+        var width=screen.availWidth;
+        var height=screen.availHeight;
+        $("#map").css({
+            width: width+"px",
+            height: height+"px"
+        });
     };
 });
