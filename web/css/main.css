@@ -44,6 +44,9 @@ h1{
     width:50%;
     z-index:2;
     background:rgba(255,255,255,0.7);
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
     color:#333333;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
