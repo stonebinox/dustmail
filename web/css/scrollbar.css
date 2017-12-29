@@ -1,0 +1,56 @@
+/*-------------------------------------
+Author: Spectral Insights Cloud Team
+Date Created: 2/2/17 10:47
+Last Modified: 7/2/17 10:05
+Comments: file for scrollbar CSS.
+------------------------------------*/
+::-webkit-scrollbar {
+  width: 10px;
+  height:10px;
+}
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+  height: 15px;
+  width: 15px;
+  display: none;
+  background-color: #FFFFAA;
+  background-repeat: no-repeat;
+}
+::-webkit-scrollbar-track-piece{
+	background:rgba(255,255,255,0.5);
+	-webkit-border-radius:7px;
+	-moz-border-radius:7px;
+	border-radius:7px;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+::-webkit-scrollbar-thumb:vertical{
+  background-color:#666666;
+  border:0;
+  -webkit-border-radius:7px;
+  -moz-border-radius:7px;
+  border-radius:7px;
+  -webkit-transition:all 0.2s ease;
+	-moz-transition:all 0.2s ease;
+	-o-transition:all 0.2s ease;
+	transition: all 0.2s ease;
+}
+::-webkit-scrollbar-thumb:vertical:hover{
+	background-color:#444444;
+}
+::-webkit-scrollbar-thumb:horizontal{
+  background-color:#666666;
+  border:0;
+  -webkit-border-radius:7px;
+  -moz-border-radius:7px;
+  border-radius:7px;
+  -webkit-transition:all 0.2s ease;
+	-moz-transition:all 0.2s ease;
+	-o-transition:all 0.2s ease;
+	transition: all 0.2s ease;
+ }
+ ::-webkit-scrollbar-thumb:horizontal:hover{
+	background-color:#444444;
+ }
