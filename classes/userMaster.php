@@ -238,5 +238,48 @@ class userMaster extends adminMaster
             return "INVALID_USER_ID";
         }
     }
+    function getUsers($limit=10,$adminID=NULL)
+    {
+        $app=$this->app;
+        $limit=secure($limit);
+        if((validate($limit))&&(is_numeric($limit))&&($limit>0))
+        {
+            $um="SELECT iduser_master FROM user_master WHERE stat='1'";
+            if(validate($adminID))
+            {
+                $adminID=secure($adminID);
+                adminMaster::__construct($adminID);
+                if($this->adminValid)
+                {
+                    $um.=" AND admin_master_idadmin_master='$adminID'";
+                }
+            }
+            $um.=" ORDER BY RAND() LIMIT $limit";
+            $um=$app['db']->fetchAll($um);
+            $userArray=array();
+            foreach($um as $user)
+            {
+                $userID=$user['idemail_master'];
+                $this->__construct($userID);
+                $userData=$this->getEmail();
+                if(is_array($userData))
+                {
+                    array_push($userArray,$userData);
+                }
+            }
+            if(count($userArray)>0)
+            {
+                return $userArray;
+            }
+            else
+            {
+                return "NO_USERS_FOUND";
+            }
+        }
+        else
+        {
+            return "INVALID_USER_LIMIT";
+        }
+    }
 }
 ?> 

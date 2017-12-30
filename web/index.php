@@ -1,5 +1,4 @@
 <?php
-
 ini_set('display_errors', 1);
 require_once __DIR__.'/../vendor/autoload.php';
 $app = require __DIR__.'/../src/app.php';
@@ -7,6 +6,18 @@ require __DIR__.'/../config/prod.php';
 require __DIR__.'/../src/controllers.php';
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+function validate($object)
+{
+    if(($object!="")&&($object!=NULL))
+    {
+        return true;
+    }
+    return false;
+}
+function secure($string)
+{
+    return addslashes(htmlentities($string));
+}
 $app->register(new Silex\Provider\MonologServiceProvider(), array(
     'monolog.logfile' => 'php://stderr',
 ));
