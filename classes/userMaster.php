@@ -130,6 +130,7 @@ class userMaster extends adminMaster
             $storedPassword=$this->getUserPassword();
             if($userPassword==$storedPassword)
             {
+                
                 $up="UPDATE user_master SET online_flag='1' WHERE iduser_master='$userID'";
                 $up=$app['db']->executeUpdate($up);
                 $app['session']->set('uid',$userID);

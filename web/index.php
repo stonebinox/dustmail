@@ -42,5 +42,19 @@ $app->before(function(Request $request) use($app){
 $app->get("/",function() use($app){
     $app['twig']->render("index.html.twig");
 });
+$app->post("/registration",function(Request $request){
+    if(($request->get("name"))&&($request->get("email"))&&($request->get("password"))&&($request->get("password2"))&&($request->get("admin_id")))
+    {
+        require("../classes/adminMaster.php");
+        require("../classes/userMaster.php");
+        $user=new userMaster;
+        $response=$user->createAccount($request->get("name"),$request->get("email"),$request->get("password"),$request->get("password2"),$request->get("admin_id"));
+        return $response;
+    }
+    else
+    {
+        return "INVALID_PARAMETERS";
+    }
+});
 $app->run();
 ?>
