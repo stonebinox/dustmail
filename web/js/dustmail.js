@@ -56,6 +56,7 @@ app.controller("mail",function($scope,$compile,$http){
                                     messageBox("Problem","Somethign went wrong while trying to create your account. Please try again later.");
                                 },
                                 success: function(response){
+                                    console.log(response);
                                     $("#sendbut").removeClass("disabled");
                                     response=$.trim(response);
                                     switch(response){
