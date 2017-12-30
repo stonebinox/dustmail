@@ -115,10 +115,14 @@ textarea:focus,textarea:hover{
     -webkit-border-radius:2px;
     -moz-border-radius:2px;
     border-radius:2px;
-    border:0;
+    border:3px solid rgba(255,255,255,0.0);
     outline:0;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 .button:hover{
     background-color:#ffffff;
     color:#E64D1E;
+    border:3px solid #E64D1E;
 }
