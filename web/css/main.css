@@ -69,4 +69,6 @@ input[type="text"],input[type="password"]{
     border-bottom:1px solid #E64D1E;
     background:rgba(255,255,255,0.0);
     color:#333333;
+    width:100%;
+    height:30px;
 }
