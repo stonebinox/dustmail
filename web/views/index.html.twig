@@ -41,15 +41,21 @@ Dustin Smith"></textarea>
                 </div>
                 <div class="form-group" ng-init="devcount=10">
                     <label for="devcount">3) Select how many developers to email (Selected: {[{devcount}]})</label>
-                    <input type="range" class="form-control" name="devcount" id="devcount" ng-model="devcount" min=10 max=100 step=10>
+                    <input type="range" class="form-control" name="devcount" id="devcount" ng-model="devcount" min=10 max=100 step=10 data-toggle="tooltip" title="{[{devcount}]} developers" data-placement="auto">
                 </div>
                 <hr>
                 <div class="text-center">
                     <button type="button" class="button">Send for just ${[{devcount/10}]}!</button>
                 </div>
-
             </form>
             <div style="height:50px;"></div>
+            <script type="text/javascript">
+            <!--
+            $('[data-toggle="tooltip"]').tooltip({
+                trigger:"hover"
+            });
+            //-->
+            </script>
         </div>
     </div>
     <div id="logo"></div>
