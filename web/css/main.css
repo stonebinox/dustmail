@@ -79,7 +79,7 @@ h5{
     background-size:contain;
     z-index:2000;
 }
-input[type="text"],input[type="password"]{
+/* input[type="text"],input[type="password"]{
     border:0;
     padding:3px;
     border-bottom:1px solid #E64D1E;
@@ -120,7 +120,7 @@ textarea{
 textarea:focus,textarea:hover{
     border-bottom:2px solid #E64D1E;
     background:rgba(255,255,255,0.5);
-}
+} */
 .button{
     padding:10px;
     max-width:200px;
