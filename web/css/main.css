@@ -81,6 +81,7 @@ h5{
     -moz-background-size:contain;
     background-size:contain;
     z-index:2000;
+    cursor:pointer;
 }
 /* input[type="text"],input[type="password"]{
     border:0;
