@@ -106,3 +106,13 @@ textarea:focus,textarea:hover{
     border-bottom:2px solid #E64D1E;
     background:rgba(255,255,255,0.5);
 }
+.button{
+    padding:10px;
+    max-width:80px;
+    background-color:#E64D1E;
+    color:#ffffff;
+    font-weight:bold;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
