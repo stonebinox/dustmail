@@ -66,6 +66,7 @@ h2{
 }
 input[type="text"],input[type="password"]{
     border:0;
+    padding:3px;
     border-bottom:1px solid #E64D1E;
     background:rgba(255,255,255,0.0);
     -webkit-border-radius:3px;
