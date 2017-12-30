@@ -4,6 +4,7 @@ app.config(function($interpolateProvider){
 });
 app.controller("mail",function($scope,$compile,$http){
     $scope.map=null;
+    $scope.admin_id=null;
     $scope.loadMap=function(){
         var mapProp= {
             center:new google.maps.LatLng(51.508742,-0.120850),
