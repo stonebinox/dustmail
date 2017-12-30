@@ -64,3 +64,9 @@ h2{
     background-size:contain;
     z-index:2000;
 }
+input[type="text"],input[type="password"]{
+    border:0;
+    border-bottom:1px solid #E64D1E;
+    background:rgba(255,255,255,0.0);
+    color:#333333;
+}
