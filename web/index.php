@@ -43,12 +43,12 @@ $app->get("/",function() use($app){
     $app['twig']->render("index.html.twig");
 });
 $app->post("/registration",function(Request $request){
-    if(($request->get("name"))&&($request->get("email"))&&($request->get("password"))&&($request->get("password2"))&&($request->get("admin_id"))&&($request->get("location")))
+    if(($request->get("name"))&&($request->get("email"))&&($request->get("password"))&&($request->get("password2"))&&($request->get("admin_id"))&&($request->get("location_lat"))&&($request->get("location_lon")))
     {
         require("../classes/adminMaster.php");
         require("../classes/userMaster.php");
         $user=new userMaster;
-        $response=$user->createAccount($request->get("name"),$request->get("email"),$request->get("password"),$request->get("password2"),$request->get("admin_id"));
+        $response=$user->createAccount($request->get("name"),$request->get("email"),$request->get("password"),$request->get("password2"),$request->get("admin_id"),$request->get("location_lat"),$request->get("location_lon"));
         return $response;
     }
     else

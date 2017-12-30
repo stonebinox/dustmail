@@ -175,7 +175,7 @@ class userMaster extends adminMaster
             return "INVALID_USER_CREDENTIALS";
         }
     }
-    function createAccount($userName,$userEmail,$userPassword,$userPassword2,$adminID=1) //to create an account
+    function createAccount($userName,$userEmail,$userPassword,$userPassword2,$adminID=1,$locationLat,$locationLon) //to create an account
     {
         $app=$this->app;
         $userName=trim(addslashes(htmlentities($userName)));

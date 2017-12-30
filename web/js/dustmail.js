@@ -69,7 +69,8 @@ app.controller("mail",function($scope,$compile,$http){
                                         password: password,
                                         password2: password2,
                                         admin_id: $scope.admin_id,
-                                        location: $scope.location
+                                        location_lat: $scope.location.coords.latitude,
+                                        location_lon: $scope.location.coords.longitude
                                     },
                                     error: function(response){
                                         console.log(response);
