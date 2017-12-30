@@ -118,3 +118,7 @@ textarea:focus,textarea:hover{
     border:0;
     outline:0;
 }
+.button:hover{
+    background-color:#ffffff;
+    color:#E64D1E;
+}
