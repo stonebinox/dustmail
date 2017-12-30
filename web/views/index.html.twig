@@ -52,8 +52,8 @@ Dustin Smith"></textarea>
                 </div>
                 <div class="form-group" ng-init="devcount=10">
                     <label for="devcount">3. Select how many developers to email</label>
-                    <div style="width:100%;">${[{devcount/10}]}</div>
-                    {[{devcount}]} devs&nbsp;&nbsp;<input type="range" name="devcount" id="devcount" ng-model="devcount" min=10 max=100 step=10>
+                    <div style="width:100%;"><strong>Email {[{devcount}]} devs for ${[{devcount/10}]}</strong></div>
+                    <input type="range" class="form-control" name="devcount" id="devcount" ng-model="devcount" min=10 max=100 step=10>
                 </div>
                 <hr>
                 <div class="text-center">
