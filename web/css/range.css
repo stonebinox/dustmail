@@ -74,8 +74,8 @@ input[type=range]::-ms-track {
   transition: all 0.5s ease;
 }
 input[type=range]::-ms-thumb {
-  box-shadow: 1px 1px 1px rgb(145, 49, 20), 0px 0px 1px rgb(145, 49, 20);
-  border: 1px solid rgb(145, 49, 20);
+  box-shadow: 1px 1px 1px #666666, 0px 0px 1px #666666;
+  border: 1px solid #333333;
   height: 16px;
   width: 16px;
   border-radius: 16px;
