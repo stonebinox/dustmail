@@ -16,3 +16,12 @@ app.controller("mail",function($scope,$compile,$http){
         $("#form").css("height",(height-51)+"px");
     };
 });
+window.resize=function(){
+    var width=$(window).width();
+    var height=$(window).height();
+    $("#map").css({
+        width: width+"px",
+        height: height+"px"
+    });
+    $("#form").css("height",(height-51)+"px");
+}
