@@ -21,9 +21,9 @@
                     <li><a href="https://facebook.com/thedustmakers" target="_blank"><img src="images/fb_icon.png" class="img-responsive" style="height:16px;" alt="Dust Facebook"></a></li>
                     <li><a href="https://twitter.com/thedustmakers" target="_blank"><img src="images/twitter_icon.png" class="img-responsive" style="width:20px;" alt="Dust Twitter"></a></li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right" id="logoptions">
-                    <li class="active"><a href="javascript:void(0)" style="background-color:#E64D1E;font-weight:bold;" onclick="mover('registration')" ng-click="admin_id=21;">Developer sign up</a></li>
-                    <li><a href="javascript:void(0)" style="color:#ffffff;" onclick="mover('registration')" ng-click="admin_id=11;">Sign Up</a></li>
+                <ul class="nav navbar-nav navbar-right" id="logoptions" ng-init="signText='an';">
+                    <li class="active"><a href="javascript:void(0)" style="background-color:#E64D1E;font-weight:bold;" onclick="mover('registration')" ng-click="admin_id=21;signText='a developer';">Developer sign up</a></li>
+                    <li><a href="javascript:void(0)" style="color:#ffffff;" onclick="mover('registration')" ng-click="admin_id=11;signText='an';">Sign Up</a></li>
                     <li><a href="javascript:void(0)" style="color:#ffffff;" onclick="mover('login')">Login</a></li>
                 </ul>
             </div>
@@ -71,7 +71,7 @@ Can we hop on a call and talk about this more?"></textarea>
     <div class="form" id="registration">
         <div class="container-fluid">
             <br>
-            <h2 class="text-center">Create an account</h2>
+            <h2 class="text-center">Create {[{signText}]} account</h2>
             <hr>
             <form>
                 <div class="form-group">
