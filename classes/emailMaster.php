@@ -96,5 +96,74 @@ class emailMaster extends userMaster
             return "INVALID_EMAIL_ID";
         }
     }    
+    function sendEmails($userID,$subject,$body,$limit=10,$adminID=21)
+    {
+        $app=$this->app;
+        $adminID=secure($adminID);
+        adminMaster::__construct($adminID);
+        if($this->adminValid)
+        {
+            $limit=asecure($limit);
+            if((validate($limit))&&(is_numeric($limit))&&($limit>=0))
+            {
+                $userID=secure($userID);
+                userMaster::__construct($userID);
+                if($this->userValid)
+                {
+                    $subject=trim($subject);
+                    if(validate($subject))
+                    {
+                        $body=trim($body);
+                        if(validate($body))
+                        {
+                            $users=userMaster::getUsers($limit,$adminID);
+                            if(is_array($users))
+                            {
+                                foreach($users as $user)
+                                {
+                                    $toUserID=$user['iduser_master'];
+                                    $senderName=userMaster::getUserName();
+                                    $userEmail=$user['user_email'];
+                                    $userName=stripslashes($user['user_name']);
+                                    $from = new SendGrid\Email($senderName." via Dust", "dust@dusthq.com");
+                                    $to = new SendGrid\Email($userName, $userEmail);
+                                    $content = new SendGrid\Content("text/plain", $body);
+                                    $mail = new SendGrid\Mail($from, $subject, $to, $content);
+                                    $apiKey = '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';
+                                    $sg = new \SendGrid($apiKey);
+                                    $response = $sg->client->mail()->send()->post($mail);
+                                }
+                                return "USERS_EMAILED";
+                            }
+                            else
+                            {
+                                return $users;
+                            }
+                        }
+                        else
+                        {
+                            return "INVALID_EMAIL_BODY";
+                        }
+                    }
+                    else
+                    {
+                        return "INVALID_EMAIL_SUBJECT";
+                    }
+                }
+                else
+                {
+                    return "INVALID_USER_ID";
+                }
+            }
+            else
+            {
+                return "INVALID_EMAIL_LIMIT";
+            }
+        }
+        else
+        {
+            return "INVALID_ADMIN_ID";
+        }
+    }
 }
 ?>
