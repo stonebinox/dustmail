@@ -53,3 +53,14 @@ h1{
     -moz-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
+#logo{
+    position:fixed;
+    top:0;
+    left:45%;
+    width:10%;
+    height:80px;
+    background:url(../images/dust-logo.png) no-repeat center;
+    -webkit-background-size:contain;
+    -moz-background-size:contain;
+    background-size:contain;
+}
