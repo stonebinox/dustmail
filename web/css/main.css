@@ -115,4 +115,6 @@ textarea:focus,textarea:hover{
     -webkit-border-radius:5px;
     -moz-border-radius:5px;
     border-radius:5px;
+    border:0;
+    outline:0;
 }
