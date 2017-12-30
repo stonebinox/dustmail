@@ -25,9 +25,9 @@ input[type=range]::-webkit-slider-runnable-track {
 input[type=range]::-webkit-slider-thumb {
   box-shadow:0px 0px 10px #ffffff;
   border: 1px solid #cccccc;
-  height: 16px;
-  width: 16px;
-  border-radius: 16px;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
   background: #ffffff;
   cursor: pointer;
   -webkit-appearance: none;
@@ -52,9 +52,9 @@ input[type=range]::-moz-range-track {
 input[type=range]::-moz-range-thumb {
   box-shadow:0px 0px 10px #ffffff;
   border: 1px solid #cccccc;
-  height: 16px;
-  width: 16px;
-  border-radius: 16px;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
   background: #ffffff;
   cursor: pointer;
   -webkit-appearance: none;
@@ -76,9 +76,9 @@ input[type=range]::-ms-track {
 input[type=range]::-ms-thumb {
   box-shadow:0px 0px 10px #ffffff;
   border: 1px solid #cccccc;
-  height: 16px;
-  width: 16px;
-  border-radius: 16px;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
   background: #ffffff;
   cursor: pointer;
   -webkit-appearance: none;

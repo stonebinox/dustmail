@@ -129,6 +129,7 @@ textarea:focus,textarea:hover{
 .button{
     padding:10px;
     max-width:200px;
+    min-width:100px;
     background-color:#E64D1E;
     color:#ffffff;
     font-weight:bold;
