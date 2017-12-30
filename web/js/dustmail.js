@@ -13,7 +13,7 @@ app.controller("mail",function($scope,$compile,$http){
             width: width+"px",
             height: height+"px"
         });
-        $("#form").css("height",(height-51)+"px");
+        $(".form").css("height",(height-51)+"px");
         var text='<table width="100%" cellpadding=0 cellspacing=10 align="center">';
         for(var i=1;i<=15;i++){
             if((i==1)||(i==6)||(i==11)){
