@@ -164,6 +164,6 @@ textarea:focus,textarea:hover{
         width:100%;
     }
     #logo{
-        top:0;
+        top:-5;
     }
 }
