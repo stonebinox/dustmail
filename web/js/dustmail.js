@@ -1,4 +1,7 @@
 var app=angular.module("dust",[]);
+app.config(function($interpolateProvider){
+    $interpolateProvider.startSymbol('{[{').endSymbol('}]}');
+});
 app.controller("mail",function($scope,$compile,$http){
     $scope.map=null;
     $scope.loadMap=function(){
