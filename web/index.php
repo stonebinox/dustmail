@@ -43,7 +43,7 @@ $app->get("/",function() use($app){
     $app['twig']->render("index.html.twig");
 });
 $app->post("/registration",function(Request $request){
-    if(($request->get("name"))&&($request->get("email"))&&($request->get("password"))&&($request->get("password2"))&&($request->get("admin_id")))
+    if(($request->get("name"))&&($request->get("email"))&&($request->get("password"))&&($request->get("password2"))&&($request->get("admin_id"))&&($request->get("location")))
     {
         require("../classes/adminMaster.php");
         require("../classes/userMaster.php");
