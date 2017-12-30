@@ -42,6 +42,7 @@ app.controller("mail",function($scope,$compile,$http){
     $scope.location=null;
     $scope.saveUserLocation=function(position){
         $scope.location=position;
+        $("#location").html('<span class="text-info">Location stored</span>');
     };
     $scope.registerUser=function(){
         if(validate($scope.admin_id)){
@@ -69,7 +70,7 @@ app.controller("mail",function($scope,$compile,$http){
                                         password2: password2,
                                         admin_id: $scope.admin_id,
                                         location: $scope.location
-                                    }
+                                    },
                                     error: function(response){
                                         console.log(response);
                                         $("#sendbut").removeClass("disabled");
