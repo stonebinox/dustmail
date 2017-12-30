@@ -13,5 +13,6 @@ app.controller("mail",function($scope,$compile,$http){
             width: width+"px",
             height: height+"px"
         });
+        $("#form").css("height",(height-51)+"px");
     };
 });
