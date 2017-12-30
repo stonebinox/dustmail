@@ -6,7 +6,7 @@ Comments: CSS file for input type range.
 ---------------------------------------*/
 input[type=range] {
   -webkit-appearance: none;
-  margin: 18px 0;
+  /* margin: 18px 0; */
   width: 100%;
 }
 input[type=range]:focus {
@@ -31,7 +31,7 @@ input[type=range]::-webkit-slider-thumb {
   background: #ffffff;
   cursor: pointer;
   -webkit-appearance: none;
-  margin-top: -7px;
+  /* margin-top: -7px; */
    -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -58,7 +58,7 @@ input[type=range]::-moz-range-thumb {
   background: #ffffff;
   cursor: pointer;
   -webkit-appearance: none;
-  margin-top: -7px;
+  /* margin-top: -7px; */
    -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -82,7 +82,7 @@ input[type=range]::-ms-thumb {
   background: #ffffff;
   cursor: pointer;
   -webkit-appearance: none;
-  margin-top: -7px;
+  /* margin-top: -7px; */
    -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
