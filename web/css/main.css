@@ -33,7 +33,7 @@ h1{
     height:100%;
     z-index:1;
 }
-#form{
+.form{
     position:fixed;
     top:51px;
     height:auto;

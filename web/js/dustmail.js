@@ -20,7 +20,7 @@ app.controller("mail",function($scope,$compile,$http){
                 text+='<tr>';
             }
             text+='<td align="center" width="20%"><img src="images/credentials/'+i+'.png" class="img-responsive" style="width:80px;"></td>';
-            if((i==5)||(i==11)||(i==15)){
+            if((i==5)||(i==10)||(i==15)){
                 text+='</tr>';
             }
         }
