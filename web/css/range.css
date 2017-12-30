@@ -23,8 +23,8 @@ input[type=range]::-webkit-slider-runnable-track {
   transition: all 0.5s ease;
 }
 input[type=range]::-webkit-slider-thumb {
-  box-shadow: 1px 1px 1px rgb(145, 49, 20), 0px 0px 1px rgb(145, 49, 20);
-  border: 1px solid rgb(145, 49, 20);
+  box-shadow: 1px 1px 1px #666666, 0px 0px 1px #666666;
+  border: 1px solid #333333;
   height: 16px;
   width: 16px;
   border-radius: 16px;
@@ -50,8 +50,8 @@ input[type=range]::-moz-range-track {
   transition: all 0.5s ease;
 }
 input[type=range]::-moz-range-thumb {
- box-shadow: 1px 1px 1px rgb(145, 49, 20), 0px 0px 1px rgb(145, 49, 20);
-  border: 1px solid rgb(145, 49, 20);
+  box-shadow: 1px 1px 1px #666666, 0px 0px 1px #666666;
+  border: 1px solid #333333;
   height: 16px;
   width: 16px;
   border-radius: 16px;
