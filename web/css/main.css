@@ -139,3 +139,9 @@ textarea:focus,textarea:hover{
     color:#E64D1E;
     border:3px solid #E64D1E;
 }
+@media screen and (max-width: 480px) {
+    .form{
+        left:0;
+        width:100%;
+    }
+}
