@@ -140,7 +140,6 @@ textarea:focus,textarea:hover{
     border:3px solid #E64D1E;
 }
 .lead{
-    color:#E64D1E;
     font-family: MontRegular, Arial, Helvetica, sans-serif;
 }
 @media screen and (max-width: 480px) {
