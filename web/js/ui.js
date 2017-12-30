@@ -82,3 +82,8 @@ function validate(str){
 		return false;
 	}
 }
+function mover(layer){
+	layer="#"+layer;
+	$(".form").removeAttr("active");
+	$(layer).attr("active","true");
+}
