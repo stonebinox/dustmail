@@ -8,6 +8,7 @@ app.controller("mail",function($scope,$compile,$http){
         var mapProp= {
             center:new google.maps.LatLng(51.508742,-0.120850),
             zoom:3,
+            mapTypeId: 'satellite'
         };
         $scope.map=new google.maps.Map(document.getElementById("map"),mapProp);
         var width=$(window).width();
