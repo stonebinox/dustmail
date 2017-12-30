@@ -117,6 +117,28 @@ class userMaster extends adminMaster
             return "INVALID_USER_ID";
         }
     }
+    function getVerificationFlag()
+    {
+        if($this->userValid)
+        {
+            $app=$this->app;
+            $userID=$this->user_id;
+            $um="SELECT email_flag FROM user_master WHERE iduser_master='$userID'";
+            $um=$app['db']->fetchAssoc($um);
+            if(validate($um))
+            {
+                return $um['email_flag'];
+            }
+            else
+            {
+                return "INVALID_USER_ID";
+            }
+        }
+        else
+        {
+            return "INVALID_USER_ID";
+        }
+    }
     function authenticateUser($userEmail,$userPassword) //to log a user in
     {
         $userEmail=addslashes(htmlentities($userEmail));
@@ -130,11 +152,18 @@ class userMaster extends adminMaster
             $storedPassword=$this->getUserPassword();
             if($userPassword==$storedPassword)
             {
-                
-                $up="UPDATE user_master SET online_flag='1' WHERE iduser_master='$userID'";
-                $up=$app['db']->executeUpdate($up);
-                $app['session']->set('uid',$userID);
-                return "AUTHENTICATE_USER";
+                $emailFlag=$this->getVerificationFlag();
+                if($emailFlag==1)
+                {
+                    $up="UPDATE user_master SET online_flag='1' WHERE iduser_master='$userID'";
+                    $up=$app['db']->executeUpdate($up);
+                    $app['session']->set('uid',$userID);
+                    return "AUTHENTICATE_USER";
+                }
+                else
+                {
+                    return "USER_NOT_VERIFIED";
+                }
             }
             else
             {
