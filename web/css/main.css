@@ -121,7 +121,7 @@ textarea:focus,textarea:hover{
     border-bottom:2px solid #E64D1E;
     background:rgba(255,255,255,0.5);
 } */
-input[type="text"]:hover,input[type="password"]:hover,input[type="password"]:focus,input[type="text"]:focus{
+.form-control:hover{
     border:2px solid #E64D1E;
 }
 .button{
