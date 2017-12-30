@@ -121,7 +121,7 @@ textarea:focus,textarea:hover{
     background:rgba(255,255,255,0.5);
 } */
 .form-control{
-    box-shadow:0px 0px 8px #888888;
+    box-shadow:0px 0px 6px #CCCCCC;
 }
 .form-control:focus{
     border:1px solid #E64D1E;
