@@ -159,4 +159,8 @@ textarea:focus,textarea:hover{
         left:0;
         width:100%;
     }
+    .form[active="true"]{
+        left:0;
+        width:100%;
+    }
 }
