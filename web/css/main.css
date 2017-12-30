@@ -150,6 +150,9 @@ textarea:focus,textarea:hover{
 .lead{
     font-family: MontRegular, Arial, Helvetica, sans-serif;
 }
+.active{
+    background-color:#E64D1E;
+}
 @media screen and (max-width: 480px) {
     .form{
         left:0;
