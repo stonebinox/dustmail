@@ -221,15 +221,15 @@ app.controller("mail",function($scope,$compile,$http){
             var adminID=admin.idadmin_master;
             if(adminID==21){
                 mover('devhome');
+                $("#logo").click(function(){
+                    mover('devhome');
+                });
             }
             else if(adminID==11){
                 mover("find");
             }
             $(".loginoptions").parent().css("display","none");
             $("#logoutbutton").parent().css("display","block");
-            $("#logo").click(function(){
-                mover('devhome');
-            });
         }
     };
 });
