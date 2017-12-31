@@ -18,7 +18,7 @@ body{
     background-color:#000000;
     overflow:hidden;
 }
-h2{
+h1,h2{
     font-family: MontBold, Arial, Helvetica, sans-serif;
 }
 h5{
