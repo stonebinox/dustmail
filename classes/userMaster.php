@@ -191,32 +191,48 @@ class userMaster extends adminMaster
                         adminMaster::__construct($adminID);
                         if($this->adminValid)
                         {
-                            $um="SELECT iduser_master FROM user_master WHERE user_email='$userEmail' AND stat!='0'";
-                            $um=$app['db']->fetchAssoc($um);
-                            if(($um=="")||($um==NULL))
+                            $locationLat=secure($locationLat);
+                            if(validate($locationLat))
                             {
-                                $hashPassword=md5($userPassword);
-                                $in="INSERT INTO user_master (timestamp,user_name,user_email,user_password,admin_master_idadmin_master) VALUES (NOW(),'$userName','$userEmail','$hashPassword','$adminID')";
-                                $in=$app['db']->executeQuery($in);
-                                $um="SELECT iduser_master FROM user_master WHERE stat='1' AND user_email='$userEmail'";
-                                $um=$app['db']->fetchAssoc($um);
-                                $userID=$um['iduser_master'];
-                                $from = new SendGrid\Email("Dust", "dust@dusthq.com");
-                                $to = new SendGrid\Email($userName, $userEmail);
-                                $e=explode(" ",$userName);
-                                $firstName=trim($e[0]);
-                                $content = new SendGrid\Content("text/plain", 'Hi '.$firstName.'. Thank you for signing up to Dust. Please click the following link to confirm your email: https://dustmail.herokuapp.com/verify?id='.$userID.' - The Dust Team');
-                                $subject='Please confirm your email';
-                                $mail = new SendGrid\Mail($from, $subject, $to, $content);
-                                // $apiKey = getenv('SENDGRID_API_KEY');
-                                $apiKey='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';
-                                $sg = new \SendGrid($apiKey);
-                                $response = $sg->client->mail()->send()->post($mail);
-                                return "ACCOUNT_CREATED";
+                                $locationLon=secure($locationLon);
+                                if(validate($locationLon))
+                                {
+                                    $um="SELECT iduser_master FROM user_master WHERE user_email='$userEmail' AND stat!='0'";
+                                    $um=$app['db']->fetchAssoc($um);
+                                    if(($um=="")||($um==NULL))
+                                    {
+                                        $hashPassword=md5($userPassword);
+                                        $in="INSERT INTO user_master (timestamp,user_name,user_email,user_password,admin_master_idadmin_master,latitude,longitude) VALUES (NOW(),'$userName','$userEmail','$hashPassword','$adminID','$locationLat','$locationLon')";
+                                        $in=$app['db']->executeQuery($in);
+                                        $um="SELECT iduser_master FROM user_master WHERE stat='1' AND user_email='$userEmail'";
+                                        $um=$app['db']->fetchAssoc($um);
+                                        $userID=$um['iduser_master'];
+                                        $from = new SendGrid\Email("Dust", "dust@dusthq.com");
+                                        $to = new SendGrid\Email($userName, $userEmail);
+                                        $e=explode(" ",$userName);
+                                        $firstName=trim($e[0]);
+                                        $content = new SendGrid\Content("text/plain", 'Hi '.$firstName.'. Thank you for signing up to Dust. Please click the following link to confirm your email: https://dustmail.herokuapp.com/verify?id='.$userID.' - The Dust Team');
+                                        $subject='Please confirm your email';
+                                        $mail = new SendGrid\Mail($from, $subject, $to, $content);
+                                        // $apiKey = getenv('SENDGRID_API_KEY');
+                                        $apiKey='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';
+                                        $sg = new \SendGrid($apiKey);
+                                        $response = $sg->client->mail()->send()->post($mail);
+                                        return "ACCOUNT_CREATED";
+                                    }
+                                    else
+                                    {
+                                        return "ACCOUNT_ALREADY_EXISTS";
+                                    }
+                                }
+                                else
+                                {
+                                    return "INVALID_LOCATION_LONGITUDE";
+                                }
                             }
                             else
                             {
-                                return "ACCOUNT_ALREADY_EXISTS";
+                                return "INVALID_LOCATION_LATITUDE";
                             }
                         }
                         else
