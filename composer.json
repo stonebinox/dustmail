@@ -3,6 +3,7 @@
     "description": "A pre-configured skeleton for the Silex microframework",
     "license": "MIT",
     "type": "project",
+    "secure-http" : false,
     "require": {
         "php": ">=5.5.9",
         "silex/silex": "~2.0",
