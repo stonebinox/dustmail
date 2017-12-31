@@ -39,6 +39,7 @@ return array(
     'Symfony\\Bundle\\WebProfilerBundle\\' => array($vendorDir . '/symfony/web-profiler-bundle'),
     'Symfony\\Bridge\\Twig\\' => array($vendorDir . '/symfony/twig-bridge'),
     'Symfony\\Bridge\\Monolog\\' => array($vendorDir . '/symfony/monolog-bridge'),
+    'Stripe\\' => array($vendorDir . '/stripe/stripe-php/lib'),
     'Silex\\Provider\\' => array($vendorDir . '/silex/web-profiler'),
     'Silex\\' => array($vendorDir . '/silex/silex/src/Silex'),
     'SendGrid\\' => array($vendorDir . '/sendgrid/php-http-client/lib'),
