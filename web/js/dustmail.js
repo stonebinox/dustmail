@@ -225,7 +225,7 @@ app.controller("mail",function($scope,$compile,$http){
             else if(adminID==11){
                 mover("find");
             }
-            $("#logoptions").css("display","none");
+            $(".loginoptions").parent().css("display","none");
             $("#logo").click(function(){
                 mover('devhome');
             });

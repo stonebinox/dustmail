@@ -21,10 +21,11 @@
                     <li><a href="https://facebook.com/thedustmakers" target="_blank"><img src="images/fb_icon.png" class="img-responsive" style="height:16px;" alt="Dust Facebook"></a></li>
                     <li><a href="https://twitter.com/thedustmakers" target="_blank"><img src="images/twitter_icon.png" class="img-responsive" style="width:20px;" alt="Dust Twitter"></a></li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right" id="logoptions" ng-init="signText='an';">
-                    <li class="active"><a href="javascript:void(0)" style="background-color:#E64D1E;font-weight:bold;" onclick="mover('registration')" ng-click="admin_id=21;signText='a developer';">Developer sign up</a></li>
-                    <li><a href="javascript:void(0)" style="color:#ffffff;" onclick="mover('registration')" ng-click="admin_id=11;signText='an';">Sign Up</a></li>
-                    <li><a href="javascript:void(0)" style="color:#ffffff;" onclick="mover('login')">Login</a></li>
+                <ul class="nav navbar-nav navbar-right" ng-init="signText='an';">
+                    <li class="active"><a href="javascript:void(0)" style="background-color:#E64D1E;font-weight:bold;" onclick="mover('registration')" ng-click="admin_id=21;signText='a developer';" class="loginoptions">Developer sign up</a></li>
+                    <li><a href="javascript:void(0)" style="color:#ffffff;" onclick="mover('registration')" ng-click="admin_id=11;signText='an';" class="loginoptions">Sign Up</a></li>
+                    <li><a href="javascript:void(0)" style="color:#ffffff;" onclick="mover('login')" class="loginoptions">Login</a></li>
+                    <li><a href="logout" style="color:#ffffff;" id="logoutbutton" style="display:none;">Logout</a></li>
                 </ul>
             </div>
         </div>
@@ -129,6 +130,9 @@ Can we hop on a call and talk about this more?"></textarea>
     </div>
     <div class="form" id="devhome">
         <div class="container-fluid">
+            <br>
+            <br>
+            <br>
             <br>
             <h2 class="text-center">Thank you for signing up as a developer.</h2>
             <hr>
