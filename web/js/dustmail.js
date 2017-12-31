@@ -217,7 +217,8 @@ app.controller("mail",function($scope,$compile,$http){
     };
     $scope.loadUser=function(){
         if(validate($scope.user)){
-            var adminID=$scope.user.admin_master_idadmin_master;
+            var admin=$scope.user.admin_master_idadmin_master;
+            var adminID=admin.idadmin_master;
             if(adminID==21){
                 mover('devhome');
             }
