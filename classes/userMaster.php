@@ -198,6 +198,19 @@ class userMaster extends adminMaster
                                 $hashPassword=md5($userPassword);
                                 $in="INSERT INTO user_master (timestamp,user_name,user_email,user_password,admin_master_idadmin_master) VALUES (NOW(),'$userName','$userEmail','$hashPassword','$adminID')";
                                 $in=$app['db']->executeQuery($in);
+                                $um="SELECT iduser_master FROM user_master WHERE stat='1' AND user_email='$userEmail'";
+                                $um=$app['db']->fetchAssoc($um);
+                                $userID=$um['iduser_master'];
+                                $from = new SendGrid\Email("Dust", "dust@dusthq.com");
+                                $to = new SendGrid\Email($userName, $userEmail);
+                                $e=explode(" ",$userName);
+                                $firstName=trim($e[0]);
+                                $content = new SendGrid\Content("text/plain", 'Hi '.$firstName.'. Thank you for signing up to Dust. Please click the following link to confirm your email: https://dustmail.herokuapp.com/verify?id='.$userID.' The Dust Team');
+                                $subject='Please confirm your email';
+                                $mail = new SendGrid\Mail($from, $subject, $to, $content);
+                                $apiKey = getenv('SENDGRID_API_KEY');
+                                $sg = new \SendGrid($apiKey);
+                                $response = $sg->client->mail()->send()->post($mail);
                                 return "ACCOUNT_CREATED";
                             }
                             else
