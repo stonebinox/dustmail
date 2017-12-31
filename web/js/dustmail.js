@@ -237,6 +237,7 @@ app.controller("mail",function($scope,$compile,$http){
         }
     };
     $scope.validateRequest=function(){
+        console.log("here");
         var subject=$.trim($("#subject").val());
         if(validate(subject)){
             $("#subject").parent().removeClass("has-error");
@@ -255,7 +256,6 @@ app.controller("mail",function($scope,$compile,$http){
         }
     };
     $scope.saveRequest=function(subject,body){
-        console.log("here");
         if (typeof(Storage) !== "undefined") {
             localStorage.setItem("subject", subject);
             localStorage.setItem("body",body);
