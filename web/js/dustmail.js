@@ -135,6 +135,57 @@ app.controller("mail",function($scope,$compile,$http){
             }
         }
     };
+    $scope.loginStatus=false;
+    $scope.loginUser=function(){
+        var email=$.trim($("#user_email").val());
+        if(validate(email)){
+            $("#user_email").parent().removeClass("has-error");
+            var password=$("#user_password").val();
+            if(password.length>=8){
+                $("#user_password").parent().removeClass("has-error");
+                $.ajax({
+                    url: '/login',
+                    method: 'post',
+                    data:{
+                        user_email: email,
+                        user_password: password
+                    },
+                    error:function(response){
+                        console.log(response);
+                        messageBox("Problem","Something went wrong while logging you in. Please try again later.");
+                    },
+                    success: function(response){
+                        response=$.trim(response);
+                        switch(response){
+                            case "INVALID_PARAMETERS":
+                            default:
+                            messageBox("Problem","Something went wrong while logging in. Please try again later. This is the error we see: "+response);
+                            break;
+                            case "INVALID_USER_CREDENTIALS":
+                            messageBox("Invalid Credentials","Please verify the details and try again.");
+                            break;
+                            case "USER_NOT_VERIFIED":
+                            messageBox("Not Verified","Your account hasn't been verified by you yet. Please check your email and click on the verification link to login.");
+                            break;
+                            case "AUTHENTICATE_USER":
+                            $scope.loginStatus=true;
+                            mover('find');
+                            break;
+                        }
+                    },
+                    beforeSend:function(){
+                        $("#loginbut").addClass("disabled");
+                    }
+                });
+            }
+            else{
+                $("#user_password").parent().addClass("has-error");
+            }
+        }
+        else{
+            $("#user_email").parent().addClass("has-error");
+        }
+    };
 });
 window.resize=function(){
     var width=$(window).width();

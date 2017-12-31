@@ -59,5 +59,19 @@ $app->post("/registration",function(Request $request){
 $app->get("/comingsoon",function() use($app){
     return $app['twig']->render("comingsoon.html.twig");
 });
+$app->post("/login",function() use($app){
+    if(($request->get("user_email"))&&($request->get("user_password")))
+    {
+        require("../classes/adminMaster.php");
+        require("../classes/userMaster.php");
+        $user=new userMaster;
+        $response=$user->authenticateUser($request->get("user_email"),$request->get("user_password"));
+        return $response;
+    }
+    else
+    {
+        return "INVALID_PARAMETERS";
+    }
+});
 $app->run();
 ?>
