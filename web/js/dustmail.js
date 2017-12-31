@@ -237,18 +237,17 @@ app.controller("mail",function($scope,$compile,$http){
         }
     };
     $scope.validateRequest=function(){
-        console.log("here");
         var subject=$.trim($("#subject").val());
         if(validate(subject)){
             $("#subject").parent().removeClass("has-error");
-            var body=$.trim($("#body").val());
+            var body=$.trim($("#desc").val());
             if(validate(body)){
-                $("#body").parent().removeClass("has-error");
+                $("#desc").parent().removeClass("has-error");
                 var devcount=parseInt($scope.devcount);
                 $scope.saveRequest(subject,body);
             }
             else{
-                $("#body").parent().addClass("has-error");
+                $("#desc").parent().addClass("has-error");
             }
         }
         else{
