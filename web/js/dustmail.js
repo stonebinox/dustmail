@@ -260,8 +260,28 @@ app.controller("mail",function($scope,$compile,$http){
             localStorage.setItem("body",body);
         }
         if($scope.loginStatus){
-            //make payment
             console.log("pay up!");
+            var form=document.createElement("form");
+            $(form).attr("method","post");
+            $(form).attr("action","pay");
+                var hidden1=document.createElement("input");
+                $(hidden1).attr("type","hidden");
+                $(hidden1).attr("name","subject");
+                $(hidden1).attr("value",subject);
+            $(form).append(hidden1);
+                var hidden2=document.createElement("input");
+                $(hidden2).attr("type","hidden");
+                $(hidden2).attr("name","body");
+                $(hidden2).attr("value",body);
+            $(form).append(hidden2);
+                var hidden3=document.createElement("input");
+                $(hidden3).attr("type","hidden");
+                $(hidden3).attr("name","devcount");
+                $(hidden3).attr("value",$scope.devcount);
+            $(form).append(hidden3);
+            var amount=($scope.devcount/10)*100;
+            $(form).append('<script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="pk_test_AaNN3vmVBn3clhgdqGa9CMXX" data-amount="'+amount+'" data-name="Dust &amp; Co., Inc." data-description="Widget" data-image="https://stripe.com/img/documentation/checkout/marketplace.png" data-locale="auto"></script>');
+            messageBox("Make Payment",form);
         }
         else{
             $scope.admin_id=11;
