@@ -230,6 +230,41 @@ app.controller("mail",function($scope,$compile,$http){
             }
             $(".loginoptions").parent().css("display","none");
             $("#logoutbutton").parent().css("display","block");
+            if(validate(localStorage.getItem("subject"))){
+                $("#subject").val(localStorage.getItem("subject"));
+                $("#body").val(localStorage.getItem("body"));
+            }
+        }
+    };
+    $scope.validateRequest=function(){
+        var subject=$.trim($("#subject").val());
+        if(validate(subject)){
+            $("#subject").parent().removeClass("has-error");
+            var body=$.trim($("#body").val());
+            if(validate(body)){
+                $("#body").parent().removeClass("has-error");
+                var devcount=parseInt($scope.devcount);
+                $scope.saveRequest(subject,body);
+            }
+            else{
+                $("#body").parent().addClass("has-error");
+            }
+        }
+        else{
+            $("#subject").parent().addClass("has-error");
+        }
+    };
+    $scope.saveRequest=function(subject,body){
+        if (typeof(Storage) !== "undefined") {
+            localStorage.setItem("subject", subject);
+            localStorage.setItem("body",body);
+        }
+        if($scope.loginStatus){
+            //make payment
+            console.log("pay up!");
+        }
+        else{
+            mover('registration');
         }
     };
 });
