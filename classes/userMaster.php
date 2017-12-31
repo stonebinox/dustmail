@@ -212,7 +212,6 @@ class userMaster extends adminMaster
                                 $apiKey='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';
                                 $sg = new \SendGrid($apiKey);
                                 $response = $sg->client->mail()->send()->post($mail);
-                                var_dump($response);
                                 return "ACCOUNT_CREATED";
                             }
                             else

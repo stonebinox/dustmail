@@ -94,5 +94,23 @@ $app->get("/verify",function(Request $request) use($app){
         return $app->redirect("/");
     }
 });
+$app->get("/user/getUser",function() use($app){
+    if($app['session']->get("uid"))
+    {
+        require("../classes/adminMaster.php");
+        require("../classes/userMaster.php");
+        $user=new userMaster($app['session']->get("uid"));
+        $userData=$user->getUser();
+        if(is_array($userData))
+        {
+            return json_encode($userData);
+        }
+        return $userData;
+    }
+    else
+    {
+        return "INVALID_PARAMETERS";
+    }
+});
 $app->run();
 ?>

@@ -136,6 +136,7 @@ app.controller("mail",function($scope,$compile,$http){
         }
     };
     $scope.loginStatus=false;
+    $scope.user=null;
     $scope.loginUser=function(){
         var email=$.trim($("#user_email").val());
         if(validate(email)){
@@ -169,7 +170,7 @@ app.controller("mail",function($scope,$compile,$http){
                             break;
                             case "AUTHENTICATE_USER":
                             $scope.loginStatus=true;
-                            mover('find');
+                            $scope.getUser();
                             break;
                         }
                     },
@@ -184,6 +185,48 @@ app.controller("mail",function($scope,$compile,$http){
         }
         else{
             $("#user_email").parent().addClass("has-error");
+        }
+    };
+    $scope.getUser=function(){
+        $http.get("user/getUser")
+        .then(function success(response){
+            response=response.data;
+            if(typeof response=="object"){
+                $scope.user=response;
+                $scope.loadUser();
+            }
+            else{
+                response=$.trim(response);
+                // switch(response){
+                //     case "INVALID_PARAMETERS":
+                //     default:
+                //     messageBox("Problem","Something went wrong while getting user information. Please try again later. This is the error we see: "+response);
+                //     break;
+                //     case "INVALID_USER_ID":
+                //     messageBox("Invalid User","Your account is invalid or doesn't exist. Please refresh the page and try again.");
+                //     break;
+                // }
+                //do nothing
+            }
+        },
+        function error(response){
+            console.log(response);
+            messageBox("Problem","Something went wrong while getting user information. Please try again later.");
+        });
+    };
+    $scope.loadUser=function(){
+        if(validate($scope.user)){
+            var adminID=$scope.user.admin_master_idadmin_master;
+            if(adminID==21){
+                mover('devhome');
+            }
+            else if(adminID==11){
+                mover("find");
+            }
+            $("#logoptions").css("display","none");
+            $("#logo").click(function(){
+                mover('devhome');
+            });
         }
     };
 });
