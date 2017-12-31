@@ -264,6 +264,8 @@ app.controller("mail",function($scope,$compile,$http){
             console.log("pay up!");
         }
         else{
+            $scope.admin_id=11;
+            $scope.signText='an';
             mover('registration');
         }
     };
