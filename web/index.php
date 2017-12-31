@@ -112,5 +112,19 @@ $app->get("/user/getUser",function() use($app){
         return "INVALID_PARAMETERS";
     }
 });
+$app->get("/logout",function() use($app){
+    if($app['session']->get("uid"))
+    {
+        require("../classes/adminMaster.php");
+        require("../classes/userMaster.php");
+        $user=new userMaster($app['session']->get("uid"));
+        $response=$user->logout();
+        return $app->redirect("/");
+    }
+    else
+    {
+        return $app->redirect("/");
+    }
+});
 $app->run();
 ?>
