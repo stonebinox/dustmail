@@ -135,6 +135,7 @@ function readParams(){
 			break;
 			case "ACCOUNT_VERIFIED":
 			suc='Your account was verified successfully. Login to continue.';
+			mover('login');
 			angular.element(document.getElementById("login")).scope().getUser();
 			break;
 		}
