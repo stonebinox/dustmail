@@ -208,7 +208,8 @@ class userMaster extends adminMaster
                                 $content = new SendGrid\Content("text/plain", 'Hi '.$firstName.'. Thank you for signing up to Dust. Please click the following link to confirm your email: https://dustmail.herokuapp.com/verify?id='.$userID.' The Dust Team');
                                 $subject='Please confirm your email';
                                 $mail = new SendGrid\Mail($from, $subject, $to, $content);
-                                $apiKey = getenv('SENDGRID_API_KEY');
+                                // $apiKey = getenv('SENDGRID_API_KEY');
+                                $apiKey='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';
                                 $sg = new \SendGrid($apiKey);
                                 $response = $sg->client->mail()->send()->post($mail);
                                 var_dump($response);

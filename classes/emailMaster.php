@@ -164,7 +164,8 @@ class emailMaster extends userMaster
                                         $to = new SendGrid\Email($userName, $userEmail);
                                         $content = new SendGrid\Content("text/plain", $body);
                                         $mail = new SendGrid\Mail($from, $subject, $to, $content);
-                                        $apiKey = getenv('SENDGRID_API_KEY');
+                                        // $apiKey = getenv('SENDGRID_API_KEY');
+                                        $apiKey='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';
                                         $sg = new \SendGrid($apiKey);
                                         $response = $sg->client->mail()->send()->post($mail);
                                         $subject=secure($subject);
