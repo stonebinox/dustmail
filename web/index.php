@@ -57,7 +57,7 @@ $app->post("/registration",function(Request $request){
     }
 });
 $app->get("/comingsoon",function() use($app){
-    $app['twig']->render("comingsoon.html.twig");
+    return $app['twig']->render("comingsoon.html.twig");
 });
 $app->run();
 ?>
