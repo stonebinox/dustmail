@@ -191,6 +191,7 @@ app.controller("mail",function($scope,$compile,$http){
         $http.get("user/getUser")
         .then(function success(response){
             response=response.data;
+            console.log(response);
             if(typeof response=="object"){
                 $scope.user=response;
                 $scope.loadUser();
