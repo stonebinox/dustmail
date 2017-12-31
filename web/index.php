@@ -59,7 +59,7 @@ $app->post("/registration",function(Request $request){
 $app->get("/comingsoon",function() use($app){
     return $app['twig']->render("comingsoon.html.twig");
 });
-$app->post("/login",function() use($app){
+$app->post("/login",function(Request $request) use($app){
     if(($request->get("user_email"))&&($request->get("user_password")))
     {
         require("../classes/adminMaster.php");
