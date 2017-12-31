@@ -95,7 +95,39 @@ class emailMaster extends userMaster
         {
             return "INVALID_EMAIL_ID";
         }
-    }    
+    } 
+    function checkUserEmailHistory($fromUser,$toUser,$subject)
+    {
+        $fromUser=secure($fromUser);
+        userMaster::__construct($fromUser);
+        if($this->userValid)
+        {
+            $toUser=secure($toUser);
+            userMaster::__construct($toUser);
+            if($this->userValid)
+            {
+                $subject=trim(secure($subject));
+                $em="SELECT idemail_master FROM email_master WHERE stat='1' AND user_master_iduser_master='$fromUser' AND email_user='$toUser' AND email_subject='$subject'";
+                $em=$app['db']->fetchAssoc($em);
+                if(validate($em))
+                {
+                    return "EMAIL_ALREADY_SENT";
+                }
+                else
+                {
+                    return "NO_EMAIL_SENT";
+                }
+            }
+            else
+            {
+                return "INVALID_TO_USER_ID";
+            }
+        }
+        else
+        {
+            return "INVALID_FROM_USER_ID";
+        }
+    }
     function sendEmails($userID,$subject,$body,$limit=10,$adminID=21)
     {
         $app=$this->app;
@@ -122,16 +154,51 @@ class emailMaster extends userMaster
                                 foreach($users as $user)
                                 {
                                     $toUserID=$user['iduser_master'];
-                                    $senderName=userMaster::getUserName();
-                                    $userEmail=$user['user_email'];
-                                    $userName=stripslashes($user['user_name']);
-                                    $from = new SendGrid\Email($senderName." via Dust", "dust@dusthq.com");
-                                    $to = new SendGrid\Email($userName, $userEmail);
-                                    $content = new SendGrid\Content("text/plain", $body);
-                                    $mail = new SendGrid\Mail($from, $subject, $to, $content);
-                                    $apiKey = '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';
-                                    $sg = new \SendGrid($apiKey);
-                                    $response = $sg->client->mail()->send()->post($mail);
+                                    $status=$this->checkUserEmailHistory($userID,$toUserID,$subject);
+                                    if($status=="NO_EMAIL_SENT")
+                                    {
+                                        $senderName=userMaster::getUserName();
+                                        $userEmail=$user['user_email'];
+                                        $userName=stripslashes($user['user_name']);
+                                        $from = new SendGrid\Email($senderName." via Dust", "dust@dusthq.com");
+                                        $to = new SendGrid\Email($userName, $userEmail);
+                                        $content = new SendGrid\Content("text/plain", $body);
+                                        $mail = new SendGrid\Mail($from, $subject, $to, $content);
+                                        $apiKey = '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';
+                                        $sg = new \SendGrid($apiKey);
+                                        $response = $sg->client->mail()->send()->post($mail);
+                                        $subject=secure($subject);
+                                        $in="INSERT INTO email_master (timestamp,user_master_iduser_master,email_user,email_subject) VALUES (NOW(),'$userID,'$toUserID','$subject')";
+                                        $in=$app['db']->executeQuery($in);
+                                    }
+                                    elseif($status=="EMAIL_ALREADY_SENT")
+                                    {
+                                        do{
+                                            $randomUser=userMaster::getRandomUser($adminID);
+                                            if(is_array($randomUser))
+                                            {
+                                                $toUserID=$randomUser['iduser_master'];
+                                                $eStatus=$this->checkUserEmailHistory($userID,$toUserID,$subject);
+                                                if($eStatus=="NO_EMAIL_SENT")
+                                                {
+                                                    array_push($users,$randomUser);
+                                                    $continue=false;
+                                                }
+                                                elseif($eStatus=="EMAIL_ALREADY_SENT")
+                                                {
+                                                    $continue=true;
+                                                }
+                                                else
+                                                {
+                                                    $continue=false;
+                                                }
+                                            }
+                                            else
+                                            {
+                                                $continue=false;
+                                            }
+                                        }while($continue);
+                                    }
                                 }
                                 return "USERS_EMAILED";
                             }

@@ -56,5 +56,8 @@ $app->post("/registration",function(Request $request){
         return "INVALID_PARAMETERS";
     }
 });
+$app->get("/comingsoon",function() use($app){
+    $app['twig']->render("comingsoon.html.twig");
+});
 $app->run();
 ?>

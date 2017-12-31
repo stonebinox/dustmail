@@ -333,5 +333,46 @@ class userMaster extends adminMaster
             return "INVALID_USER_ID";
         }
     }
+    function getRandomUser($adminID)
+    {
+        $adminID=secure($adminID);
+        adminMaster::__construct($adminID);
+        if($this->adminValid)
+        {
+            $userID=secure($userID);
+            $this->__construct($userID);
+            if($this->userValid)
+            {
+                $app=$this->app;
+                $em="SELECT iduser_master FROM user_master WHERE stat='1' AND admin_master_idadmin_master='$adminID' ORDER BY RAND() LIMIT 1";
+                $em=$pp['db']->fetchAssoc($em);
+                if(validate($em))
+                {
+                    $userID2=$em['iduser_master'];
+                    $this->__construct($userID2);
+                    $user=$this->getUser();
+                    if(is_array($user))
+                    {
+                        return $user;
+                    }
+                    else
+                    {
+                        return "NO_USERS_FOUND";
+                    }
+                }
+                else{
+                    return "NO_USERS_FOUND";
+                }
+            }
+            else
+            {
+                return "INVALID_USER_ID";
+            }
+        }
+        else
+        {
+            return "INVALID_ADMIN_ID";
+        }
+    }
 }
 ?> 
