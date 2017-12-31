@@ -226,6 +226,7 @@ app.controller("mail",function($scope,$compile,$http){
                 mover("find");
             }
             $(".loginoptions").parent().css("display","none");
+            $("#logoutbutton").parent().css("display","block");
             $("#logo").click(function(){
                 mover('devhome');
             });
