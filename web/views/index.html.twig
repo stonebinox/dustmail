@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 {% block content %}
-<body ng-app="dust" ng-controller="mail" onload="mover('find')" ng-init="loadMap();getUser();" >
+<body ng-app="dust" ng-controller="mail" onload="mover('find');readParams();" ng-init="loadMap();getUser();" >
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             {# <div class="navbar-header">
