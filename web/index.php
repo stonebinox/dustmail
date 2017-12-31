@@ -73,5 +73,26 @@ $app->post("/login",function(Request $request) use($app){
         return "INVALID_PARAMETERS";
     }
 });
+$app->get("/verify",function(Request $request) use($app){
+    if($request->get("id"))
+    {
+        require("../classes/adminMaster.php");
+        require("../classes/userMaster.php");
+        $user=new userMaster($request->get("id"));
+        $response=$user->verifyAccount();
+        if($response=="ACCOUNT_VERIFIED")
+        {
+            return $app->redirect("/?suc=ACCOUNT_VERIFIED");
+        }
+        else
+        {
+            return $app->redirect("/?err=".$response);
+        }
+    }
+    else
+    {
+        return $app->redirect("/");
+    }
+});
 $app->run();
 ?>

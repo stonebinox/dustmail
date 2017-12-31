@@ -205,7 +205,7 @@ class userMaster extends adminMaster
                                 $to = new SendGrid\Email($userName, $userEmail);
                                 $e=explode(" ",$userName);
                                 $firstName=trim($e[0]);
-                                $content = new SendGrid\Content("text/plain", 'Hi '.$firstName.'. Thank you for signing up to Dust. Please click the following link to confirm your email: https://dustmail.herokuapp.com/verify?id='.$userID.' The Dust Team');
+                                $content = new SendGrid\Content("text/plain", 'Hi '.$firstName.'. Thank you for signing up to Dust. Please click the following link to confirm your email: https://dustmail.herokuapp.com/verify?id='.$userID.' - The Dust Team');
                                 $subject='Please confirm your email';
                                 $mail = new SendGrid\Mail($from, $subject, $to, $content);
                                 // $apiKey = getenv('SENDGRID_API_KEY');
@@ -387,6 +387,21 @@ class userMaster extends adminMaster
         else
         {
             return "INVALID_ADMIN_ID";
+        }
+    }
+    function verifyAccount()
+    {
+        if($this->userValid)
+        {
+            $app=$this->app;
+            $userID=$this->user_id;
+            $um="UPDATE user_master SET email_flag='1' WHERE iduser_master='$userID'";
+            $um=$app['db']->executeUpdate($um);
+            return "ACCOUNT_VERIFIED";
+        }
+        else
+        {
+            return "INVALID_USER_ID";
         }
     }
 }
