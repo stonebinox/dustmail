@@ -5,6 +5,7 @@ app.config(function($interpolateProvider){
 app.controller("mail",function($scope,$compile,$http){
     $scope.map=null;
     $scope.admin_id=null;
+    $scope.userArray=[];
     $scope.loadMap=function(){
         var mapProp= {
             center:new google.maps.LatLng(51.508742,-0.120850),
@@ -288,6 +289,49 @@ app.controller("mail",function($scope,$compile,$http){
             $scope.admin_id=11;
             $scope.signText='an';
             mover('registration');
+        }
+    };
+    $scope.getAllUsers=function(){
+        $http.get("user/getAllUsers")
+        .then(function success(response){
+            response=response.data;
+            if(typeof response=="object"){
+                $scope.userArray=response;
+                $scope.displayAllUsers();
+            }
+            else{
+                response=$.trim(response);
+                switch(response){
+                    case "INVALID_PARAMETERS":
+                    default:
+                    messageBox("Problem","Something went wrong while loading some information. Please try again later. This is the error we see: "+response);
+                    break;
+                    case "NO_USERS_FOUND":
+                    //do nothing
+                    break;
+                }
+            }
+        },
+        function error(response){
+            console.log(response);
+            messageBox("Problem","Something wentg wrong while loading some information. Please try again later.");
+        });
+    };
+    $scope.displayAllUsers=function(){
+        if($scope.userArray.length>0){
+            for(var i=0;i<$scope.userArray.length;i++){
+                var user=$scope.userArray[i];
+                var userID=user.iduser_master;
+                var userName=stripslashes(user.user_name);
+                var latitude=user.latitude;
+                var longitude=user.longitude;
+                var position={lat: parseFloat(latitude), lng: parseFloat(longitude)};
+                var marker = new google.maps.Marker({
+                    position: position,
+                    map: $scope.map,
+                    title: 'Hello World!'
+                });
+            }
         }
     };
 });

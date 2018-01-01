@@ -419,5 +419,27 @@ class userMaster extends adminMaster
             return "INVALID_USER_ID";
         }
     }
+    function getAllUsers()
+    {
+        $app=$this->app;
+        $um="SELECT iduser_master FROM user_master WHERE stat='1' ORDER BY iduser_master DESC";
+        $um=$app['db']->fetchAll($um);
+        $userArray=array();
+        foreach($um as $user)
+        {
+            $userID=$user['iduser_master'];
+            $this->__construct($userID);
+            $userData=$this->getUser();
+            if(is_array($userData))
+            {
+                array_push($userArray,$userData);
+            }
+        }
+        if(count($userArray)>0)
+        {
+            return $userArray;
+        }
+        return "NO_USERS_FOUND";
+    }
 }
 ?> 

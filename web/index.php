@@ -177,5 +177,16 @@ $app->post("/pay",function(Request $request) use($app){
         return $app->redirect("/?err=INVALID_PARAMETERS");
     }
 });
+$app->get("/user/getAllUsers",function() use($app){
+    require("../classes/adminMaster.php");
+    require("../classes/userMaster.php");
+    $user=new userMaster;
+    $users=$user->getAllUsers();
+    if(is_array($users))
+    {
+        return json_encoe($users);
+    }
+    return $users;
+});
 $app->run();
 ?>
