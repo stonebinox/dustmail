@@ -128,7 +128,7 @@ function readParams(){
 		$(".message").html('<div class="alert alert-danger"><strong>Error</strong> '+err+'</div>');
 		setTimeout(function(){
 			$(".message").html('');
-		},30000);
+		},15000);
 	}
 	var suc=getUrlParameter("suc");
 	if(validate(suc)){
