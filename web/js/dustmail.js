@@ -326,12 +326,16 @@ app.controller("mail",function($scope,$compile,$http){
                 var userName=stripslashes(user.user_name);
                 var latitude=user.latitude;
                 var longitude=user.longitude;
-                var position={lat: parseFloat(latitude), lng: parseFloat(longitude)};
-                var marker = new google.maps.Marker({
-                    position: position,
-                    map: $scope.map,
-                    title: userName
-                });
+                var admin=user.admin_master_idadmin_master;
+                var adminID=admin.idadmin_master;
+                if(adminID==21){
+                    var position={lat: parseFloat(latitude), lng: parseFloat(longitude)};
+                    var marker = new google.maps.Marker({
+                        position: position,
+                        map: $scope.map,
+                        title: userName
+                    });
+                }
             }
         }
     };
