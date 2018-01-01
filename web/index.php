@@ -184,7 +184,7 @@ $app->get("/user/getAllUsers",function() use($app){
     $users=$user->getAllUsers();
     if(is_array($users))
     {
-        return json_encoe($users);
+        return json_encode($users);
     }
     return $users;
 });
