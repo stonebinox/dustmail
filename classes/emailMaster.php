@@ -135,7 +135,7 @@ class emailMaster extends userMaster
         adminMaster::__construct($adminID);
         if($this->adminValid)
         {
-            $limit=asecure($limit);
+            $limit=secure($limit);
             if((validate($limit))&&(is_numeric($limit))&&($limit>=0))
             {
                 $userID=secure($userID);
