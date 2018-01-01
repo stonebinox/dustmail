@@ -170,7 +170,7 @@ class emailMaster extends userMaster
                                         $sg = new \SendGrid($apiKey);
                                         $response = $sg->client->mail()->send()->post($mail);
                                         $subject=secure($subject);
-                                        $in="INSERT INTO email_master (timestamp,user_master_iduser_master,email_user,email_subject) VALUES (NOW(),'$userID,'$toUserID','$subject')";
+                                        $in="INSERT INTO email_master (timestamp,user_master_iduser_master,email_user,email_subject) VALUES (NOW(),'$userID','$toUserID','$subject')";
                                         $in=$app['db']->executeQuery($in);
                                     }
                                     elseif($status=="EMAIL_ALREADY_SENT")
