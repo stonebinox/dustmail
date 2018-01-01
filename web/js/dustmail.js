@@ -194,6 +194,7 @@ app.controller("mail",function($scope,$compile,$http){
             console.log(response);
             if(typeof response=="object"){
                 $scope.user=response;
+                $scope.loginStatus=true;
                 $scope.loadUser();
             }
             else{
