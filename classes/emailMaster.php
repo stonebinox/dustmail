@@ -106,6 +106,7 @@ class emailMaster extends userMaster
             userMaster::__construct($toUser);
             if($this->userValid)
             {
+                $app=$this->app;
                 $subject=trim(secure($subject));
                 $em="SELECT idemail_master FROM email_master WHERE stat='1' AND user_master_iduser_master='$fromUser' AND email_user='$toUser' AND email_subject='$subject'";
                 $em=$app['db']->fetchAssoc($em);
