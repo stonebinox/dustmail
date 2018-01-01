@@ -169,7 +169,7 @@ class emailMaster extends userMaster
                                         $apiKey='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';
                                         $sg = new \SendGrid($apiKey);
                                         $response = $sg->client->mail()->send()->post($mail);
-                                        echo $response;
+                                        var_dump($response);
                                         $subject=secure($subject);
                                         $in="INSERT INTO email_master (timestamp,user_master_iduser_master,email_user,email_subject) VALUES (NOW(),'$userID','$toUserID','$subject')";
                                         $in=$app['db']->executeQuery($in);
