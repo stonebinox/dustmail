@@ -326,16 +326,10 @@ app.controller("mail",function($scope,$compile,$http){
                 var latitude=user.latitude;
                 var longitude=user.longitude;
                 var position={lat: parseFloat(latitude), lng: parseFloat(longitude)};
-                var infowindow = new google.maps.InfoWindow({
-                    content: '<strong>'+userName+'</strong>'
-                });
                 var marker = new google.maps.Marker({
                     position: position,
                     map: $scope.map,
-                    title: 'Hello World!'
-                });
-                marker.addListener('click', function() {
-                    infowindow.open($scope.map, marker);
+                    title: userName
                 });
             }
         }
