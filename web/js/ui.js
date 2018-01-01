@@ -109,8 +109,8 @@ function readParams(){
 			default:
 			err='Something went wrong while processing your request.';
 			break;
-			case "INVALID_USER_CREDENTIALS":
-			err='Invalid credentials. Please verify the details and try again.';
+			case "NO_USERS_FOUND":
+			err='No more users found to email. You\'ve emailed everyone!';
 			break;
 			case "INVALID_USER_NAME":
 			err='Invalid user name. Please enter your full name and try again.';
