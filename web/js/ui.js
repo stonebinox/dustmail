@@ -125,7 +125,7 @@ function readParams(){
 			err='Password mismatch. Please ensure the passwords match each other.';
 			break;
 		}
-		$("#message").html('<div class="alert alert-danger"><strong>Error</strong> '+err+'</div>');
+		$(".message").html('<div class="alert alert-danger"><strong>Error</strong> '+err+'</div>');
 	}
 	var suc=getUrlParameter("suc");
 	if(validate(suc)){

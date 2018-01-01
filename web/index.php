@@ -127,7 +127,7 @@ $app->get("/logout",function() use($app){
     }
 });
 $app->post("/pay",function(Request $request) use($app){
-    if(($app['session']->get("uid"))&&($request->get("stripeToken"))&&($request->get("subject"))&&($request->get("body"))&&$request->get("amount")&&($request->get("devcount")))
+    if(($app['session']->get("uid"))&&($request->get("stripeToken"))&&($request->get("subject"))&&($request->get("body"))&&($request->get("devcount")))
     {
         require("../classes/adminMaster.php");
         require("../classes/userMaster.php");
