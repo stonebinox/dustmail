@@ -232,7 +232,7 @@ app.controller("mail",function($scope,$compile,$http){
             $("#logoutbutton").parent().css("display","block");
             if(validate(localStorage.getItem("subject"))){
                 $("#subject").val(localStorage.getItem("subject"));
-                $("#body").val(localStorage.getItem("body"));
+                $("#desc").val(localStorage.getItem("body"));
             }
         }
     };
