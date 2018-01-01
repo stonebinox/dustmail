@@ -315,8 +315,8 @@ class userMaster extends adminMaster
                 }
             }
             $um.=" ORDER BY RAND() LIMIT $limit";
-            echo $um;
             $um=$app['db']->fetchAll($um);
+            var_dump($um);
             $userArray=array();
             foreach($um as $user)
             {
