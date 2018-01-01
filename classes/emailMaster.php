@@ -150,7 +150,6 @@ class emailMaster extends userMaster
                         if(validate($body))
                         {
                             $users=userMaster::getUsers($limit,$adminID);
-                            var_dump($users);
                             if(is_array($users))
                             {
                                 foreach($users as $user)
