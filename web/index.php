@@ -134,7 +134,7 @@ $app->post("/pay",function(Request $request) use($app){
         require("../classes/emailMaster.php");
         require("../classes/paymentMaster.php");
         $amount=$request->get("amount");
-        \Stripe\Stripe::setApiKey("pk_test_AaNN3vmVBn3clhgdqGa9CMXX");
+        \Stripe\Stripe::setApiKey("sk_test_0AkRhm58Zu4HwoPOLNM0uANj");
         $amount=($request->get("devcount")/10)*100;
         // Token is created using Checkout or Elements!
         // Get the payment token ID submitted by the form:
