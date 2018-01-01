@@ -106,6 +106,7 @@ app.controller("mail",function($scope,$compile,$http){
                                             case "ACCOUNT_CREATED":
                                             mover('login');
                                             messageBox("Account Created","Your account was created successfully. Please check your email and verify your account to login.");
+                                            $scope.getAllUsers();
                                             break;
                                         }
                                     },
