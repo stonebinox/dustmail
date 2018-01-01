@@ -164,7 +164,8 @@ $app->post("/pay",function(Request $request) use($app){
             }
             else
             {
-                return $app->redirect("/?err=".$emailResponse);
+                // return $app->redirect("/?err=".$emailResponse);
+                return $emailResponse;
             }
         }   
         else

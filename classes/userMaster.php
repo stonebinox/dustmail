@@ -319,9 +319,9 @@ class userMaster extends adminMaster
             $userArray=array();
             foreach($um as $user)
             {
-                $userID=$user['idemail_master'];
+                $userID=$user['iduser_master'];
                 $this->__construct($userID);
-                $userData=$this->getEmail();
+                $userData=$this->getUser();
                 if(is_array($userData))
                 {
                     array_push($userArray,$userData);
