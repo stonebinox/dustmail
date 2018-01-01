@@ -6,7 +6,7 @@ Last modified: 30/12/17 23:42
 Comments: Main class file for 
 payment_master table.
 -------------------------------*/
-class paymentMaster extends userMaster
+class paymentMaster extends emailMaster
 {
     public $app=NULL;
     public $paymentValid=false;
@@ -49,6 +49,38 @@ class paymentMaster extends userMaster
         else
         {
             return false;
+        }
+    }
+    function addPayment($userID,$amount,$token)
+    {
+        $userID=secure($userID);
+        $app=$this->app;
+        userMaster::__construct($userID);
+        if($this->userValid)
+        {
+            $amount=secure($amount);
+            if((validate($amount))&&(is_numeric($amount))&&($amount>=0))
+            {
+                $token=secure($token);
+                if(validate($token))
+                {
+                    $in="INSERT INTO payment_master (timestamp,user_master_iduser_master,amount,stripe_token) VALUES (NOW(),'$userID','$amount','$token')";
+                    $in=$app['db']->executeQuery($in);
+                    return "PAYMENT_ADDED";
+                }
+                else
+                {
+                    return "INVALID_STRIPE_TOKEN";
+                }
+            }
+            else
+            {
+                return "INVALID_AMOUNT";
+            }
+        }
+        else
+        {
+            return "INVALID_USER_ID";
         }
     }
 }

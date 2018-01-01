@@ -126,5 +126,56 @@ $app->get("/logout",function() use($app){
         return $app->redirect("/");
     }
 });
+$app->post("/pay",function(Request $request) use($app){
+    if(($app['session']->get("uid"))&&($request->get("stripeToken"))&&($request->get("subject"))&&($request->get("body"))&&$request->get("amount")&&($request->get("devcount")))
+    {
+        require("../classes/adminMaster.php");
+        require("../classes/userMaster.php");
+        require("../classes/emailMaster.php");
+        require("../classes/paymentMaster.php");
+        $amount=$request->get("amount");
+        \Stripe\Stripe::setApiKey("pk_test_AaNN3vmVBn3clhgdqGa9CMXX");
+        $amount=($request->get("devcount")/10)*100;
+        // Token is created using Checkout or Elements!
+        // Get the payment token ID submitted by the form:
+        $token = $request->get('stripeToken');
+        
+        // Charge the user's card:
+        $charge = \Stripe\Charge::create(array(
+        "amount" => $amount,
+        "currency" => "usd",
+        "description" => "Dust email campaign",
+        "source" => $token,
+        ));
+        if($charge->failure_code!=NULL)
+        {
+            return $app->redirect("/?err=PAYMENT_ERROR_".$charge->failure_message);
+        }
+        $payment=new paymentMaster;
+        $amount=$amount/100;
+        $response=$payment->addPayment($app['session']->get("uid"),$amount,$token);
+        if($response=="PAYMENT_ADDED")
+        {
+            $email=new emailMaster;
+            $emailResponse=$email->sendEmails($app['session']->get("uid"),$request->get("subject"),$request->get("body"),$request->get("devcount"));
+            if($emailResponse=="USERS_EMAILED")
+            {
+                return $app->redirect("/?suc=".$emailResponse);
+            }
+            else
+            {
+                return $app->redirect("/?err=".$emailResponse);
+            }
+        }   
+        else
+        {
+            return $app->redirect("/?err=".$response);
+        }
+    }
+    else
+    {
+        return $app->redirect("/?err=INVALID_PARAMETERS");
+    }
+});
 $app->run();
 ?>
