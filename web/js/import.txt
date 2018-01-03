@@ -5858,5 +5858,636 @@
         "twitter": "",
         "website": ""
     }
+},
+{
+    "_id": {
+        "$oid": "59e19f52b95e2a00044af93e"
+    },
+    "uid": "ba5c98f1c7ab2db214538b7d62cd79aa",
+    "updatedAt": {
+        "$date": "2017-10-14T06:46:12.887Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-14T05:23:30.708Z"
+    },
+    "email": "ross@golocalapps.com",
+    "password": "$2a$10$Hxs6ArwHVydN3BwFvbnaNO2TM4.FYtLQS8PoDfCnhgCP7JmusJU2O",
+    "isDeveloper": false,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "0-5",
+        "price": "$0-$200"
+    },
+    "profile": {
+        "firstName": "Ross",
+        "lastName": "Rojek",
+        "locationLL": "[-121.2981,38.4732]",
+        "locationPretty": "Sacramento, California, United States",
+        "producthunt": "@sacbookreviewer",
+        "title": "Developer",
+        "twitter": "@sacbookreviewer",
+        "website": "http://golocalapps.com"
+    }
+},
+{
+    "_id": {
+        "$oid": "59e1ff93b95e2a00044af93f"
+    },
+    "uid": "ffde0077550646232c3ecbcd53958400",
+    "updatedAt": {
+        "$date": "2017-10-14T13:16:06.292Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-14T12:14:11.740Z"
+    },
+    "email": "patrickwcurl@gmail.com",
+    "password": "$2a$10$X0/o/vcCGGa4HuCE/8BrJOLLVGrPVJw/P/FyLoMXI3ayZhecXcVlC",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "5-10",
+        "price": "$400-$600"
+    },
+    "profile": {
+        "firstName": "Patrick",
+        "introduction": "I'm currently working full time for a contract team that basically has one client. Been building php apps since around 2010. Been hacking scripts since 2003, and html and css since 1998. ",
+        "lastName": "Curl",
+        "locationLL": "[-111.6585,40.2338]",
+        "locationPretty": "Provo, Utah, United States",
+        "producthunt": "",
+        "title": "Laravel + Vuejs + Cordova (Mobile) Dev",
+        "twitter": "patrickcurl",
+        "website": "http://github.com/patrickcurl"
+    }
+},
+{
+    "_id": {
+        "$oid": "59e244b3b95e2a00044af940"
+    },
+    "uid": "ebf32883809eb5d39d09846d20448d64",
+    "updatedAt": {
+        "$date": "2017-10-14T17:09:07.698Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-14T17:09:07.698Z"
+    },
+    "email": "jeff.jacobsen@expatrepreneur.co",
+    "password": "$2a$10$ak3EUWYHM7ziLuZY/7e9iOTVUNvhXEJl9DpzhnG1GI/j3Zdj9YjbW",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59e2a712b95e2a00044af942"
+    },
+    "uid": "06055938a65cc24bdfd8e08eb9bedce5",
+    "updatedAt": {
+        "$date": "2017-10-15T05:40:11.793Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-15T00:08:50.335Z"
+    },
+    "email": "ken@safetap.co",
+    "password": "$2a$10$QVPaHENWalpyg84HcuP7FO71rJziBms8DFPKerGsDBKgrhq9mFLmO",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "0-5",
+        "price": "$0-$200"
+    },
+    "profile": {
+        "firstName": "Kenneth",
+        "introduction": "I run an agency focused on digital health and healthcare technology that I founded in 2015 during my undergrad at the University of Notre Dame. I have a huge passion for the health and wellness space, and helping other entrepreneurs launch game-changing products",
+        "lastName": "Colón",
+        "locationLL": "[-89.2167,37.7275]",
+        "locationPretty": "Carbondale, Illinois, United States",
+        "producthunt": "kcolon23",
+        "title": "Digital Health Entrepreneur",
+        "twitter": "",
+        "website": "http://www.safetap.co"
+    }
+},
+{
+    "_id": {
+        "$oid": "59e37d3ae6b9d4000410b937"
+    },
+    "uid": "d6ea119bd0e82d22c9179dd1ac0f2f29",
+    "updatedAt": {
+        "$date": "2017-10-15T15:29:11.189Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-15T15:22:34.873Z"
+    },
+    "email": "ghiliaweld@gmail.com",
+    "password": "$2a$10$/VcTzRuNm5apqJt9ZfE7U.okR/AxyrblQYXW.tYM3WpAngIglWmsi",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "0-5",
+        "price": "$0-$200"
+    },
+    "profile": {
+        "firstName": "Ghilia",
+        "introduction": "Hey there, my name is Ghilia. I\u2019m a student by day and investor, blockchain enthusiast and aspiring product manager by night.  When I\u2019m not busy writing article and making trades I like to design and develop MVPs (Minimum Viable Products).",
+        "lastName": "Weldesselasie",
+        "locationLL": "[-73.554,45.5088]",
+        "locationPretty": "Montréal, Quebec, Canada",
+        "producthunt": "https://www.producthunt.com/@ghiliweld",
+        "title": "MVP developer and Product Manager",
+        "twitter": "https://twitter.com/ghiliweld",
+        "website": "https://medium.com/ghilia-weldesselasie/about-ghilia-weldesselasie-2b9bde65b820"
+    }
+},
+{
+    "_id": {
+        "$oid": "59e3b41ee6b9d4000410b940"
+    },
+    "uid": "d1ee05628090b63be96dfcfdfee9be22",
+    "updatedAt": {
+        "$date": "2017-10-15T19:18:51.836Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-15T19:16:46.464Z"
+    },
+    "email": "kumar@uptickgrowth.com",
+    "password": "$2a$10$tqCfH9RBrjSFESfh2unITecQjZTI6hPyj3CSYWAxmsBzwuA4e8Jla",
+    "isDeveloper": false,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "0-5",
+        "price": "$200-$400"
+    },
+    "profile": {
+        "firstName": "Kumar",
+        "lastName": "Thangudu",
+        "locationLL": "",
+        "locationPretty": "",
+        "producthunt": "@datarade",
+        "title": "Marketer",
+        "twitter": "@datarade",
+        "website": "http://www.uptickgrowth.com"
+    }
+},
+{
+    "_id": {
+        "$oid": "59e48747acd19300045dbf6e"
+    },
+    "uid": "69dc570fc122e135c3233e18a74c73cb",
+    "updatedAt": {
+        "$date": "2017-10-16T10:35:44.125Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-16T10:17:43.108Z"
+    },
+    "email": "olivier@wittycircle.com",
+    "password": "$2a$10$7yDcN./bUphV3FFfL.q1Wet0AYfEM3M/22k/I8T0wj9Y3.qRfhQ6S",
+    "isDeveloper": false,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "0-5",
+        "price": "$0-$200"
+    },
+    "profile": {
+        "firstName": "Olivier",
+        "lastName": "Hamelin",
+        "locationLL": "[-122.463,37.7648]",
+        "locationPretty": "San Francisco, California, United States",
+        "producthunt": "",
+        "title": "cofounder",
+        "twitter": "https://twitter.com/OliHamelin",
+        "website": ""
+    }
+},
+{
+    "_id": {
+        "$oid": "59e59d14d03c9d0004b9006b"
+    },
+    "uid": "6eec370b58e9193516c0a5374b08fdbd",
+    "updatedAt": {
+        "$date": "2017-10-17T06:03:00.092Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-17T06:03:00.092Z"
+    },
+    "email": "s.sahawneh@gmail.com",
+    "password": "$2a$10$cUGKZLyqPI3MHPpKBIE/YefDhFB02N3Lbx2AIHGyf6VmzvAsq2N0O",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59e5a4d2d03c9d0004b9006d"
+    },
+    "uid": "2c1f73e21fa78f5864bc507d8eafc4c4",
+    "updatedAt": {
+        "$date": "2017-10-17T06:36:02.278Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-17T06:36:02.278Z"
+    },
+    "email": "dhruv@dhruvkumarjha.com",
+    "password": "$2a$10$ausy3q60ezrU9lmrjm66KeKyqlgbTpRtlTMCBJj4riyy23Zt7kwTy",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59e5f0de8816ac0004daafaf"
+    },
+    "uid": "233423718a49495d8fc0c21b06e8ed8a",
+    "updatedAt": {
+        "$date": "2017-10-17T12:00:30.992Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-17T12:00:30.992Z"
+    },
+    "email": "olivier_hamelin@yahoo.fr",
+    "password": "$2a$10$J92qRK7NNG5GSGBkUVcrTePej48aw4Qkfz0O1RvBG2t34pGS3jZj.",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59e636d71b79c500045eddfb"
+    },
+    "uid": "9903af93420f55f8dce57da70c02fe37",
+    "updatedAt": {
+        "$date": "2017-10-17T16:59:03.136Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-17T16:59:03.136Z"
+    },
+    "email": "eugene@culturelust.com",
+    "password": "$2a$10$GvS2FOPdigf2gqe5objtgus2HEMJOeOYE61Ix7.CriLnTWu0Xl3FW",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59e643c6d1e41900046bb5c5"
+    },
+    "uid": "c4c32cef7c72a19b6be46e4a1a52a071",
+    "updatedAt": {
+        "$date": "2017-10-17T17:54:14.117Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-17T17:54:14.117Z"
+    },
+    "email": "posix4e@gmail.com",
+    "password": "$2a$10$zJMKs7jpmbqZ1gPP.ZOcw.z7lRV4eXIwdIK4H5mhDnGDksX1LKbO6",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59ea06345f691a00046b707e"
+    },
+    "uid": "3e9c95b497b6bb518751347f839c78fd",
+    "updatedAt": {
+        "$date": "2017-10-20T14:20:36.114Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-20T14:20:36.114Z"
+    },
+    "email": "basitchohan@gmail.com",
+    "password": "$2a$10$jX5Sw1nkg8ZXsaSA7A8Yne1JE4aFMSnZqW9SXa1wHBUOfwoxnJIG2",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59ea07b05f691a00046b7080"
+    },
+    "uid": "ae59597bb6ff71886a529a7c21199ec6",
+    "updatedAt": {
+        "$date": "2017-10-20T14:26:56.015Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-20T14:26:56.015Z"
+    },
+    "email": "shepler.sam@gmail.com",
+    "password": "$2a$10$eT9EXVUOkBRN397WIDyt/uAwlFkGY28v2Us0jzR7KhDG1Q2HdQVr6",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59eb9543927d4c0004fb43c9"
+    },
+    "uid": "a4da885bb8ddbbf579c90745c6f5b600",
+    "updatedAt": {
+        "$date": "2017-10-21T18:43:15.224Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-21T18:43:15.224Z"
+    },
+    "email": "keithkimster@gmail.com",
+    "password": "$2a$10$o1fduBHpUvN7eHwsXVfhxerIapmO05ltuoIsIYoRcUCXnCUxtYKQ.",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59f05c24e76d13000415ad73"
+    },
+    "uid": "087af85524ab8ce8ddac0348c88637c3",
+    "updatedAt": {
+        "$date": "2017-10-25T09:40:52.253Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-25T09:40:52.253Z"
+    },
+    "email": "omnia08@hotmail.com",
+    "password": "$2a$10$xYWLQ89gvjbBEeMVHsZBrui/hReR0O2Xu.8ydMX1r9at6XWu9xnym",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59f39e275d08e100046e0b8f"
+    },
+    "uid": "517781d7cb425ec15c44c3dca2f41c80",
+    "updatedAt": {
+        "$date": "2017-10-27T20:59:19.876Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-27T20:59:19.876Z"
+    },
+    "email": "brn_2011@live.com",
+    "password": "$2a$10$vikke2FDu8ydD4AU8kZhEezWsJBYiwG5AQpeQ0KF.3cEguh7cjUBW",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59f9c4dd590172000452788c"
+    },
+    "uid": "18d74b18d0d7c041f82e717f7ff40b75",
+    "updatedAt": {
+        "$date": "2017-11-01T12:58:05.378Z"
+    },
+    "createdAt": {
+        "$date": "2017-11-01T12:58:05.378Z"
+    },
+    "email": "mulazimshah@gmail.com",
+    "password": "$2a$10$2706CbP829RtwUNayu3cGuXlGHuGn8Py2FKXHy3ntEpm/0b4200Ie",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59fb1b7dff44e000048d9aa9"
+    },
+    "uid": "46115fc7382b4acf2f9b1774c6e2ccd9",
+    "updatedAt": {
+        "$date": "2017-11-02T13:19:57.923Z"
+    },
+    "createdAt": {
+        "$date": "2017-11-02T13:19:57.923Z"
+    },
+    "email": "iqbaleagle7@gmail.com",
+    "password": "$2a$10$.ejBWkg09AgPYoEzAi.q3OMQTAtBPDIWD0nSEGosJxoLnLZpwaV/2",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59fbdacc2e78d00004a6edf1"
+    },
+    "uid": "4b3300c1f531ec64c2cc739f182015ee",
+    "updatedAt": {
+        "$date": "2017-11-03T02:56:12.912Z"
+    },
+    "createdAt": {
+        "$date": "2017-11-03T02:56:12.912Z"
+    },
+    "email": "efyuba3@gmail.com",
+    "password": "$2a$10$SJyT46vKHlEusyGe8r3QQecHi6f1dSr6EQTDWK5VXlGurgFt159ju",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59fc08572e78d00004a6edf3"
+    },
+    "uid": "1eb632481a14e5b8f212a6426f9ef58c",
+    "updatedAt": {
+        "$date": "2017-11-03T06:10:31.489Z"
+    },
+    "createdAt": {
+        "$date": "2017-11-03T06:10:31.489Z"
+    },
+    "email": "raziqhussain17@gmail.com",
+    "password": "$2a$10$VgGAEdxcZDL.7W4U3aB73.h9La6n9miT.f/lEMljgoWr3LVxb35Va",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59fc09e52e78d00004a6edf6"
+    },
+    "uid": "d299d34df6e3a6b07765167dd81a7461",
+    "updatedAt": {
+        "$date": "2017-11-03T06:17:09.221Z"
+    },
+    "createdAt": {
+        "$date": "2017-11-03T06:17:09.221Z"
+    },
+    "email": "rv345370@gmail.xn--om-3ia",
+    "password": "$2a$10$aa3clgVCNbS3g17FUV6N8u.7osJ/k5VrOwldX5vdC07AE8V4aqN0a",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "5a0165f3fd6f700004a0b81a"
+    },
+    "uid": "6ca6b5bcd83aaacc14ef26175045b20b",
+    "updatedAt": {
+        "$date": "2017-11-07T07:51:15.186Z"
+    },
+    "createdAt": {
+        "$date": "2017-11-07T07:51:15.186Z"
+    },
+    "email": "mukeshkumarts76458090@gmail.com",
+    "password": "$2a$10$N/q3ZrO4lGJ7ygHareQmrOj02AyAqiDiu9eUJBrPVDnEDkj8Ya1li",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "5a01e3f8fd6f700004a0b81f"
+    },
+    "uid": "ec5ac982940535c5a030f872d6aff277",
+    "updatedAt": {
+        "$date": "2017-11-07T16:48:56.123Z"
+    },
+    "createdAt": {
+        "$date": "2017-11-07T16:48:56.123Z"
+    },
+    "email": "mide0303@gmail.com",
+    "password": "$2a$10$hAtGSJK1Zmp/bnGvEHPX3uuifXjA8TWk30LLp6fhAI3Tqaj6R1oq.",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "5a07f057bcdc6a0004af45bb"
+    },
+    "uid": "5fe967c954857bac5f9f2612ec250f3c",
+    "updatedAt": {
+        "$date": "2017-11-12T06:55:19.350Z"
+    },
+    "createdAt": {
+        "$date": "2017-11-12T06:55:19.350Z"
+    },
+    "email": "multiplecodes@gmail.com",
+    "password": "$2a$10$LMSeFoU2FvjPEowL/mcmmONtto64Y.zXyT.x.t5zcJ0C8R6RzBxUS",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "5a0f6bb44bf5ac0004d6c66b"
+    },
+    "uid": "e0d284d8eae15534243c148988e84f74",
+    "updatedAt": {
+        "$date": "2017-11-17T23:11:28.672Z"
+    },
+    "createdAt": {
+        "$date": "2017-11-17T23:07:32.386Z"
+    },
+    "email": "henrybenn@gmail.com",
+    "password": "$2a$10$rTrSPjWd4xfrEKHantF7Iu4GaFvPmSi0Ul8/1Jx7B0BsWewjn599K",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "5a194f00815d580004304437"
+    },
+    "uid": "c4eacee7f0128ced088048ffde223b48",
+    "updatedAt": {
+        "$date": "2017-11-25T11:07:44.710Z"
+    },
+    "createdAt": {
+        "$date": "2017-11-25T11:07:44.710Z"
+    },
+    "email": "mduxfield@hotmail.com",
+    "password": "$2a$10$7HNYIwnUn0ka6EnKP9Z5NertM9ywC4nt5KjCZTDzXE1Uw7s5LjzN.",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "5a1fdec199b79900043cb03a"
+    },
+    "uid": "99e655e39d234381847ad95499e7efba",
+    "updatedAt": {
+        "$date": "2017-11-30T10:34:41.932Z"
+    },
+    "createdAt": {
+        "$date": "2017-11-30T10:34:41.932Z"
+    },
+    "email": "farhan@experlabs.com",
+    "password": "$2a$10$80l22Wf1.dIo5M2VTsKIve6aDXuuJD6F9Qq9s91qEeRTn9KyKz17u",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "5a2680ec27ca9d0004efd36b"
+    },
+    "uid": "46797de78e2b25f811044ad4c76de69c",
+    "updatedAt": {
+        "$date": "2017-12-05T11:20:12.131Z"
+    },
+    "createdAt": {
+        "$date": "2017-12-05T11:20:12.131Z"
+    },
+    "email": "adnan@phenomena.me",
+    "password": "$2a$10$T.nFGQysq7z9cAM..yekHOysrFyptZeKLcf3D6vcGXOlt1G6HIQYK",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "5a26ae2c27ca9d0004efd36d"
+    },
+    "uid": "eb2a6800e3b622c59583fbaba4112d7d",
+    "updatedAt": {
+        "$date": "2017-12-05T14:33:16.437Z"
+    },
+    "createdAt": {
+        "$date": "2017-12-05T14:33:16.437Z"
+    },
+    "email": "julienmahin@gmail.com",
+    "password": "$2a$10$ba1A2d3Hu9PNjniMJC4pfem4MzubSAQVu.YM.MzhKeIq5CnAg7KX2",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "5a27e0319f5c430004bbac09"
+    },
+    "uid": "424801d15215e92ce3061c873dab0f50",
+    "updatedAt": {
+        "$date": "2017-12-06T12:18:57.517Z"
+    },
+    "createdAt": {
+        "$date": "2017-12-06T12:18:57.517Z"
+    },
+    "email": "mughalbanks@gmail.com",
+    "password": "$2a$10$Et2lk7SZf11ZvSZeTs3I0eYQn4Qb5t79Ry6vGZXF8zcSF0faSj5bm",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "5a29b17511879900048cba18"
+    },
+    "uid": "e0045db31e0a9aba0c34c60d872424c5",
+    "updatedAt": {
+        "$date": "2017-12-07T21:24:05.155Z"
+    },
+    "createdAt": {
+        "$date": "2017-12-07T21:24:05.155Z"
+    },
+    "email": "gadocansey@gmail.com",
+    "password": "$2a$10$KZLko47DkGLGikWfbiATRuKUiC8hUdD5ARnFgGV10dsqebLKSWtAq",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
 }
 ]
