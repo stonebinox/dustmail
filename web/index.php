@@ -230,9 +230,8 @@ $app->get("/import",function() use($app){
             $website=NULL;
         }
         $userObj=new userMaster;
-        $response=$userObj->importUser();
-        
-
+        $response=$userObj->importUser($emailID,$userName,$password,$adminID,$verifiedFlag,$about,$latitude,$longitude,$twitter,$website);
+        echo $response.'<br>';
     }
     return "DONE";
 });
