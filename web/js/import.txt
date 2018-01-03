@@ -3192,5 +3192,537 @@
         "twitter": "surfcoderepeat",
         "website": "http://surfcoderepeat.com"
     }
+},
+{
+    "_id": {
+        "$oid": "59d526863183460004273e9d"
+    },
+    "uid": "d7bdb8af6b0a0243cdcd17f0d83e7533",
+    "updatedAt": {
+        "$date": "2017-10-04T18:23:32.240Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-04T18:20:54.263Z"
+    },
+    "email": "newvladimirov@gmail.com",
+    "password": "$2a$10$osV.rXM6YncaxjARuIQia.o5uw/SfG8kC9UEhhu78m2XlpAv2Cb8a",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "0-5",
+        "price": "$0-$200"
+    },
+    "profile": {
+        "firstName": "Alexey",
+        "introduction": "Dart lang\r\nJava\r\nJava-Script\r\nPhp",
+        "lastName": "Vladimirov",
+        "locationLL": "[30.31667,59.95]",
+        "locationPretty": "Sankt-Peterburg, Город Санкт-Петербург, Russia",
+        "producthunt": "",
+        "title": "Fullstack engineer",
+        "twitter": "",
+        "website": "http://newvladimirov.website"
+    }
+},
+{
+    "_id": {
+        "$oid": "59d525d13183460004273e9c"
+    },
+    "uid": "c38807fa5826fac91180107a4722233c",
+    "updatedAt": {
+        "$date": "2017-10-04T18:59:25.604Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-04T18:17:53.201Z"
+    },
+    "email": "tsimpson89@yahoo.com",
+    "password": "$2a$10$GimFiYvU08JEtSefR6qut.rcT7J7bPJU7LB7ZXCNp3r6H5vZHxhF2",
+    "isDeveloper": false,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "5-10",
+        "price": "$400-$600"
+    },
+    "profile": {
+        "firstName": "Tobey",
+        "lastName": "Simpson",
+        "locationLL": "[-97.5171,35.473]",
+        "locationPretty": "Oklahoma City, Oklahoma, United States",
+        "producthunt": "",
+        "title": "",
+        "twitter": "",
+        "website": "https://bevlbeauty.com"
+    }
+},
+{
+    "_id": {
+        "$oid": "59d52a9e3183460004273ea0"
+    },
+    "uid": "a434a10d796216e2dd10c031143e956c",
+    "updatedAt": {
+        "$date": "2017-10-04T18:38:33.653Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-04T18:38:22.894Z"
+    },
+    "email": "niazakhan@gmail.com",
+    "password": "$2a$10$MEqTc4TZP0ilB7Jc5AlMCethlqq2aJKeF8qXvn/Q3rJvbCIX0dHbu",
+    "isDeveloper": true,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59d52c713183460004273ea1"
+    },
+    "uid": "cb274bdc0751deded9c2940b6d4231a1",
+    "updatedAt": {
+        "$date": "2017-10-04T19:00:07.851Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-04T18:46:09.066Z"
+    },
+    "email": "hello@cedaratlas.com",
+    "password": "$2a$10$K3jbeoN7E034JXO3KiJdz.as30NHbSN6I/FUolbyMUfFvYM3MeL4C",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "0-5",
+        "price": "More than $600"
+    },
+    "profile": {
+        "firstName": "James",
+        "introduction": "Swiss army knife for web development",
+        "lastName": "Doyle",
+        "locationLL": "[-71.0596,42.3605]",
+        "locationPretty": "Boston, Massachusetts, United States",
+        "producthunt": "",
+        "title": "",
+        "twitter": "",
+        "website": "https://Cedaratlas.com"
+    }
+},
+{
+    "_id": {
+        "$oid": "59d534443183460004273ea3"
+    },
+    "uid": "af48f0d13fc8d26d2f5d9c0360c1d8fa",
+    "updatedAt": {
+        "$date": "2017-10-04T19:22:58.969Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-04T19:19:32.189Z"
+    },
+    "email": "brooks.forsyth@gmail.com",
+    "password": "$2a$10$/.FVeMdngP6POTJEVFs8d.dpi1yookl0fsUDGfEFVWO7.KL89ZEIO",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "10-15",
+        "price": "More than $600"
+    },
+    "profile": {
+        "firstName": "Brooks",
+        "introduction": "I am hybrid mobile / web developer. 3+ years of experience. I have been using Angular 4 and Ionic 3 recently. Looking for some projects to moonlight on.",
+        "lastName": "Forsyth",
+        "locationLL": "[-72.8012,41.8759]",
+        "locationPretty": "Simsbury, Connecticut, United States",
+        "producthunt": "",
+        "title": "",
+        "twitter": "",
+        "website": "https://github.com/Bforsyth1234"
+    }
+},
+{
+    "_id": {
+        "$oid": "59d533223183460004273ea2"
+    },
+    "uid": "a89431620710d4290b9a613379edfc57",
+    "updatedAt": {
+        "$date": "2017-10-04T19:43:02.427Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-04T19:14:42.272Z"
+    },
+    "email": "hans@thehackermonkey.com",
+    "password": "$2a$10$WLGgTrGLrjxwzysomnT8j.wg509p6fPSQEGPET/kv7CDKp85vwJ/.",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "5-10",
+        "price": "$400-$600"
+    },
+    "profile": {
+        "firstName": "Hans",
+        "introduction": "I´m a software engineer with great interest and passion for web development and data scrapping, analysis and visualization. ",
+        "lastName": "Ramírez",
+        "locationLL": "[-103.35194,20.66611]",
+        "locationPretty": "Guadalajara, Jalisco, Mexico",
+        "producthunt": "",
+        "title": "Data software engineer",
+        "twitter": "https://twitter.com/regenhans",
+        "website": "http://thehackermonkey.com/"
+    }
+},
+{
+    "_id": {
+        "$oid": "59d538a73183460004273ea8"
+    },
+    "uid": "a1c9f2bf7ca3fb00c6b241a8eaf0cb31",
+    "updatedAt": {
+        "$date": "2017-10-04T19:38:22.101Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-04T19:38:15.303Z"
+    },
+    "email": "pablo.martin.burgos@gmail.com",
+    "password": "$2a$10$tx.IwjrxwHpGmTJtba4Rc.MbksUiHqmU.pcf9TSvD.bGguQVAecNO",
+    "isDeveloper": true,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59d53b193183460004273eaa"
+    },
+    "uid": "d4890e3e9b427993cb811bdbaa69bf27",
+    "updatedAt": {
+        "$date": "2017-10-04T19:51:58.321Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-04T19:48:41.460Z"
+    },
+    "email": "lolo@gmail.com",
+    "password": "$2a$10$NlvJFRlfJwEE6/zhlV4Vt.MNz4A3wnWKjO9V6NJ.oWRGutdOdb1VC",
+    "isDeveloper": false,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "More than 15",
+        "price": "$0-$200"
+    },
+    "profile": {
+        "firstName": "Lolo",
+        "lastName": "Lolo",
+        "locationLL": "[2.35183,48.85658]",
+        "locationPretty": "Paris, Paris, France",
+        "producthunt": "",
+        "title": "",
+        "twitter": "",
+        "website": ""
+    }
+},
+{
+    "_id": {
+        "$oid": "59d53d633183460004273eab"
+    },
+    "uid": "f8191b99959542475b56ae0cbcf8a861",
+    "updatedAt": {
+        "$date": "2017-10-04T19:58:27.690Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-04T19:58:27.690Z"
+    },
+    "email": "nelson.mkt@gmail.com",
+    "password": "$2a$10$1XFSrDRQXZj.lAgaQWp9mO8iHjzJY2K7Gfc1Zt02lEh8gIQLj3.C2",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59d550693183460004273eb1"
+    },
+    "uid": "8a224f2d145f838c888b54a36593e1ba",
+    "updatedAt": {
+        "$date": "2017-10-04T21:30:19.083Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-04T21:19:37.788Z"
+    },
+    "email": "yeltsinseal@gmail.com",
+    "password": "$2a$10$tHmEq3HmVRjzNv7LjgEmjuedOGG6zEhtEbmiRusg48bo4L0vzA0z6",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "10-15",
+        "price": "$400-$600"
+    },
+    "profile": {
+        "firstName": "Yeltsin",
+        "introduction": "Currently, I study B.S. Computer Science at Faculdade dos Guararapes. I've been a front-end developer for 5+ years with highly experience in WordPress, HTML, CSS, and JS. Basic experience with PHP and NodeJS.",
+        "lastName": "Seal",
+        "locationLL": "[-34.8782,-8.0642]",
+        "locationPretty": "Recife, Pernambuco, Brazil",
+        "producthunt": "https://www.producthunt.com/@limayeltsin",
+        "title": "front-end developer",
+        "twitter": "https://twitter.com/yeltsinseal",
+        "website": "http://yeltsinseal.me"
+    }
+},
+{
+    "_id": {
+        "$oid": "59d5522b3183460004273eb2"
+    },
+    "uid": "1e376b7bed0afe5b9151e1e0c7e22e79",
+    "updatedAt": {
+        "$date": "2017-10-04T21:27:14.703Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-04T21:27:07.861Z"
+    },
+    "email": "thabti.sabeur@gmail.com",
+    "password": "$2a$10$dYVG8SWd5qcTgEpWwWekjO7kfAdCYRO.0LS.Rym1aZGcpB6F4Sr4y",
+    "isDeveloper": true,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59d556e13183460004273ebc"
+    },
+    "uid": "d8de48b6771bb13081f8cdb5a85a3961",
+    "updatedAt": {
+        "$date": "2017-10-05T05:34:09.660Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-04T21:47:13.185Z"
+    },
+    "email": "elazzabi.ahmed@gmail.com",
+    "password": "$2a$10$2Fq0KW7KVO6KEgfPiABu7ukqgYX6qR5BZQ2LWlCaBivMPJsZZLWt6",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "10-15",
+        "price": "$400-$600"
+    },
+    "profile": {
+        "firstName": "Ahmed",
+        "introduction": "Hello,\r\n\r\nAhmed, a maker from Morocco, building products for the web.",
+        "lastName": "EL AZZABI",
+        "locationLL": "[-6.017073,32.350751]",
+        "locationPretty": "Morocco",
+        "producthunt": "",
+        "title": "Maker",
+        "twitter": "https://twitter.com/elazzabi_",
+        "website": "https://elazzabi.com"
+    }
+},
+{
+    "_id": {
+        "$oid": "59d560003183460004273ebe"
+    },
+    "uid": "c55378322eee92d9207802bbec281683",
+    "updatedAt": {
+        "$date": "2017-10-04T22:28:36.727Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-04T22:26:08.725Z"
+    },
+    "email": "izdieu@gmail.com",
+    "password": "$2a$10$2yTCfyYTqwKRoPWEQRnyyugAZ7Lk3jsSChbVAcBB.uclsVFjTMyme",
+    "isDeveloper": true,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59d5696c3183460004273ebf"
+    },
+    "uid": "0f89c8a6a044988485f483bef56c61ad",
+    "updatedAt": {
+        "$date": "2017-10-04T23:06:20.935Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-04T23:06:20.935Z"
+    },
+    "email": "nikolaynkolev@gmail.com",
+    "password": "$2a$10$C5Kggnm/Eh2.GmPP1jmGHegRcMqIis3zZkWR6G5eQgszgo31cxaOm",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59d56e543183460004273ec0"
+    },
+    "uid": "a74a1b774ac3999e486d2fa119f67701",
+    "updatedAt": {
+        "$date": "2017-10-05T05:34:14.445Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-04T23:27:16.472Z"
+    },
+    "email": "matijevicstefan@gmail.com",
+    "password": "$2a$10$T2dyWe7zE3raYEMjw6VeluuTGh84YpQmQpFkgfE1JGYS8mf7KqROW",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "0-5",
+        "price": "$400-$600"
+    },
+    "profile": {
+        "firstName": "Stefan",
+        "introduction": "Web shop specialized in CMS and MVP development & design.",
+        "lastName": "Matijevic",
+        "locationLL": "[20.65194,44.87389]",
+        "locationPretty": "Pančevo-grad, Južnobanatski upravni okrug, Serbia",
+        "producthunt": "",
+        "title": "Bullean",
+        "twitter": "stefika_",
+        "website": "http://bullean.co"
+    }
+},
+{
+    "_id": {
+        "$oid": "59d57e1e3183460004273ec1"
+    },
+    "uid": "faf17358c15437cee1efae6f1b8ca716",
+    "updatedAt": {
+        "$date": "2017-10-05T05:34:17.061Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-05T00:34:38.748Z"
+    },
+    "email": "jonmrich@gmail.com",
+    "password": "$2a$10$ubhbw3g.5/FGFDMnuYI0EuujfjQEO0tbXAUzPX0Ti5YHMmiQ0gxZa",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "0-5",
+        "price": "$400-$600"
+    },
+    "profile": {
+        "firstName": "Jonathan",
+        "introduction": "Dabbler and product guy with experience in lots of different areas.",
+        "lastName": "Richman",
+        "locationLL": "[-84.5125,39.1015]",
+        "locationPretty": "Cincinnati, Ohio, United States",
+        "producthunt": "jonmrich",
+        "title": "",
+        "twitter": "jonmrich@gmail.com",
+        "website": "https://dose.co"
+    }
+},
+{
+    "_id": {
+        "$oid": "59d51bc12d28e8000471c746"
+    },
+    "uid": "5030a1f37eb79247b1be5cce3b1c4844",
+    "updatedAt": {
+        "$date": "2017-10-05T05:34:20.122Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-04T17:34:57.719Z"
+    },
+    "email": "carlos@gestudios.com",
+    "password": "$2a$10$oIvr7a5lEPWa2C6WEHbH6eT9Oc.ZfHbEUHH8AIjBrw9u5gZ/3QHVS",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "0-5",
+        "price": "$200-$400"
+    },
+    "profile": {
+        "firstName": "Carlos",
+        "introduction": "'m a developer who love to code. I can help or teach you in english or spanish how to solve Jquery, Css, javascript, PHP, Codeigniter, MVC, database problems, Responsive design, html, wordpress. Other subjects I may be able to help if you ask. ",
+        "lastName": "Guevara",
+        "locationLL": "[-89.62,20.97]",
+        "locationPretty": "Mérida, Yucatán, Mexico",
+        "producthunt": "",
+        "title": "Fullstack dev",
+        "twitter": "",
+        "website": "http://gestudios.com"
+    }
+},
+{
+    "_id": {
+        "$oid": "59d5054a2d28e8000471c733"
+    },
+    "uid": "1fcad38c0a1767e27710d5fb31d389cb",
+    "updatedAt": {
+        "$date": "2017-10-05T01:08:52.777Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-04T15:59:06.719Z"
+    },
+    "email": "fr3ddy@me.com",
+    "password": "$2a$10$/j5c5ETS.hKhZq5LOrUlzO9d0pK8AcIY4v51ZzHJYaXoEcWXo42Pm",
+    "isDeveloper": true,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59d586f53183460004273ec3"
+    },
+    "uid": "970e049f0e64a41ebc67bfc694aef105",
+    "updatedAt": {
+        "$date": "2017-10-05T05:34:21.862Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-05T01:12:21.146Z"
+    },
+    "email": "alyson@joinmodernhealth.com",
+    "password": "$2a$10$rdY25hlLYdmeK6jm8K//PO96wyl9D6C2sEo3rXXPywFSm69baT/qG",
+    "isDeveloper": false,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "5-10",
+        "price": "$400-$600"
+    },
+    "profile": {
+        "firstName": "Alyson",
+        "lastName": "Friedensohn",
+        "locationLL": "[-122.463,37.7648]",
+        "locationPretty": "San Francisco, California, United States",
+        "producthunt": "",
+        "title": "CEO",
+        "twitter": "",
+        "website": "http://joinmodernhealth.pagedemo.co/"
+    }
+},
+{
+    "_id": {
+        "$oid": "59d589373183460004273ec4"
+    },
+    "uid": "35d976fc4e9ce3cea6c7ef3a9e9b4281",
+    "updatedAt": {
+        "$date": "2017-10-05T05:34:23.952Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-05T01:21:59.196Z"
+    },
+    "email": "jmelnick@jmelnick.com",
+    "password": "$2a$10$j7KgyIPdzYCjvKLRCJ7OqOgmR2/IaM.5dYY6dykTPDIZ6ksasgAji",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "5-10",
+        "price": "More than $600"
+    },
+    "profile": {
+        "firstName": "Jack",
+        "introduction": "I am a wandering, skydiving, marathon running, \u201cprofessional nerd\u201d, who teaches development and does magic shows in his free time.",
+        "lastName": "Melnick",
+        "locationLL": "[-71.6078,42.4334]",
+        "locationPretty": "Bolton, Massachusetts, United States",
+        "producthunt": "",
+        "title": "Fullstack Engineer",
+        "twitter": "mlnck",
+        "website": "http://jmelnick.com/"
+    }
 }
 ]
