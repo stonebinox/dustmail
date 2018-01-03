@@ -198,12 +198,21 @@ $app->get("/import",function() use($app){
     foreach($json as $user)
     {
         $emailID=$user['email'];
-        // $password=$user['password'];
-        // $devFlag=$user['isDeveloper'];
-        // $verifiedFlag=$user['verified'];
-        // $userName=$user['profile']['firstName'].' '.$user['profile']['lastName'];
-        // $about=$user['profile']['introduction'];
-        echo $emailID.'<br>';
+        $password=$user['password'];
+        $devFlag=$user['isDeveloper'];
+        $verifiedFlag=$user['verified'];
+        if(validate($user['profile']))
+        {
+            $profile=$user['profile'];
+            $userName=$profile['firstName'].' '.$profile['lastName'];
+            $about=$profile['introduction'];
+        }
+        else
+        {
+            $userName=$email;
+            $about='';
+        }
+        echo $emailID.' - '.$userName.' - '.$about.'<br>';
 
     }
     return "DONE";
