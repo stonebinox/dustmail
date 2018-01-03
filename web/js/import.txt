@@ -4253,5 +4253,563 @@
         "twitter": "",
         "website": "http://www.github.com/andyhmltn"
     }
+},
+{
+    "_id": {
+        "$oid": "59d71a7643295500041a33ca"
+    },
+    "uid": "e2dfa12bddfe48c2593e8bca345039b7",
+    "updatedAt": {
+        "$date": "2017-10-06T06:00:01.571Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-06T05:53:58.201Z"
+    },
+    "email": "connectwithzahid@gmail.com",
+    "password": "$2a$10$lz5fusly/.rbVJb4bOmua.4ln79ExULQtlrR9T78qDrpngMWy6RG6",
+    "isDeveloper": false,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "More than 15",
+        "price": "$200-$400"
+    },
+    "profile": {
+        "firstName": "Zahid",
+        "lastName": "Hussain",
+        "locationLL": "[55.291139,24.989208]",
+        "locationPretty": "Dubai, United Arab Emirates",
+        "producthunt": "",
+        "title": "Business consultant ",
+        "twitter": "induscrafts  ",
+        "website": ""
+    }
+},
+{
+    "_id": {
+        "$oid": "59d729ca43295500041a33cd"
+    },
+    "uid": "1eb3d2ed25f5185649dbbfdb21c85c93",
+    "updatedAt": {
+        "$date": "2017-10-06T07:08:11.048Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-06T06:59:22.575Z"
+    },
+    "email": "rahul@conq.co",
+    "password": "$2a$10$ZpAy8DV9oP0s4MnBQP8RN.ut6IaIvuLJ6Iid3M8UqgJ4oUvB.cU9y",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "10-15",
+        "price": "More than $600"
+    },
+    "profile": {
+        "firstName": "Rahul",
+        "introduction": "Hey you guys,\r\n\r\nMy name is Rahul Lakhaney, I am currently a CTO at Glam360, and I founded a wedding company 3 years back that got acquired last year. I also happen to be an advisor to the two fastest growing media companies in automotive and women's news sectors.\r\n",
+        "lastName": "Lakhaney",
+        "locationLL": "[55.30944,25.26972]",
+        "locationPretty": "Dubai, Dubai, United Arab Emirates",
+        "producthunt": "https://www.producthunt.com/@istereotype",
+        "title": "Full stack engineer",
+        "twitter": "https;//www.twitter.com/istereotype",
+        "website": "https://conq.co"
+    }
+},
+{
+    "_id": {
+        "$oid": "59d731fe43295500041a33d0"
+    },
+    "uid": "3249a25e62fac85d9d3715be8e75f5e7",
+    "updatedAt": {
+        "$date": "2017-10-06T07:34:31.014Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-06T07:34:22.338Z"
+    },
+    "email": "m@awcode.com",
+    "password": "$2a$10$FLE37PTZQMs54rVxSFg8ZOsI.Bsl2ZyutC9J6CBc4jovOchjH.TCi",
+    "isDeveloper": true,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59d74d6643295500041a33d2"
+    },
+    "uid": "985a512df5474076b3d3efd3dc72ecf4",
+    "updatedAt": {
+        "$date": "2017-10-06T09:31:18.830Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-06T09:31:18.830Z"
+    },
+    "email": "slatterytom@gmail.com",
+    "password": "$2a$10$j48ZC3zEPliXTBCu0hvw0Ob34sXiXyaOqSFyk1yUu6dxzkPZS0Y.C",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59d7619743295500041a33da"
+    },
+    "uid": "4d126d4e0b66c3a04c399cd1786680d4",
+    "updatedAt": {
+        "$date": "2017-10-06T11:05:18.821Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-06T10:57:27.747Z"
+    },
+    "email": "ahruschev@gmail.com",
+    "password": "$2a$10$7b5naM7I8P0ddS5ngF7zMuwThJQ.rlQwXLVnobvPy2Znpfnr2zoO6",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "10-15",
+        "price": "More than $600"
+    },
+    "profile": {
+        "firstName": "Alexandr",
+        "introduction": "Minimal product \u2014 Maximum result. Product that completely works, bring money and real users. ",
+        "lastName": "Hruschev",
+        "locationLL": "",
+        "locationPretty": "",
+        "producthunt": "",
+        "title": "Design, prototypes, development. Web & Apps.",
+        "twitter": "",
+        "website": "http://mvplab.org"
+    }
+},
+{
+    "_id": {
+        "$oid": "59d7733943295500041a33e2"
+    },
+    "uid": "ac9e1c49e12b144ca04e5248c2e56146",
+    "updatedAt": {
+        "$date": "2017-10-06T12:12:41.295Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-06T12:12:41.295Z"
+    },
+    "email": "jeffrey.neil.larsen@gmail.com",
+    "password": "$2a$10$4Q.n5lPr4JrzEaTjyhgdWuIL8vWBPjRM5cKHISSVgc4LE944u5uhq",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59d6df8743295500041a33c5"
+    },
+    "uid": "b0858ca7ae961fa09d92bca4179daa69",
+    "updatedAt": {
+        "$date": "2017-10-06T14:11:46.819Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-06T01:42:31.596Z"
+    },
+    "email": "mduncan77@comcast.net",
+    "password": "$2a$10$.Upc3EOfczpkvixtQ1ETmOSHTO6DTqLQp4rBgA.oi4OBaizZWcxgm",
+    "isDeveloper": false,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "More than 15",
+        "price": "More than $600"
+    },
+    "profile": {
+        "firstName": "Mike",
+        "lastName": "Duncan",
+        "locationLL": "[-75.6009,38.3662]",
+        "locationPretty": "Salisbury, Maryland, United States",
+        "producthunt": "",
+        "title": "",
+        "twitter": "",
+        "website": ""
+    }
+},
+{
+    "_id": {
+        "$oid": "59d7daebcf369d0004d7166a"
+    },
+    "uid": "5f5476e48711ede6934b60e977a704f9",
+    "updatedAt": {
+        "$date": "2017-10-06T20:02:56.420Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-06T19:35:07.626Z"
+    },
+    "email": "law@cinemasetfree.com",
+    "password": "$2a$10$ws76ha6gmCI0d9zdw9Pi6uKe..yahDD7sKLWUMSOln4dy0Ztd9yIG",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "5-10",
+        "price": "More than $600"
+    },
+    "profile": {
+        "firstName": "Lawrence",
+        "introduction": "I've been a part of a dozen or so startups.  Some with Angel funding, some with Series B.  It's a different game depending on where the money and the team is.  I help with early technical decisions and code that strategically give better returns in the long term, building out MVPs and seo landing pages is the fun part.  Getting to the next level with advanced admin functionality as an app grows is where seed funding tends to run out.  Right when we're trying to scale.  I'm happy and professional with communication and writing skills out the yahoo and working remotely has been my style for the past decade.",
+        "lastName": "Whiteside",
+        "locationLL": "[-122.6742,45.5202]",
+        "locationPretty": "Portland, Oregon, United States",
+        "producthunt": "https://www.producthunt.com/@lawrence_whiteside",
+        "title": "Web Architect, Technical Co-Founder",
+        "twitter": "https://twitter.com/lawwantsin",
+        "website": "https://lawrencewhiteside.com"
+    }
+},
+{
+    "_id": {
+        "$oid": "59d7e17ccf369d0004d7166b"
+    },
+    "uid": "d429f5558ac8ee09d5876a174d1daebb",
+    "updatedAt": {
+        "$date": "2017-10-06T20:03:13.094Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-06T20:03:08.667Z"
+    },
+    "email": "joffreycarle@gmail.com",
+    "password": "$2a$10$f/I8EFSHvTBQUlr1P2f07.Ok6nD9oadHxA.gjwoVia7G/Z7Uj1MjK",
+    "isDeveloper": true,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59d7e292cf369d0004d7166c"
+    },
+    "uid": "cd195964981410b07a77db9d77464818",
+    "updatedAt": {
+        "$date": "2017-10-06T20:20:25.257Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-06T20:07:46.679Z"
+    },
+    "email": "varun1505@gmail.com",
+    "password": "$2a$10$4JT4zvNtx..KkQAJy0a8O.ReXY.BIdlLHF1lnvaFMFaulA2b/a3fS",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "0-5",
+        "price": "$400-$600"
+    },
+    "profile": {
+        "firstName": "Varun",
+        "introduction": "I am a software craftsman and a maker, I just love making things. From inspiration to realization. From thinking of a feature, through every step of it\u2019s development, through the deployment, the infrastructure, the monitoring, the performance tweaking, the support of users, the back and forth with product, with marketing. I just love every aspect of it. ",
+        "lastName": "Srinivas",
+        "locationLL": "[73.89426,18.5191]",
+        "locationPretty": "Pune, Maharashtra, India",
+        "producthunt": "",
+        "title": "Fullstack Developer",
+        "twitter": "varun1505",
+        "website": "http://varun.website"
+    }
+},
+{
+    "_id": {
+        "$oid": "59d7e6a5cf369d0004d7166e"
+    },
+    "uid": "83c5949b4c53b9b883c99eee16f318e5",
+    "updatedAt": {
+        "$date": "2017-10-06T20:28:50.293Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-06T20:25:09.816Z"
+    },
+    "email": "ali@supermentor.us",
+    "password": "$2a$10$vg25rDKiFw5Q43dYSjGtr.gO.6QzSVRYdDtnuO6sKUNomSZ4wXGLS",
+    "isDeveloper": false,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "10-15",
+        "price": "$200-$400"
+    },
+    "profile": {
+        "firstName": "Ali",
+        "lastName": "Mahmoud",
+        "locationLL": "[39.17278,21.54278]",
+        "locationPretty": "Jiddah, Makkah, Saudi Arabia",
+        "producthunt": "https://www.producthunt.com/@ali_brandofpeople",
+        "title": "Product Manager",
+        "twitter": "https://twitter.com/Ali_Bofp",
+        "website": "http://supermentor.us"
+    }
+},
+{
+    "_id": {
+        "$oid": "59d7f2dfcf369d0004d71674"
+    },
+    "uid": "3269407e3e0f52642953d1caebd4ad08",
+    "updatedAt": {
+        "$date": "2017-10-06T21:21:16.891Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-06T21:17:19.499Z"
+    },
+    "email": "mp0010@zehntech.com",
+    "password": "$2a$10$ZlP6z5yK6wa3ObOYz7UVjeFVxN/l0mkzKOCkw2RU9DlAAEisGCiBi",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "5-10",
+        "price": "$200-$400"
+    },
+    "profile": {
+        "firstName": "Mahendra",
+        "introduction": "I am Mahendra, Developer and System Architect. ",
+        "lastName": "P",
+        "locationLL": "[13.38333,52.51667]",
+        "locationPretty": "Berlin, Berlin, Germany",
+        "producthunt": "",
+        "title": "Manager",
+        "twitter": "@zehntech",
+        "website": "http://zehntech.com/"
+    }
+},
+{
+    "_id": {
+        "$oid": "59d80573cf369d0004d7167d"
+    },
+    "uid": "ff785cbecc7cb257d8a6dce247ce1ecf",
+    "updatedAt": {
+        "$date": "2017-10-07T04:56:35.567Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-06T22:36:35.885Z"
+    },
+    "email": "idevz@ymail.com",
+    "password": "$2a$10$GNVTWSJUmyt3vKSJuCiYsetO2sfDEfYqzTxWL8X7vvZOm.DTnhTf6",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "10-15",
+        "price": "More than $600"
+    },
+    "profile": {
+        "firstName": "George",
+        "introduction": "Former CTO, Full Stack Software Engineer. Dynamic leader known for jump-starting product development & creation of award-winning apps.\r\n",
+        "lastName": "Ciobanu",
+        "locationLL": "[-0.1276,51.5073]",
+        "locationPretty": "London, Greater London, England, United Kingdom",
+        "producthunt": "",
+        "title": "Full Stack Engineer",
+        "twitter": "",
+        "website": "http://www.idevz.com"
+    }
+},
+{
+    "_id": {
+        "$oid": "59d80afacf369d0004d7167f"
+    },
+    "uid": "6c95d2175f38e4ee45caf519013e75dc",
+    "updatedAt": {
+        "$date": "2017-10-07T04:56:48.973Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-06T23:00:10.089Z"
+    },
+    "email": "zjacksonn@gmail.com",
+    "password": "$2a$10$zCAc.o7YkJiGa0xkJJK/WuFep8H9DG/hWJVCS6DHoEcrRPRzPjg/u",
+    "isDeveloper": false,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "0-5",
+        "price": "$400-$600"
+    },
+    "profile": {
+        "firstName": "Zac",
+        "lastName": "Jackson",
+        "locationLL": "[151.21,-33.868]",
+        "locationPretty": "Sydney, New South Wales, Australia",
+        "producthunt": "",
+        "title": "",
+        "twitter": "",
+        "website": ""
+    }
+},
+{
+    "_id": {
+        "$oid": "59d8125dcf369d0004d71680"
+    },
+    "uid": "225cf685e8d56366a41dd2132bfba03d",
+    "updatedAt": {
+        "$date": "2017-10-07T04:57:18.120Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-06T23:31:41.780Z"
+    },
+    "email": "mk@wilshire.ae",
+    "password": "$2a$10$juj8XpF6SG9i9sIRZgqb0uckQmXYP6lDdPYNBy52XcZwvGopDoX5G",
+    "isDeveloper": false,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "More than 15",
+        "price": "More than $600"
+    },
+    "profile": {
+        "firstName": "Mohamed",
+        "lastName": "Eldarat",
+        "locationLL": "",
+        "locationPretty": "",
+        "producthunt": "N/a",
+        "title": "Founder",
+        "twitter": "N/a",
+        "website": "http:/www.wilshire.ae"
+    }
+},
+{
+    "_id": {
+        "$oid": "59d82980cf369d0004d71685"
+    },
+    "uid": "dfd47465c33137e42aca5b6708b54863",
+    "updatedAt": {
+        "$date": "2017-10-09T19:03:11.813Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-07T01:10:24.796Z"
+    },
+    "email": "frontdesk@nicknoble.works",
+    "password": "$2a$10$7tvRQfmN3nIsiPBqoxdY7.3/xJldlrsaI5LmSyGMXW8PR7BdulEEy",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "5-10",
+        "price": "More than $600"
+    },
+    "profile": {
+        "firstName": "Nick",
+        "introduction": "My name is Nick Noble \u2013 I\u2019m a product designer with over seven years of experience in digital design, development, and strategy. I've helped some of the biggest and the smallest companies in the world build brands, websites, products, and audiences \u2013 all from scratch. Now I'd like to help you build the next big thing!",
+        "lastName": "Noble",
+        "locationLL": "[-73.9496,40.6501]",
+        "locationPretty": "Brooklyn, 11226, New York, New York, United States",
+        "producthunt": "https://www.producthunt.com/@nickisnoble",
+        "title": "Design, code, strategy.",
+        "twitter": "https://twitter.com/NickisNoble",
+        "website": "https://dribbble.com/nickisnoble"
+    }
+},
+{
+    "_id": {
+        "$oid": "59d878a9cf369d0004d71687"
+    },
+    "uid": "e4369bec4fa013c1c2aa70e283f5fb95",
+    "updatedAt": {
+        "$date": "2017-10-07T06:57:24.360Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-07T06:48:09.976Z"
+    },
+    "email": "mymapdrops@gmail.com",
+    "password": "$2a$10$gRbtfIRJCL44GGTmYO4EEu0pyWR11p.oHMxdWxBKC.vBugCBYkCES",
+    "isDeveloper": false,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "10-15",
+        "price": "$200-$400"
+    },
+    "profile": {
+        "firstName": "Holly",
+        "lastName": "Golvach",
+        "locationLL": "[-96.7969,32.7763]",
+        "locationPretty": "Dallas, Texas, United States",
+        "producthunt": "https://www.producthunt.com/@veryimportantholly",
+        "title": "Product Designer",
+        "twitter": "@hollygolvach",
+        "website": "http://www.mapdrops.com"
+    }
+},
+{
+    "_id": {
+        "$oid": "59d8beabcf369d0004d7169a"
+    },
+    "uid": "102610271b7e74553d87b078f35dec12",
+    "updatedAt": {
+        "$date": "2017-10-07T11:46:59.020Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-07T11:46:51.801Z"
+    },
+    "email": "ak863315@gmail.com",
+    "password": "$2a$10$oWBxlLrrJm./ru.8fTK/QOuALjQ/0fEHmHW7.UxEMnge.I1KGQumy",
+    "isDeveloper": true,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59d283eaae95ab000462ce7c"
+    },
+    "uid": "bb132f0de32ef738e48ddc49f4ce55f6",
+    "updatedAt": {
+        "$date": "2017-10-07T13:34:40.177Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-02T18:22:34.053Z"
+    },
+    "email": "stevenjmesser@gmail.com",
+    "password": "$2a$10$gyGUoDU4dftEm/sfQG29oulhi.57zQqxgHyTG1pD1.LXLJ0UNBxXK",
+    "isDeveloper": false,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "10-15",
+        "price": "$0-$200"
+    },
+    "profile": {
+        "firstName": "Steve",
+        "lastName": "Messer",
+        "locationLL": "[-0.1276,51.5073]",
+        "locationPretty": "London, Greater London, England, United Kingdom",
+        "producthunt": "https://www.producthunt.com/@stevenjmesser",
+        "title": "Product Manager",
+        "twitter": "https://twitter.com/stevenjmesser",
+        "website": ""
+    }
+},
+{
+    "_id": {
+        "$oid": "59d9d800266b1500046df739"
+    },
+    "uid": "525e4fefd407290a57de7e2a7c79aebd",
+    "updatedAt": {
+        "$date": "2017-10-08T07:54:47.255Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-08T07:47:12.122Z"
+    },
+    "email": "indextop5@gmail.com",
+    "password": "$2a$10$xKqtPP4IkZ7bgx/rL5oJnu3DTL.012zCYq6DxFvn/Lr9rPcGI6aEK",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "More than 15",
+        "price": "More than $600"
+    },
+    "profile": {
+        "firstName": "husain",
+        "introduction": "Conduct in-depth information research to gain business insights\r\ninto the organization, to improve and organize the information used for the various studies,\r\nto implement modeling algorithms, data mining and learning machine,\r\n\r\ninformation acquisition - integration of information from several sources, from several types of files, ability to work with large amounts of data (Big Data)\r\nInvestigation of information - analysis of information using programming language, modeling and algorithms, statistical analysis\r\nAnalytical analysis of information - capabilities of forecasting, information mining, optimization, processing of textual information and analysis of large data\r\nPresentation of information - capabilities of presenting information products and different visualization capabilities\r\n\r\nstatistics\r\nMathematics (including algorithms)\r\nData mining tools - including SPSS or SAS, or SSAS\r\nMachine Learning\r\nprogramming languages \u200b\u200b- Python, R\r\nNoSQL technologies - such as Hadoop, MongoDB, Cassandra\r\nKnowledge and experience working with relational databases - MSSQL, MySQL, Oracle\r\n\r\nCombining technology - A combination of ideas for new products - \r\nMost interesting is , I find myself with a lot of experience in the In many Domains\r\nTo find the adjustment batween technology and Big Data & Idea ,",
+        "lastName": "shtia",
+        "locationLL": "",
+        "locationPretty": "",
+        "producthunt": "https://www.producthunt.com/@hussein_shtia",
+        "title": "Data Scientist / technology integrator",
+        "twitter": "https://twitter.com/hussein_shtia",
+        "website": "https://www.linkedin.com/in/shtia/"
+    }
 }
 ]
