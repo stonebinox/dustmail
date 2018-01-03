@@ -190,5 +190,11 @@ $app->get("/user/getAllUsers",function() use($app){
     }
     return $users;
 });
+$app->get("/import",function() use($app){
+    require("../classes/adminMaster.php");
+    require("../classes/userMaster.php");
+    $content=file_get_contents("js/import.txt");
+    echo nl2br($content);
+});
 $app->run();
 ?>
