@@ -5314,5 +5314,549 @@
     "isDeveloper": true,
     "verified": false,
     "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59dde40483326a0004148f9c"
+    },
+    "uid": "e7a481add333bfaac2d5f513148605fa",
+    "updatedAt": {
+        "$date": "2017-10-11T09:28:00.275Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-11T09:27:32.966Z"
+    },
+    "email": "tarekaljundi@gmail.com",
+    "password": "$2a$10$Zx6nmZg7AVP6JcSN0D1NZeE4d2b7hTmxh6m/uzJTOYbx1X7MUH1RK",
+    "isDeveloper": true,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59df03287d326c0004e2d10f"
+    },
+    "uid": "5d518155aa246be8d4fd5457751d34fb",
+    "updatedAt": {
+        "$date": "2017-10-12T05:52:40.522Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-12T05:52:40.522Z"
+    },
+    "email": "paulhines01@gmail.com",
+    "password": "$2a$10$u2dlW3/.fh.64qwkWqSx..MPt8JZBOsMfdtion.ajetT6MO/Q5Zsa",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59df39417d326c0004e2d110"
+    },
+    "uid": "0912e053e00bd2da6668adac42f06d47",
+    "updatedAt": {
+        "$date": "2017-10-12T09:43:39.386Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-12T09:43:29.683Z"
+    },
+    "email": "jensenbernard5@gmail.com",
+    "password": "$2a$10$2ViJA7NFF9I4LqfM7igEE.mDhSpa1BiEK/96gIieYewERcCns7Tgq",
+    "isDeveloper": true,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59e33a65e6b9d4000410b933"
+    },
+    "uid": "d7be50fba53beed12a84c14c9ea4827b",
+    "updatedAt": {
+        "$date": "2017-10-15T10:37:25.803Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-15T10:37:25.803Z"
+    },
+    "email": "sm@hexkey.co",
+    "password": "$2a$10$zaOIvYY4raUmV5rF6rkc/uvWFkbe.q1VxvR5N/BBKONXkauIxOfLm",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59e512a6acd19300045dbf7f"
+    },
+    "uid": "f9f7d8549687cd4971381eab8116ce6b",
+    "updatedAt": {
+        "$date": "2017-10-16T20:12:30.128Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-16T20:12:22.564Z"
+    },
+    "email": "jbruell94@gmail.com",
+    "password": "$2a$10$ZWUMb5CywbuFYOyaYyr6x.xPb9U/27ghLcTTLqQQaHB7/gK8jrfiu",
+    "isDeveloper": true,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59dc8956f1d0da0004e7c8b1"
+    },
+    "uid": "11a62b6f70e3dc62c6a1105c9c7784d6",
+    "updatedAt": {
+        "$date": "2017-10-10T09:44:00.362Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-10T08:48:22.406Z"
+    },
+    "email": "asadabbas88@gmail.com",
+    "password": "$2a$10$AJ6KUUB2FBlvBo1oRaM2o.UiPFz7xKHBpkUTJAhCI5e7Is16.FERS",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "10-15",
+        "price": "$200-$400"
+    },
+    "profile": {
+        "firstName": "Asad",
+        "introduction": "Senior developer with java/nodejs/angular/php experience .. currently working in a startup as technical lead",
+        "lastName": "Abbas",
+        "locationLL": "[67.114544,24.870862]",
+        "locationPretty": "Karachi, Sind, Pakistan",
+        "producthunt": "",
+        "title": "Nodejs/PHP Developer",
+        "twitter": "asadabbas",
+        "website": "https://asadabbas88.tumblr.com/"
+    }
+},
+{
+    "_id": {
+        "$oid": "59dc94fbf1d0da0004e7c8b2"
+    },
+    "uid": "c491b20e114dad099e8520006dc0e07d",
+    "updatedAt": {
+        "$date": "2017-10-10T09:42:14.433Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-10T09:38:03.634Z"
+    },
+    "email": "faisal.7akeem@gmail.com",
+    "password": "$2a$10$ccnzW72OZD.HwzZXkWLPNO.IE1HeCB66rh6tX/W5D1i5spS6SbUOi",
+    "isDeveloper": false,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "5-10",
+        "price": "$200-$400"
+    },
+    "profile": {
+        "firstName": "Faisal",
+        "lastName": "Hakeem",
+        "locationLL": "[35.93333,31.95]",
+        "locationPretty": "Amman, Amman, Jordan",
+        "producthunt": "",
+        "title": "Product Launcher",
+        "twitter": "www.twitter.com/fezzent",
+        "website": ""
+    }
+},
+{
+    "_id": {
+        "$oid": "59dccfe2f1d0da0004e7c8b8"
+    },
+    "uid": "df5fa895dd35d3fbc6d565a3fc012b9a",
+    "updatedAt": {
+        "$date": "2017-10-10T15:14:34.155Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-10T13:49:22.282Z"
+    },
+    "email": "jonathan@fitrepreneur.me",
+    "password": "$2a$10$xPOFdiBtV7OYqL73TishFu1LKaBDYNFIu0d7WRWYT6PLKRJ5YUkZC",
+    "isDeveloper": false,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "More than 15",
+        "price": "$0-$200"
+    },
+    "profile": {
+        "firstName": "Jonathan",
+        "lastName": "Miller",
+        "locationLL": "[-122.463,37.7648]",
+        "locationPretty": "San Francisco, California, United States",
+        "producthunt": "@fittech_insider",
+        "title": "Fitrepreneur",
+        "twitter": "@FitTech_Insider",
+        "website": "http://www.fitrepreneur.me"
+    }
+},
+{
+    "_id": {
+        "$oid": "59d4d9e22d28e8000471c70d"
+    },
+    "uid": "b6900dd375c9a7417cb4df58c74ed726",
+    "updatedAt": {
+        "$date": "2017-10-12T00:56:05.668Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-04T12:53:54.697Z"
+    },
+    "email": "m.khalloufi@mintit.io",
+    "password": "$2a$10$tOnCrh9gg9BlCH5p4XoYNuYHPMNYDsqa2v/sZqxcwX07KZ6wcRWMa",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "More than 15",
+        "price": "More than $600"
+    },
+    "profile": {
+        "firstName": "Mohamed",
+        "introduction": "We make native mobile applications for Android et iOS since smartphone app development became a mainstream trend back in 2010. More than 90% of our projects have been completed on time, on budget and issue-free.",
+        "lastName": "Khalloufi",
+        "locationLL": "[10.269841,36.827847]",
+        "locationPretty": "Tunis, Tunisia",
+        "producthunt": "",
+        "title": "CEO",
+        "twitter": "",
+        "website": "http://mintit.io/"
+    }
+},
+{
+    "_id": {
+        "$oid": "59dd325083326a0004148f97"
+    },
+    "uid": "3bddd8d391ece1f63fb8be51d99b4618",
+    "updatedAt": {
+        "$date": "2017-10-11T05:28:11.880Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-10T20:49:20.734Z"
+    },
+    "email": "leonel@1950labs.com",
+    "password": "$2a$10$Ca.SviKXyu1SpLmIQO2N/u46sxThUfJ0vaqz87i8YsMZEZuJGYuc6",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "More than 15",
+        "price": "More than $600"
+    },
+    "profile": {
+        "firstName": "Leonel",
+        "introduction": "I own a software boutique with more than 10 full time developers",
+        "lastName": "More",
+        "locationLL": "[-56.012396,-32.799646]",
+        "locationPretty": "Uruguay",
+        "producthunt": "https://www.producthunt.com/@leonelmore",
+        "title": "",
+        "twitter": "https://twitter.com/leonelmore",
+        "website": "http://www.1950labs.com"
+    }
+},
+{
+    "_id": {
+        "$oid": "59dd89ed83326a0004148f9a"
+    },
+    "uid": "6e5f9e9e24590a1c4d346225d9e5af9c",
+    "updatedAt": {
+        "$date": "2017-10-11T05:28:13.504Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-11T03:03:09.368Z"
+    },
+    "email": "usama@botsify.com",
+    "password": "$2a$10$oOVeLTMJxC2GhjY7c2Oi0uXdOLwnBhuOREQsMy85vQgw.DVkLol7.",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "5-10",
+        "price": "$400-$600"
+    },
+    "profile": {
+        "firstName": "Usama",
+        "introduction": "I am founder and CEO of Botsify. Botsify helps businesses create artificial intelligent chatbots without coding and programming. \r\nI am technical geek, love build MVP and start up lean methodology. Always going something interesting and techie!",
+        "lastName": "Noman",
+        "locationLL": "[67.114544,24.870862]",
+        "locationPretty": "Karachi, Sind, Pakistan",
+        "producthunt": "@usamanoman",
+        "title": "CEO",
+        "twitter": "@usamanoman",
+        "website": "https://botsify.com"
+    }
+},
+{
+    "_id": {
+        "$oid": "59dd95c883326a0004148f9b"
+    },
+    "uid": "a25cc20e6f229ed3c5722648a8929f9e",
+    "updatedAt": {
+        "$date": "2017-10-11T05:28:09.430Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-11T03:53:44.353Z"
+    },
+    "email": "anoop.santhanam@gmail.com",
+    "password": "$2a$10$P3Y1qp73kC6pcx7FpiqPaukrhljTQbnfVtswkwrqC5BiFdxEJMuSK",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "0-5",
+        "price": "$0-$200"
+    },
+    "profile": {
+        "firstName": "Anoop",
+        "introduction": "I am passionate about everything new. Anything creative has my attention irrespective of what field of expertise it demands. However, computer science being one of my areas of expertise, tech related stuff never fails to impress me. \r\n\r\nStarted a company in 2011-12 while studying in second year of college. Was featured in Bangalore Mirror, Prajavani, YourStory, and Ignire. Filed for a patent in India and the US in August 2013.",
+        "lastName": "Santhanam",
+        "locationLL": "[77.59796,12.96991]",
+        "locationPretty": "Bengaluru, Karnataka, India",
+        "producthunt": "",
+        "title": "Serial Fullstack Web Developer",
+        "twitter": "https://twitter.com/anoopsanthanam",
+        "website": "https://www.linkedin.com/in/anoop-santhanam-742a6256"
+    }
+},
+{
+    "_id": {
+        "$oid": "59ddf6c383326a0004148f9e"
+    },
+    "uid": "8594bcc7baa9a47d4e427de66c3e34ca",
+    "updatedAt": {
+        "$date": "2017-10-11T10:54:13.159Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-11T10:47:31.755Z"
+    },
+    "email": "abidali.alibhai@gmail.com",
+    "password": "$2a$10$x68ETzMvOfXsgGTbjib2nOTBJ3SrfapX1SA/9Ukrm5wkfjoyZbpsu",
+    "isDeveloper": false,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "0-5",
+        "price": "$0-$200"
+    },
+    "profile": {
+        "firstName": "Abidali",
+        "lastName": "Alibhai",
+        "locationLL": "[-0.1276,51.5073]",
+        "locationPretty": "London, Greater London, England, United Kingdom",
+        "producthunt": "",
+        "title": "",
+        "twitter": "@AbidaliAlibhai",
+        "website": "http://www.myventurecapital.co.uk"
+    }
+},
+{
+    "_id": {
+        "$oid": "59ddf93183326a0004148f9f"
+    },
+    "uid": "26c98e16f5cd7eeb86203a1d0614b659",
+    "updatedAt": {
+        "$date": "2017-10-11T11:11:45.955Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-11T10:57:53.726Z"
+    },
+    "email": "yatinweb@gmail.com",
+    "password": "$2a$10$.XQ92p7zx5vRk3sJrJDzmupJF0NRoboDZ/ATiYA3lFRcazNjoYxMS",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "0-5",
+        "price": "$0-$200"
+    },
+    "profile": {
+        "firstName": "Yatin",
+        "introduction": "I am a Full stack developer with a Bachelor of Computer Application (B.C.A.) from Gujarat University and 10+ years of enterprise software development experience\r\n\r\nI am experienced in web and mobile development with the front end, back end and DevOps technologies using AngularJS, JavaScript, NodeJs, PHP, Java, Ionic, git, docker, AWS, Google Cloud, HTML5, CSS3, YUI, Bootstrap, JQuery. I have has vast experience in crafting architecture, design and development best practices for UI that enables teams to be their best. My work has been recognized by fortune 100 clients and has been appreciated for my contribution in various projects. \r\n\r\nWhen working on a new project, I like to speak with my clients so that I can have a clear understanding of their needs and vision of the project. Thank you in advance for your time and consideration. I look forward to working with you soon.",
+        "lastName": "Patel",
+        "locationLL": "[72.58,23.03]",
+        "locationPretty": "Ahmadabad, Gujarat, India",
+        "producthunt": "",
+        "title": "Front-End Full Stack Developer",
+        "twitter": "https://twitter.com/yatinweb",
+        "website": "http://www.yatin-patel.com"
+    }
+},
+{
+    "_id": {
+        "$oid": "59d53a783183460004273ea9"
+    },
+    "uid": "c72edfda4a17627424680630c743db0f",
+    "updatedAt": {
+        "$date": "2017-10-13T23:05:19.919Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-04T19:46:00.114Z"
+    },
+    "email": "nioperas06@gmail.com",
+    "password": "$2a$10$hXGZo0xBjfFz6lSWyL4WRu74zo0OGDq.URZNQSgacZ56TlnFF9ILG",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "10-15",
+        "price": "$200-$400"
+    },
+    "profile": {
+        "firstName": "Junior",
+        "introduction": "Hello I am a web & mobile developer with a preference for web technologies. I speak fluently Pyhon, JavaScript, & PHP.\r\nAs a computer engineer by training, I am convinced that an application should not just work, but also be well designed. I offer my services for a serious and quality work.",
+        "lastName": "Gantin",
+        "locationLL": "[2.4401,6.373391]",
+        "locationPretty": "Cotonou, Littoral, Benin",
+        "producthunt": "https://www.producthunt.com/@nioperas06",
+        "title": "Junior Web Developer",
+        "twitter": "https://twitter.com/nioperas06",
+        "website": "https://medium.com/@nioperas06/"
+    }
+},
+    {
+    "_id": {
+        "$oid": "59de292383326a0004148fb3"
+    },
+    "uid": "e5a61585ee783ca05a1fd166486ca11b",
+    "updatedAt": {
+        "$date": "2017-10-11T14:52:04.423Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-11T14:22:27.057Z"
+    },
+    "email": "mimakram88@gmail.com",
+    "password": "$2a$10$P.d2X1gJx1qKUdlrVSQxmeVcqxaxBabg3J586kjE4Tsrov2M9a8r6",
+    "isDeveloper": false,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "More than 15",
+        "price": "$200-$400"
+    },
+    "profile": {
+        "firstName": "Akram",
+        "lastName": "Mimouni",
+        "locationLL": "[24.94861,60.17333]",
+        "locationPretty": "Helsinki, Uusimaa, Finland",
+        "producthunt": "",
+        "title": "Business Development Lead",
+        "twitter": "",
+        "website": ""
+    }
+},
+{
+    "_id": {
+        "$oid": "59de386f83326a0004148fb6"
+    },
+    "uid": "c7b5dfa50da6e77c4b0c66de9fe3be84",
+    "updatedAt": {
+        "$date": "2017-10-11T15:47:25.468Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-11T15:27:43.618Z"
+    },
+    "email": "max.c.gregori@gmail.com",
+    "password": "$2a$10$3RizjuzOgnWr/FklybNtGuRMLrBtIxkhbrQ/nwrUWsKKX8SDD.x8m",
+    "isDeveloper": false,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "10-15",
+        "price": "$200-$400"
+    },
+    "profile": {
+        "firstName": "Max",
+        "lastName": "Gregori",
+        "locationLL": "[-73.9808,40.7648]",
+        "locationPretty": "New York, New York, United States",
+        "producthunt": "",
+        "title": "CEO",
+        "twitter": "@dadafund",
+        "website": "https://www.dadafund.com"
+    }
+},
+{
+    "_id": {
+        "$oid": "59d8b658cf369d0004d71699"
+    },
+    "uid": "24b65b598ec721139da18f23fdb9feab",
+    "updatedAt": {
+        "$date": "2017-10-12T04:38:31.129Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-07T11:11:20.070Z"
+    },
+    "email": "ialbetsram@gmail.com",
+    "password": "$2a$10$fxr9XIbnEPW3M6Zo.fhghOcCWLK2y4.Y1NHYNmeOd./LeFy4wJ5om",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "0-5",
+        "price": "$400-$600"
+    },
+    "profile": {
+        "firstName": "Isaac",
+        "introduction": "I'm an entrepreneur and programmer who loves to create MVPs for different concepts - and do it fast - as I do with my own MVPs to go from idea to feedback in the market as fast as thunder and secure that portion of the market you're after.",
+        "lastName": "Ramonet",
+        "locationLL": "",
+        "locationPretty": "",
+        "producthunt": "",
+        "title": "Full-stack engineer",
+        "twitter": "",
+        "website": "http://www.github.com/isaac12x"
+    }
+},
+{
+    "_id": {
+        "$oid": "59e06973caf473000428cb38"
+    },
+    "uid": "dafbf6837bf6b93a510ecb7e43097ce9",
+    "updatedAt": {
+        "$date": "2017-10-13T07:21:23.844Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-13T07:21:23.844Z"
+    },
+    "email": "ajay.vjti11@gmail.com",
+    "password": "$2a$10$.zetPCsonkOROpER/fT8v.7PDaZN0qZKqUI8/wH3bcsjbr1v/ZoKq",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59e0e872caf473000428cb39"
+    },
+    "uid": "052556fc672c1047384fcd882f963610",
+    "updatedAt": {
+        "$date": "2017-10-13T19:31:47.759Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-13T16:23:14.559Z"
+    },
+    "email": "hashedpotato@forward.cat",
+    "password": "$2a$10$yMQj4zjVirGHVuEUOwUoouSJq1Cklvd8bPJGmncoXplfE5ijzF3RC",
+    "isDeveloper": false,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "0-5",
+        "price": "$0-$200"
+    },
+    "profile": {
+        "firstName": "Rene",
+        "lastName": "Kreider",
+        "locationLL": "",
+        "locationPretty": "",
+        "producthunt": "",
+        "title": "Software Architect",
+        "twitter": "",
+        "website": ""
+    }
 }
 ]
