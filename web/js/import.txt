@@ -4811,5 +4811,508 @@
         "twitter": "https://twitter.com/hussein_shtia",
         "website": "https://www.linkedin.com/in/shtia/"
     }
+},
+{
+    "_id": {
+        "$oid": "59d9ede8266b1500046df73a"
+    },
+    "uid": "58abb23601e58bbfeccd1cfcdafc9c30",
+    "updatedAt": {
+        "$date": "2017-10-08T09:25:05.289Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-08T09:20:40.552Z"
+    },
+    "email": "james@thewebworkers.co.uk",
+    "password": "$2a$10$e9UbZhqKNsoRe7HDWOkV6OSRakTkxHxmph1hhrS4deCEflCPEgsr2",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "5-10",
+        "price": "More than $600"
+    },
+    "profile": {
+        "firstName": "James",
+        "introduction": "A first class honours graduate in (BSc) Interactive Media from the University of York, and a Front-end Developer.\r\n\r\nUniversity provided me with a detailed understanding in software development and user experience design.\r\n\r\nI have since developed web services on large-scale distributed systems at GoHire, a SAAS recruitment startup. Furthermore, I have structured/taught a programming course for \u2018Code First:Girls\u2019.",
+        "lastName": "Moran",
+        "locationLL": "[-0.1276,51.5073]",
+        "locationPretty": "London, Greater London, England, United Kingdom",
+        "producthunt": "",
+        "title": "Front-end Developer",
+        "twitter": "",
+        "website": "https://github.com/james2406"
+    }
+},
+{
+    "_id": {
+        "$oid": "59dad53c3382dc0004f17a3e"
+    },
+    "uid": "4f98d3b927bae0b606817a2751e96df2",
+    "updatedAt": {
+        "$date": "2017-10-09T04:39:31.662Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-09T01:47:40.912Z"
+    },
+    "email": "paulitajuane@gmail.com",
+    "password": "$2a$10$ANAIlReDJQN9LHj3cEPggeg3JU/9RkhXt19CvKXxMp5h0Od9pVa/S",
+    "isDeveloper": false,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "5-10",
+        "price": "$0-$200"
+    },
+    "profile": {
+        "firstName": "Paulita",
+        "lastName": "Juane",
+        "locationLL": "[-73.9808,40.7648]",
+        "locationPretty": "New York, New York, United States",
+        "producthunt": "",
+        "title": "",
+        "twitter": "",
+        "website": ""
+    }
+},
+{
+    "_id": {
+        "$oid": "59dafff13382dc0004f17a3f"
+    },
+    "uid": "a0b915ff641ea42588590e91093d102a",
+    "updatedAt": {
+        "$date": "2017-10-09T04:49:56.621Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-09T04:49:53.394Z"
+    },
+    "email": "m.rogers@futurist-labs.com",
+    "password": "$2a$10$NafYQKZe2sZ38V8u4wQ4vefdXo2IvMoa.rDOP33DcCAzoJmK76ocW",
+    "isDeveloper": true,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59db0d753382dc0004f17a40"
+    },
+    "uid": "4b7766187446883686632aee88cf80a5",
+    "updatedAt": {
+        "$date": "2017-10-09T05:47:52.775Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-09T05:47:33.928Z"
+    },
+    "email": "test@gmail.com",
+    "password": "$2a$10$lUFA5OsMVv3rOE3IKHzmB.anreHVT8.Ja/HlVlzPQYzQXAyWQMxqO",
+    "isDeveloper": true,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59db0dbe3382dc0004f17a41"
+    },
+    "uid": "36948cb399ab35978a86e774b4d67a6b",
+    "updatedAt": {
+        "$date": "2017-10-09T05:48:46.590Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-09T05:48:46.590Z"
+    },
+    "email": "asdfdf@gmail.com",
+    "password": "$2a$10$UubmLqQnqYUSFYLaXQqBL.GSDHvhrKLcDF5c8J/MRejYc6S/oL19i",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59db0e093382dc0004f17a42"
+    },
+    "uid": "bed0d32a2a130f1c7c9539e2c043a447",
+    "updatedAt": {
+        "$date": "2017-10-09T05:50:32.941Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-09T05:50:01.750Z"
+    },
+    "email": "sdfgsdfgsdfg@gmail.com",
+    "password": "$2a$10$JNvHv2BPi3dv2a2SS3TEvuV4keCcsy5yRbKjfBqfE3yF9NEvVp8lW",
+    "isDeveloper": true,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59db0fc33382dc0004f17a43"
+    },
+    "uid": "2b8859f17d9e6a6cf113cb7ba913ed28",
+    "updatedAt": {
+        "$date": "2017-10-09T06:07:51.915Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-09T05:57:23.511Z"
+    },
+    "email": "happyhirani.cis@gmail.com",
+    "password": "$2a$10$GmCJPYjnrT8VYTVaJhRtguF2qCrX32ki2p.D5jc5VCIRuNiOfu4F6",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "10-15",
+        "price": "More than $600"
+    },
+    "profile": {
+        "firstName": "Happy",
+        "introduction": "Just having fun in developing apps.",
+        "lastName": "Hirani",
+        "locationLL": "[72.58,23.03]",
+        "locationPretty": "Ahmadabad, Gujarat, India",
+        "producthunt": "",
+        "title": "Mobile App developer",
+        "twitter": "",
+        "website": "https://play.google.com/store/apps/details?id=com.crest.goyo&hl=en"
+    }
+},
+{
+    "_id": {
+        "$oid": "59db11393382dc0004f17a44"
+    },
+    "uid": "324f21be284d6a6e3fcd570e9e547f60",
+    "updatedAt": {
+        "$date": "2017-10-09T07:02:48.174Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-09T06:03:37.854Z"
+    },
+    "email": "reahmiyara@gmail.com",
+    "password": "$2a$10$dxljKmr3OSAn5gVkwHV6D..NGFgxD7i8OZ.yqMzJ0WhRbQcZtSo8a",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "10-15",
+        "price": "$400-$600"
+    },
+    "profile": {
+        "firstName": "reah",
+        "introduction": "www.reah.me",
+        "lastName": "miyara",
+        "locationLL": "[-73.9808,40.7648]",
+        "locationPretty": "New York, New York, United States",
+        "producthunt": "",
+        "title": "fullstack engineer",
+        "twitter": "djreah",
+        "website": "http://reah.me"
+    }
+},
+{
+    "_id": {
+        "$oid": "59d77b2043295500041a33e5"
+    },
+    "uid": "47405623454285cbe21af0184403ad53",
+    "updatedAt": {
+        "$date": "2017-10-09T09:01:32.720Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-06T12:46:24.644Z"
+    },
+    "email": "info@foryard.nl",
+    "password": "$2a$10$58YdcrHrXzLLHdItNyCVSO1sdVkj3MXWXueb0DTELRT6nXP3hGJcC",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "0-5",
+        "price": "More than $600"
+    },
+    "profile": {
+        "firstName": "Quintus",
+        "introduction": "We are a company with experience in building prototypes and MVPs for innovation labs, which we set up for our clients.",
+        "lastName": "Willemese",
+        "locationLL": "[4.9,52.378]",
+        "locationPretty": "Amsterdam, Noord-Holland, Netherlands",
+        "producthunt": "",
+        "title": "",
+        "twitter": "twitter.com/foryardcompany",
+        "website": "https://foryard.nl"
+    }
+},
+{
+    "_id": {
+        "$oid": "59db625c3382dc0004f17a48"
+    },
+    "uid": "b3b9d74ccb2a8196c145488eda76d297",
+    "updatedAt": {
+        "$date": "2017-10-09T12:51:42.727Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-09T11:49:48.357Z"
+    },
+    "email": "tymutemeri@gmail.com",
+    "password": "$2a$10$ANkIV2ZBDjDyf3XytRGnEu1lPLmSlvfPuk2iaLVKPYtn9ZszxiZcy",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "0-5",
+        "price": "$200-$400"
+    },
+    "profile": {
+        "firstName": "Itai",
+        "introduction": "I'm a business and science grad turned techie. I'm based in London. I upgraded the Python data analysis skills I got during my science masters into software development skills. After a bunch of courses, I can now build all the basics: marketplaces, online directories, variations of uber (location-based services), social networks etc. \r\n\r\nI'm looking to work on interesting real-world projects to improve my skills and help a non-technical founder turn their idea into something the market actually interacts with. Because I'm \"green\" I'm willing to work on your project for cheaper than most. Also, I advise startups on business-related issues, primarily through the MIT Climate Colab. If we work together on your project I'll do business consulting free of charge. \r\n\r\nLet's have a chat.",
+        "lastName": "Mutemeri",
+        "locationLL": "[-0.1276,51.5073]",
+        "locationPretty": "London, Greater London, England, United Kingdom",
+        "producthunt": "",
+        "title": "Head of Analytics",
+        "twitter": "@tyclimateguy",
+        "website": "https://www.linkedin.com/in/itai-mutemeri-28979924/"
+    }
+},
+{
+    "_id": {
+        "$oid": "59db6c093382dc0004f17a49"
+    },
+    "uid": "b5cfcb3149c385f2099025af33b74828",
+    "updatedAt": {
+        "$date": "2017-10-09T12:51:57.954Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-09T12:31:05.106Z"
+    },
+    "email": "vinayak.joshi@gmail.com",
+    "password": "$2a$10$nxckD363fFENMKxOlH/9te8hennOxHS.BCiR5AT.JDKpU6e.6u9P6",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "0-5",
+        "price": "$200-$400"
+    },
+    "profile": {
+        "firstName": "Vinayak",
+        "introduction": "I can design MVPs of web and mobile applications using PHP, mySQL, Mongo, NodeJS, Cordova etc. I have extensive experience in data visualizations using various JS libraries like D3 etc. I can also develop native mobile apps for both Android and iOS.",
+        "lastName": "Joshi",
+        "locationLL": "[77.2,28.7]",
+        "locationPretty": "New Delhi, Delhi, India",
+        "producthunt": "",
+        "title": "Software Architect and Full Stack Developer",
+        "twitter": "http://twitter.com/vinayak",
+        "website": "http://www.learningconcepts.in/"
+    }
+},
+{
+    "_id": {
+        "$oid": "59db730c3382dc0004f17a4a"
+    },
+    "uid": "da44a2ab453575e6c9e0aadaeb5b0b37",
+    "updatedAt": {
+        "$date": "2017-10-09T13:01:06.987Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-09T13:01:00.337Z"
+    },
+    "email": "ian@jozian.com",
+    "password": "$2a$10$Y526W.tPV9ObKVHO3mgI9ubUe5fJ8cnvEHMun6Bl7vD3mOkzwSnle",
+    "isDeveloper": true,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59db73e83382dc0004f17a4c"
+    },
+    "uid": "cdf7079140c2dfe5949d3ed2aa28d795",
+    "updatedAt": {
+        "$date": "2017-10-09T13:05:13.428Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-09T13:04:40.303Z"
+    },
+    "email": "hi@dimitrios.im",
+    "password": "$2a$10$aS6jf4DwiIf.MaI0bHuQ8OSXwtPO9GBQ6zjigTHdoloAUdGo1bweS",
+    "isDeveloper": true,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59db791d3382dc0004f17a56"
+    },
+    "uid": "d6d18a6eef5ab3e5f3bfbe3d747bdf05",
+    "updatedAt": {
+        "$date": "2017-10-09T14:05:29.974Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-09T13:26:53.243Z"
+    },
+    "email": "aaronjcowper@gmail.com",
+    "password": "$2a$10$zWSl3vSx3pfEnTPKrQpc0es3fidRsaRkpZ4SGINWCNPRZva/DnMke",
+    "isDeveloper": false,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "10-15",
+        "price": "$400-$600"
+    },
+    "profile": {
+        "firstName": "Aaron",
+        "lastName": "Cowper",
+        "locationLL": "[151.21,-33.868]",
+        "locationPretty": "Sydney, New South Wales, Australia",
+        "producthunt": "",
+        "title": "Retail Exec, soon-to-be Founder",
+        "twitter": "https://twitter.com/acowpy",
+        "website": "http://www.shop-grok.com"
+    }
+},
+    {
+    "_id": {
+        "$oid": "59dbd6e1f1d0da0004e7c8a8"
+    },
+    "uid": "56b2138e79467fd69b1799b1f0e726ff",
+    "updatedAt": {
+        "$date": "2017-10-09T20:07:25.019Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-09T20:06:57.560Z"
+    },
+    "email": "faizan10114@gmail.com",
+    "password": "$2a$10$nd2rkDJPttrgOtAhcQqp0uG932cOAMb8JcUmT8ezw7mqpo/z1Fx5.",
+    "isDeveloper": true,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59dbd6edf1d0da0004e7c8a9"
+    },
+    "uid": "574533c0f6241fe6ec420453fb5fd9b4",
+    "updatedAt": {
+        "$date": "2017-10-09T20:43:44.049Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-09T20:07:09.078Z"
+    },
+    "email": "patel.nachiket.r@gmail.com",
+    "password": "$2a$10$URKp0c7nI0hIV26qCXGAb.o7tCmRjsNgm4MpfkIcDXrQ8cxk9Xw5m",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "10-15",
+        "price": "More than $600"
+    },
+    "profile": {
+        "firstName": "Nachiket",
+        "introduction": "I run a devshop from India. My team is of 14 fullstack devs. \r\nAnd we are highly skilled in Javascript (React, Angular, NodeJS, Mongo etc) ",
+        "lastName": "Patel",
+        "locationLL": "",
+        "locationPretty": "",
+        "producthunt": "https://www.producthunt.com/@patelnachiket",
+        "title": "Architect",
+        "twitter": "https://twitter.com/PatelNachiket",
+        "website": "http://jumpbyte.com"
+    }
+},
+{
+    "_id": {
+        "$oid": "59dbefc2f1d0da0004e7c8aa"
+    },
+    "uid": "bcf8ce49d5f605e4eba7bebe9c7209c4",
+    "updatedAt": {
+        "$date": "2017-10-09T23:08:12.737Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-09T21:53:06.743Z"
+    },
+    "email": "joaquin@growthmile.com",
+    "password": "$2a$10$BEeUwAiVbToLybbYLon8CuugI5l.JGNyinDWYGnJbNADb7rHyXraW",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "0-5",
+        "price": "$400-$600"
+    },
+    "profile": {
+        "firstName": "Joaquin",
+        "introduction": "I am a technical marketer and frontend engineer that has worked with top e-commerce and startups in Madrid (TheBrubaker, Pompeiibrand, etc ). I am focused on speed development and implementing monitoring tools that allow us to get the most important information as fast as possible",
+        "lastName": "Ibanez",
+        "locationLL": "[-3.69194,40.41889]",
+        "locationPretty": "Madrid, Madrid, Spain",
+        "producthunt": "",
+        "title": "frontend engineer & technical marketer",
+        "twitter": "@joaqib",
+        "website": "https://www.growthmile.com"
+    }
+},
+{
+    "_id": {
+        "$oid": "59dc3aa3f1d0da0004e7c8af"
+    },
+    "uid": "dff53464a3fe338c6c8d478f9f737875",
+    "updatedAt": {
+        "$date": "2017-10-10T05:51:57.822Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-10T03:12:35.529Z"
+    },
+    "email": "trungkien2288@gmail.com",
+    "password": "$2a$10$uGe9/j8qsDr55FAMvHriO.EKimtxgWhsNzrHHRzGCIQWCa7sPZvnO",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "5-10",
+        "price": "$400-$600"
+    },
+    "profile": {
+        "firstName": "Kien",
+        "introduction": "I am an experienced software engineer. After 5 years help companies and startups build and grow their team, I decided to quit and start my own company.\r\n\r\nNow, I am working on the project call AdRevise: https://www.adrevise.com. This is a service let marketers create a custom audience for Facebook Ads from any fan Page, Group or Closed Group on Facebook. Sure Facebook does not like us :)",
+        "lastName": "Nguyen",
+        "locationLL": "[108.339537,14.315424]",
+        "locationPretty": "Vietnam",
+        "producthunt": "",
+        "title": "Full stack",
+        "twitter": "kiennt",
+        "website": "https://www.adrevise.com"
+    }
+},
+{
+    "_id": {
+        "$oid": "59dc6e9ff1d0da0004e7c8b0"
+    },
+    "uid": "36e6c24b780d9fedbb7f801b60cb357e",
+    "updatedAt": {
+        "$date": "2017-10-10T06:54:23.344Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-10T06:54:23.344Z"
+    },
+    "email": "dusthq@doddrell.com",
+    "password": "$2a$10$ba2wr8y/JqdBi/DeiWxGAeXs5FhBLMpsr7QLJpBSkWrwYuUyOLvy.",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59dce208f1d0da0004e7c8be"
+    },
+    "uid": "57efd7a8e16efedafd3fa53c99b2ec77",
+    "updatedAt": {
+        "$date": "2017-10-10T15:06:56.032Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-10T15:06:48.192Z"
+    },
+    "email": "mehdi@factory619.com",
+    "password": "$2a$10$Mh/aMm/Q6cmIa9Np3KBcmO7.EDjWB6wp3ElfF7lWCGLlK2mTKRK.S",
+    "isDeveloper": true,
+    "verified": false,
+    "__v": 0
 }
 ]
