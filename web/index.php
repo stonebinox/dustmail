@@ -200,19 +200,38 @@ $app->get("/import",function() use($app){
         $emailID=$user['email'];
         $password=$user['password'];
         $devFlag=$user['isDeveloper'];
+        if($devFlag)
+        {
+            $adminID=21;
+        }
+        else
+        {
+            $adminID=11;
+        }
         $verifiedFlag=$user['verified'];
         if(validate($user['profile']))
         {
             $profile=$user['profile'];
             $userName=$profile['firstName'].' '.$profile['lastName'];
             $about=$profile['introduction'];
+            $coords=$profile['locationLL'];
+            $latitude=$coords[0];
+            $longitude=$coords[1];
+            $twitter=$profile['twitter'];
+            $website=$profile['website'];
         }
         else
         {
-            $userName=$email;
+            $userName=$emailID;
             $about='';
+            $latitude=NULL;
+            $longitude=NULL;
+            $twitter=NULL;
+            $website=NULL;
         }
-        echo $emailID.' - '.$userName.' - '.$about.'<br>';
+        $userObj=new userMaster;
+        $response=$userObj->importUser();
+        
 
     }
     return "DONE";

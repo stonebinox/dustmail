@@ -441,5 +441,76 @@ class userMaster extends adminMaster
         }
         return "NO_USERS_FOUND";
     }
+    function importUser($email,$userName='',$password,$adminID,$verifiedFlag,$about=NULL,$locationLat=NULL,$locationLon=NULL,$twitter=NULL,$website=NULL)
+    {
+        $email=secure($email);
+        if(validate($email))
+        {
+            $userName=secure($userName);
+            if(!validate($userName))
+            {
+                $userName=$email;
+            }
+            if(validate($password))
+            {
+                $adminID=secure($adminID);
+                adminMaster::__construct($adminID);
+                if($this->adminValid)
+                {
+                    if($verifiedFlag)
+                    {
+                        $verifiedFlag=1;
+                    }
+                    else
+                    {
+                        $verifiedFlag=0;
+                    }
+                    $about=trim(secure($about));
+                    if(!validate($about))
+                    {
+                        $about=NULL;
+                    }
+                    if(validate($locationLat))
+                    {
+                        $locationLat=secure($locationLat);
+                        $locationLon=secure($locationLon);
+                    }
+                    if(validate($twitter))
+                    {
+                        $twitter=secure($twitter);
+                    }
+                    if(validate($website))
+                    {
+                        $website=secure($website);
+                    }
+                    $um="SELECT iduser_master FROM user_master WHERE stat!='0' AND user_email='$email'";
+                    $app=$this->app;
+                    $um=$app['db']->fetchAssoc($um);
+                    if(!validate($um))
+                    {
+                        $in="INSERT INTO user_master (timestamp,user_email,user_name,user_password,admin_master_idadmin_master,email_flag,user_about,latitude,longitude,user_twitter,user_website) VALUES (NOW(),'$email','$userName','$password','$adminID','$verifiedFlag','$about','$locationLat','$locationLon','$twitter','$website')";
+                        $in=$app['db']->executeQuery($in);
+                        return "USER_ADDED";
+                    }
+                    else
+                    {
+                        return "USER_ALREADY_ADDED";
+                    }
+                }
+                else
+                {
+                    return "INVALID_ADMIN_ID";
+                }
+            }
+            else
+            {
+                return "INVALID_USER_PASSWORD";
+            }
+        }
+        else
+        {
+            return "INVALID_EMAIL_ID";
+        }
+    }
 }
 ?> 
