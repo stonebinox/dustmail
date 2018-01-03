@@ -194,7 +194,9 @@ $app->get("/import",function() use($app){
     require("../classes/adminMaster.php");
     require("../classes/userMaster.php");
     $content=file_get_contents("js/import.txt");
-    echo nl2br($content);
+    $json=json_decode($content,true);
+    var_dump($json);
+    return "DONE";
 });
 $app->run();
 ?>
