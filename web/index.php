@@ -214,7 +214,7 @@ $app->get("/import",function() use($app){
             $profile=$user['profile'];
             $userName=$profile['firstName'].' '.$profile['lastName'];
             $about=$profile['introduction'];
-            $coords=$profile['locationLL'];
+            $coords=eval($profile['locationLL']);
             $latitude=$coords[0];
             $longitude=$coords[1];
             $twitter=$profile['twitter'];
