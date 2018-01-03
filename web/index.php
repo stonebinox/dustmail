@@ -195,7 +195,17 @@ $app->get("/import",function() use($app){
     require("../classes/userMaster.php");
     $content=file_get_contents("js/import.txt");
     $json=json_decode($content,true);
-    var_dump($json);
+    foreach($json as $user)
+    {
+        $emailID=$user['email'];
+        // $password=$user['password'];
+        // $devFlag=$user['isDeveloper'];
+        // $verifiedFlag=$user['verified'];
+        // $userName=$user['profile']['firstName'].' '.$user['profile']['lastName'];
+        // $about=$user['profile']['introduction'];
+        echo $emailID.'<br>';
+
+    }
     return "DONE";
 });
 $app->run();
