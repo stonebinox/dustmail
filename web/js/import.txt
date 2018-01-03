@@ -3724,5 +3724,534 @@
         "twitter": "mlnck",
         "website": "http://jmelnick.com/"
     }
+},
+{
+    "_id": {
+        "$oid": "59d5a6103183460004273ec5"
+    },
+    "uid": "7992f53067f196df2a9e1841f864d7f7",
+    "updatedAt": {
+        "$date": "2017-10-05T03:25:04.989Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-05T03:25:04.989Z"
+    },
+    "email": "rangasee@gmail.com",
+    "password": "$2a$10$OrgTsnqncm5rRTe4vG8PFe6OS/xgmVsWnGGxEyCN8yuoaK5dlgYU2",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59d5b5e93183460004273ec8"
+    },
+    "uid": "3a4559f185624e954ecc2c922692e9f2",
+    "updatedAt": {
+        "$date": "2017-10-06T04:52:04.046Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-05T04:32:41.628Z"
+    },
+    "email": "jeanleonino@gmail.com",
+    "password": "$2a$10$Fmpa80M4oMKL0ejwUHQWKOJErX3t3j3jUzqxIbK27OUR2s0ZSSdRK",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "0-5",
+        "price": "$400-$600"
+    },
+    "profile": {
+        "firstName": "Jean Lucas",
+        "introduction": "Raised on linux, nowadays I do prototypes for my own companies, while I go with sales people to sell them, only than sending to a team of developers. My goal is simple: iterate fast. My focus is B2B, I can use AI APIs. ",
+        "lastName": "Lima",
+        "locationLL": "[-46.6334,-23.5507]",
+        "locationPretty": "São Paulo, São Paulo, Brazil",
+        "producthunt": "aleattorium",
+        "title": "Developer",
+        "twitter": "aleattorium",
+        "website": "https://twitter.com/aleattorium"
+    }
+},
+{
+    "_id": {
+        "$oid": "59d5bc213183460004273ec9"
+    },
+    "uid": "5132b23210b28d7488bc7775b2901881",
+    "updatedAt": {
+        "$date": "2017-10-05T04:59:13.615Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-05T04:59:13.615Z"
+    },
+    "email": "annacho13@gmail.com",
+    "password": "$2a$10$X3ZGKBFOkHBZZiT6yoLJA.37KSj6JdAI/UHq8fZeiwKEZVpuLZmd.",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59d5bfb43183460004273eca"
+    },
+    "uid": "dcc2a1a80db38a1d12397ba8eb927ac3",
+    "updatedAt": {
+        "$date": "2017-10-05T05:14:34.644Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-05T05:14:28.715Z"
+    },
+    "email": "costi.stan@gmail.com",
+    "password": "$2a$10$TMtx3fPH1xZtQy6iHdcx0.USHb4.aXYt.WZ2n3taZhtGj1KVTG2B.",
+    "isDeveloper": true,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59d5bfe83183460004273ecb"
+    },
+    "uid": "02a58c348e398250c14b2d32a021d8d0",
+    "updatedAt": {
+        "$date": "2017-10-05T05:15:28.397Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-05T05:15:20.224Z"
+    },
+    "email": "washie@eliteworks.co.zw",
+    "password": "$2a$10$RgxYXuPnlGtaRXY3cokFi.YSB2Lcypa.UbWUSOHypEafL3NVTS/EO",
+    "isDeveloper": true,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59d5d3783183460004273ecd"
+    },
+    "uid": "9d4d5d1df50293af1c499890ca6098d9",
+    "updatedAt": {
+        "$date": "2017-10-05T08:59:06.491Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-05T06:38:48.501Z"
+    },
+    "email": "nishantguptameerut@gmail.com",
+    "password": "$2a$10$P6LEZVb2iZC03HPyJH8fLOo7Kvx4TF615COoLXQvkcs8qUM6d1nPa",
+    "isDeveloper": false,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "5-10",
+        "price": "$0-$200"
+    },
+    "profile": {
+        "firstName": "Nishant",
+        "lastName": "Gupta",
+        "locationLL": "[78.476681,22.199166]",
+        "locationPretty": "India",
+        "producthunt": "",
+        "title": "",
+        "twitter": "",
+        "website": ""
+    }
+},
+{
+    "_id": {
+        "$oid": "59d5d0883183460004273ecc"
+    },
+    "uid": "8a10b0658701dd780859ce44bfff3758",
+    "updatedAt": {
+        "$date": "2017-10-05T08:59:02.850Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-05T06:26:16.749Z"
+    },
+    "email": "zamanis.gr@gmail.com",
+    "password": "$2a$10$we2jfziySeVy147xxGnZ.eDY1iYhsmY7IFT9fbyV6i3XThosNH0F2",
+    "isDeveloper": false,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "10-15",
+        "price": "$0-$200"
+    },
+    "profile": {
+        "firstName": "panos",
+        "lastName": "zamanis",
+        "locationLL": "[23.71667,38]",
+        "locationPretty": "Athina, Αττικη, Greece",
+        "producthunt": "",
+        "title": "co-founder",
+        "twitter": "pzamanis",
+        "website": "http://www.lofty.gr"
+    }
+},
+{
+    "_id": {
+        "$oid": "59d5d7a33183460004273ece"
+    },
+    "uid": "99cd61f7cd7a6502a6bf0f8b21e60359",
+    "updatedAt": {
+        "$date": "2017-10-05T08:59:01.032Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-05T06:56:35.232Z"
+    },
+    "email": "michael@goldstrom.com",
+    "password": "$2a$10$QchirZUhFcFWSXTuft6uF.xSoycLI2tJMLkj60lpyJqt.5zWFmBgu",
+    "isDeveloper": false,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "0-5",
+        "price": "$200-$400"
+    },
+    "profile": {
+        "firstName": "Michael",
+        "lastName": "Goldstrom",
+        "locationLL": "[-118.2439,34.0544]",
+        "locationPretty": "Los Angeles, California, United States",
+        "producthunt": "",
+        "title": "Founder",
+        "twitter": "",
+        "website": "http://www.getmotivatedbuddies.com"
+    }
+},
+{
+    "_id": {
+        "$oid": "59d5db5f3183460004273ecf"
+    },
+    "uid": "e9e72da0da562071883a0ce54ed40b6b",
+    "updatedAt": {
+        "$date": "2017-10-05T08:58:58.569Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-05T07:12:31.701Z"
+    },
+    "email": "abeseksek@gmail.com",
+    "password": "$2a$10$3j54WkTyJJYQZSX5aYDCZ.SIXR8D9.iuCsmLxwqBjmSpfZHQqvSDK",
+    "isDeveloper": false,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "0-5",
+        "price": "More than $600"
+    },
+    "profile": {
+        "firstName": "Ibrahim",
+        "lastName": "Seksek",
+        "locationLL": "[55.30944,25.26972]",
+        "locationPretty": "Dubai, Dubai, United Arab Emirates",
+        "producthunt": "https://www.producthunt.com/@abe_seksek",
+        "title": "Founders",
+        "twitter": "@abeseksek",
+        "website": ""
+    }
+},
+{
+    "_id": {
+        "$oid": "59d5fb883183460004273ed8"
+    },
+    "uid": "6f64db40fdfe1c6692f6aaefc70a582f",
+    "updatedAt": {
+        "$date": "2017-10-05T09:29:44.850Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-05T09:29:44.850Z"
+    },
+    "email": "caroleelias@gmail.com",
+    "password": "$2a$10$u5U.ycgUc01uLHKXMAYhjuKFw9lOiR7ZyXMCDPJ75hxCoPA5q2U4i",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59d601603183460004273ed9"
+    },
+    "uid": "31f887d9596d0484bcb764342d0bdfb8",
+    "updatedAt": {
+        "$date": "2017-10-05T09:54:40.975Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-05T09:54:40.975Z"
+    },
+    "email": "niranjan@switchidea.com",
+    "password": "$2a$10$aO.jIy/XXduF8jWC3p4s7O8K2KPbxHPw.hlV1UdY07K7VG3tD7PmC",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59d609d43183460004273eda"
+    },
+    "uid": "6d1ee1fb2b18e40345a7d9ea766f0fdb",
+    "updatedAt": {
+        "$date": "2017-10-05T10:35:39.359Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-05T10:30:44.728Z"
+    },
+    "email": "altimir.antonov@gmail.com",
+    "password": "$2a$10$7xK0KKoqEB3ze/15zUr4J.0kCnXgXpHg3SB87T/VkowXlesayor7u",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "0-5",
+        "price": "$0-$200"
+    },
+    "profile": {
+        "firstName": "Altimir",
+        "introduction": "I have 20+ built iOS application in the past few years. Working with the latest technologies.",
+        "lastName": "Antonov",
+        "locationLL": "[23.333659,42.654019]",
+        "locationPretty": "София, Bulgaria",
+        "producthunt": "",
+        "title": "Senior iOS engineer",
+        "twitter": "",
+        "website": "http://altidev.eu"
+    }
+},
+{
+    "_id": {
+        "$oid": "59d60e683183460004273edb"
+    },
+    "uid": "faec2545bbef147234c8203c9f84d4e8",
+    "updatedAt": {
+        "$date": "2017-10-05T10:58:08.705Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-05T10:50:16.887Z"
+    },
+    "email": "carrgust@gmail.com",
+    "password": "$2a$10$DNkBBpdoaJjtdOLqwQtgUuhjn2WvtdHFgOn8GUO5qH/ATatHxnw3.",
+    "isDeveloper": false,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "More than 15",
+        "price": "$400-$600"
+    },
+    "profile": {
+        "firstName": "Gustavo",
+        "lastName": "Carriconde",
+        "locationLL": "[55.30944,25.26972]",
+        "locationPretty": "Dubai, Dubai, United Arab Emirates",
+        "producthunt": "",
+        "title": "Mr",
+        "twitter": "",
+        "website": "httos://www.gustavocarriconde.com.br"
+    }
+},
+{
+    "_id": {
+        "$oid": "59d624b33183460004273edf"
+    },
+    "uid": "d1207d592c84cf6907d78075d43780aa",
+    "updatedAt": {
+        "$date": "2017-10-05T12:25:23.439Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-05T12:25:23.439Z"
+    },
+    "email": "ricardo.ghekiere@hotmail.com",
+    "password": "$2a$10$p0rD6Ta0RZ4VOTdFuR/DMu4XopFPPfHDWQLznkSjuh8RMBk0F3UtS",
+    "isDeveloper": false,
+    "verified": false,
+    "__v": 0
+},
+{
+    "_id": {
+        "$oid": "59d62b8b3183460004273ee0"
+    },
+    "uid": "f2212bd1b66b65c90b6b642958937cc0",
+    "updatedAt": {
+        "$date": "2017-10-05T13:05:53.087Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-05T12:54:35.889Z"
+    },
+    "email": "ricardo@wepullthetrigger.com",
+    "password": "$2a$10$vXufIAXD.UIb/X.Y8xO.kuRHHlAVWBsMgfkU5pHvRdPVlDXJwHCFK",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "0-5",
+        "price": "More than $600"
+    },
+    "profile": {
+        "firstName": "ricardo",
+        "introduction": "Enthusiastic Growth Hacker @thegrowthrevolution with a passion for growing companies and ideas. Founder of Worcc.be, Alchemistbox.be",
+        "lastName": "ghekiere",
+        "locationLL": "[3.26667,50.83333]",
+        "locationPretty": "Kortrijk, West-Vlanderen, Belgium",
+        "producthunt": "",
+        "title": "Growth Engineer",
+        "twitter": "",
+        "website": "https://thegrowthrevolution.com/"
+    }
+},
+{
+    "_id": {
+        "$oid": "59d648413183460004273ee3"
+    },
+    "uid": "0e828d9418945cb05a1852fbc6a05cff",
+    "updatedAt": {
+        "$date": "2017-10-05T15:31:28.944Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-05T14:57:05.296Z"
+    },
+    "email": "lguyard@gmail.com",
+    "password": "$2a$10$yVkLprLRWAbhAH5IDMUHJeLdu6a/mk9BfVwrTOmbLdwaMlW00esku",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "0-5",
+        "price": "$0-$200"
+    },
+    "profile": {
+        "firstName": "laurent",
+        "introduction": "web dev since 1998",
+        "lastName": "guyard",
+        "locationLL": "[2.320582,48.859489]",
+        "locationPretty": "Paris, France",
+        "producthunt": "",
+        "title": "",
+        "twitter": "",
+        "website": "http://mikmakstudio.com"
+    }
+},
+{
+    "_id": {
+        "$oid": "59d657273183460004273ee4"
+    },
+    "uid": "bf708fdf1837812c95900e046217da5f",
+    "updatedAt": {
+        "$date": "2017-10-05T16:15:31.694Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-05T16:00:39.726Z"
+    },
+    "email": "kelagha@gmail.com",
+    "password": "$2a$10$d0aWulnWBpprefnlD3aYku9U/AUfNqm6KS/BLOiX52VwU7W7iaRvy",
+    "isDeveloper": false,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "More than 15",
+        "price": "More than $600"
+    },
+    "profile": {
+        "firstName": "Kamal",
+        "lastName": "Elagha",
+        "locationLL": "[55.291139,24.989208]",
+        "locationPretty": "Dubai, United Arab Emirates",
+        "producthunt": "https://www.producthunt.com/@kelagha",
+        "title": "",
+        "twitter": "",
+        "website": ""
+    }
+},
+{
+    "_id": {
+        "$oid": "59d66f873183460004273ee5"
+    },
+    "uid": "50ce5727a754e5f09a3077e9f37b8d94",
+    "updatedAt": {
+        "$date": "2017-10-05T17:54:28.984Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-05T17:44:39.170Z"
+    },
+    "email": "rf@romanfilippov.com",
+    "password": "$2a$10$ApHnWJ0ur2E2/Y3axHC1ge5S6mQo78ZxRxFcn29Lke8QclbWZFv.i",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "0-5",
+        "price": "More than $600"
+    },
+    "profile": {
+        "firstName": "Roman",
+        "introduction": "Been building web applications since 1998. Have experience with project management, scrum, and other buzzwords. Can build an prototype pretty quickly in NodeJS. Hourly rate is USD$80.",
+        "lastName": "Filippov",
+        "locationLL": "[-73.554,45.5088]",
+        "locationPretty": "Montréal, Quebec, Canada",
+        "producthunt": "",
+        "title": "Full Stack Software Engineer",
+        "twitter": "nomadovich",
+        "website": "http://www.trevastudio.com"
+    }
+},
+{
+    "_id": {
+        "$oid": "59d6a55543295500041a33c1"
+    },
+    "uid": "1c58f9fd67f7155db76667846025849c",
+    "updatedAt": {
+        "$date": "2017-10-06T13:22:42.891Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-05T21:34:13.308Z"
+    },
+    "email": "reg@batarin.zp.ua",
+    "password": "$2a$10$2kQnI0k30gRUFy0ZfmQvGe8MAUDicUuU.Svg5oL/c8.ePPlhJLR4C",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "5-10",
+        "price": "$200-$400"
+    },
+    "profile": {
+        "firstName": "Dmytro",
+        "introduction": "Hi! My name is Dmytro (Dima, Dmitriy, as you want) and I\u2019m working as JS Developer more than 2 years.",
+        "lastName": "Batarin",
+        "locationLL": "[35.13833,47.83778]",
+        "locationPretty": "Zaporizhzhya, Запорізька, Ukraine",
+        "producthunt": "",
+        "title": "JS Full Stack Developer",
+        "twitter": "https://twitter.com/nokwin_ua",
+        "website": "https://batarin.zp.ua"
+    }
+},
+{
+    "_id": {
+        "$oid": "59d6a93b43295500041a33c2"
+    },
+    "uid": "09ce89b025e4127652b5076ed7a0fd4a",
+    "updatedAt": {
+        "$date": "2017-10-06T04:21:37.375Z"
+    },
+    "createdAt": {
+        "$date": "2017-10-05T21:50:51.447Z"
+    },
+    "email": "andyhmltn@gmail.com",
+    "password": "$2a$10$5p9Qjv6n6RCMGRIToLJ0KOIN1AlvlPH0leiURK7IMrXWuDSC1TwnC",
+    "isDeveloper": true,
+    "verified": true,
+    "__v": 0,
+    "mvpSettings": {
+        "days": "0-5",
+        "price": "$200-$400"
+    },
+    "profile": {
+        "firstName": "Andy",
+        "introduction": "I've been a developer for around 7 years now working at a number of companies across the stack. I'm currently working at a tech startup in London called DueDil. I can take your idea and rapidly build an incredible web application utilising the latest technology.",
+        "lastName": "Hamilton",
+        "locationLL": "[-0.1276,51.5073]",
+        "locationPretty": "London, Greater London, England, United Kingdom",
+        "producthunt": "",
+        "title": "Full Stack Engineer",
+        "twitter": "",
+        "website": "http://www.github.com/andyhmltn"
+    }
 }
 ]
