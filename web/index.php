@@ -195,6 +195,7 @@ $app->get("/import",function() use($app){
     require("../classes/userMaster.php");
     $content=file_get_contents("js/import.txt");
     $json=json_decode($content,true);
+    echo count($json).'<br>';
     foreach($json as $user)
     {
         $emailID=$user['email'];
