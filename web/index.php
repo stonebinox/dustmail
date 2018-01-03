@@ -216,10 +216,14 @@ $app->get("/import",function() use($app){
             $about=$profile['introduction'];
             if(validate($profile['locationLL']))
             {
-                $coords=eval($profile['locationLL']);
+                $coords=$profile['locationLL'];
+                $coords=trim($coords,'"');
+                $coords=ltrim($coords,'[');
+                $coords=rtrim($coords,']');
+                $e=explode(',',$coords);
+                $latitude=$e[0];
+                $longitude=$e[1];
             }
-            $latitude=$coords[0];
-            $longitude=$coords[1];
             $twitter=$profile['twitter'];
             $website=$profile['website'];
         }
