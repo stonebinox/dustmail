@@ -345,7 +345,7 @@ app.controller("mail",function($scope,$compile,$http){
             $("#pass_email").parent().removeClass("has-error");
             $http.get("user/resetPassword")
             .then(function success(response){
-                response=$.trim(response);
+                response=$.trim(response.data);
                 console.log(response);
                 switch(response){
                     case "INVALID_PARAMETERS":
