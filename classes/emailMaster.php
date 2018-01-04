@@ -155,7 +155,6 @@ class emailMaster extends userMaster
                                 foreach($users as $user)
                                 {
                                     $toUserID=$user['iduser_master'];
-                                    echo $toUserID.'<br>';
                                     $subFlag=$user['subscribe_flag'];
                                     if($subFlag==1)
                                     {
@@ -163,6 +162,8 @@ class emailMaster extends userMaster
                                         if($status=="NO_EMAIL_SENT")
                                         {
                                             $senderName=userMaster::getUserName();
+                                            $senderEmail=userMaster::getUserEmail();
+                                            $body.=' To reply to '.$senderName.', please email '.$senderEmail.' instead of replying to this email directly. You cannot contact this sender by replying to this email.';
                                             $userEmail=$user['user_email'];
                                             $userName=stripslashes($user['user_name']);
                                             $from = new SendGrid\Email($senderName." via Dust", "dust@dusthq.com");
