@@ -260,7 +260,7 @@ $app->get("/user/resetPassword",function(Request $request) use($app){
             $userName=$user->getUserName();
             $subject='Reset your password';
             $body='Hi! Someone requested to reset your password. If this wasn\'t you, please ignore this email. If this was you, then click on the following link to reset your password: https://dustmail.herokuapp.com/?suc=RESET_PASSWORD&id='.$userID.' - Dust Team';
-            $from = new SendGrid\Email("Dust", "dust@dusthq.com");
+            $from = new SendGrid\Email("Dust", "noreply@dusthq.com");
             $to = new SendGrid\Email($userName, $request->get("pass_email"));
             $content = new SendGrid\Content("text/plain", $body);
             $mail = new SendGrid\Mail($from, $subject, $to, $content);
