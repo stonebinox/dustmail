@@ -343,7 +343,7 @@ app.controller("mail",function($scope,$compile,$http){
         var email=$.trim($("#pass_email").val());
         if(validate(email)){
             $("#pass_email").parent().removeClass("has-error");
-            $http.get("user/resetPassword")
+            $http.get("user/resetPassword?pass_email="+email)
             .then(function success(response){
                 response=$.trim(response.data);
                 console.log(response);

@@ -274,7 +274,7 @@ $app->get("/user/resetPassword",function(Request $request) use($app){
     }
     else
     {
-        return "INVAID_PARAMETERS";
+        return "INVALID_PARAMETERS";
     }
 });
 $app->run();
