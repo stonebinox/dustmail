@@ -155,10 +155,10 @@ class emailMaster extends userMaster
                                 foreach($users as $user)
                                 {
                                     $toUserID=$user['iduser_master'];
-                                    echo $toUserID.'<br>';
                                     $subFlag=$user['subscribe_flag'];
                                     if($subFlag==1)
                                     {
+                                        echo $toUserID.'<br>';
                                         $status=$this->checkUserEmailHistory($userID,$toUserID,$subject);
                                         if($status=="NO_EMAIL_SENT")
                                         {
