@@ -150,6 +150,6 @@ function readParams(){
 			suc='Your password was reset successfully.';
 			break;
 		}
-		$("#message").html('<div class="alert alert-success"><strong>Success</strong> '+suc+'</div>');
+		$(".message").html('<div class="alert alert-success"><strong>Success</strong> '+suc+'</div>');
 	}
 }
