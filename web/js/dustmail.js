@@ -346,10 +346,11 @@ app.controller("mail",function($scope,$compile,$http){
             $http.get("user/resetPassword")
             .then(function success(response){
                 response=$.trim(response);
+                console.log(response);
                 switch(response){
                     case "INVALID_PARAMETERS":
                     default:
-                    messageBox("Problem","Something went wrong while sending you a reset link. Please try again later. THis is the error we see: "+response);
+                    messageBox("Problem","Something went wrong while sending you a reset link. Please try again later. This is the error we see: "+response);
                     break;
                     case "RESET_LINK_SENT":
                     case "INVALUD_USER_EMAIL":
