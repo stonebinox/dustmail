@@ -277,5 +277,26 @@ $app->get("/user/resetPassword",function(Request $request) use($app){
         return "INVALID_PARAMETERS";
     }
 });
+$app->post("/user/savePassword",function(Request $request) use($app){
+    if(($request->get("npassword1"))&&($request->get("npassword2"))&&($request->get("uid")))
+    {
+        require("../classes/adminMaster.php");
+        require("../classes/userMaster.php");
+        $user=new userMaster($request->get("uid"));
+        $response=$user->savePassword($request->get("npassword1"),$request->get("npassword2"));
+        if($response=="PASSWORD_RESET")
+        {
+            return $app->redirect("/?suc=".$response);
+        }
+        else
+        {
+            return $app->redirect("/?err=".$response);
+        }
+    }
+    else
+    {
+        return $app->redirect("/?err=INVALID_PARAMETERS");
+    }
+});
 $app->run();
 ?>

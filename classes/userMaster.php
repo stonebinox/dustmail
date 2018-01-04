@@ -512,5 +512,35 @@ class userMaster extends adminMaster
             return "INVALID_EMAIL_ID";
         }
     }
+    function savePassword($password1,$password2) //to reset a password
+    {
+        if($this->userValid)
+        {
+            $app=$this->app;
+            $userID=$this->user_id;
+            if(strlen($password1)>=8)
+            {
+                if($password1===$password2)
+                {
+                    $encPassword=md5($password1);
+                    $up="UPDATE user_master SET user_password='$encPassword' WHERE iduser_master='$userID'";
+                    $up=$app['db']->executeUpdate($up);
+                    return "PASSWORD_RESET";
+                }
+                else
+                {
+                    return "PASSWORD_MISMATCH";
+                }
+            }
+            else
+            {
+                return "INVALID_PASSWORD";
+            }
+        }
+        else
+        {
+            return "INVALID_USER_ID";
+        }
+    }
 }
 ?> 

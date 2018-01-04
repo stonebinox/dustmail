@@ -368,6 +368,31 @@ app.controller("mail",function($scope,$compile,$http){
             $("#pass_email").parent().addClass("has-error");
         }
     };
+    $scope.validatePasswords=function(){
+        var uid=$("#uid").val();
+        if(validate(uid)){
+            var password1=$("#npassword1").val();
+            if(password1.length>=8){
+                $("#npassword1").parent().removeClass("has-error");
+                var password2=$("#npassword2").val();
+                if(password2==password1){
+                    $("#npassword1").parent().removeClass("has-error");
+                    $("#npassword2").parent().removeClass("has-error");
+                    document.confirmforgot.submit();
+                }
+                else{
+                    $("#npassword1").parent().addClass("has-error");
+                    $("#npassword2").parent().addClass("has-error");
+                }
+            }
+            else{
+                $("#npassword1").parent().addClass("has-error");
+            }
+        }
+        else{
+            messageBox("Problem",'Something went wrong while resetting your password. Please contact support at <a href="mailto:dust@dusthq.com">dust@dusthq.com</a> and our password manager would help.');
+        }
+    };
 });
 window.resize=function(){
     var width=$(window).width();

@@ -167,7 +167,7 @@ Can we hop on a call and talk about this more?"></textarea>
             <h2 class="text-center">Reset your password</h2>
             <hr>
             <div class="message"></div>
-            <form>
+            <form method="post" action="user/savePassword" name="confirmforgot">
                 <div class="form-group">
                     <label for="npassword1">New password</label>
                     <input type="password" name="npassword1" id="npassword1" class="form-control" placeholder="A minimum of 8 characters">
@@ -178,7 +178,7 @@ Can we hop on a call and talk about this more?"></textarea>
                 </div>
                 <br>
                 <div class="text-right">
-                    <button type="button" class="button" id="resetbut">Reset</button>
+                    <button type="button" class="button" id="resetbut" ng-click="validatePasswords()">Reset</button>
                 </div>
             </form>
             <div style="height:50px;"></div>
