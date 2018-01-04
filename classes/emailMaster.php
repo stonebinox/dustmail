@@ -164,7 +164,7 @@ class emailMaster extends userMaster
                                             userMaster::__construct($userID);
                                             $senderName=userMaster::getUserName();
                                             $senderEmail=userMaster::getUserEmail();
-                                            $body.=' To reply to '.$senderName.', please email '.$senderEmail.' instead of replying to this email directly. You cannot contact this sender by replying to this email.';
+                                            $body.=' To reply to '.$senderName.', please email '.$senderEmail.' instead of replying to this email directly. You cannot contact this sender by replying to this email. If you need any assistance, feel free to contact us at dust@dusthq.com and we\'ll get back to you!';
                                             $userEmail=$user['user_email'];
                                             $userName=stripslashes($user['user_name']);
                                             $from = new SendGrid\Email($senderName." via Dust", "noreply@dusthq.com");
