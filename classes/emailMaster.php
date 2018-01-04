@@ -209,6 +209,21 @@ class emailMaster extends userMaster
                                         }
                                     }
                                 }
+                                userMaster::__construct($userID);
+                                $senderName=userMaster::getUserName();
+                                $e=explode(" ",$senderName);
+                                $firstName=$e[0];
+                                $senderEmail=userMaster::getUserEmail();
+                                $subject='Thank you for your Dust order!';
+                                $body='Hello '.$firstName.'! Thank you for your order. You\'ve sent '.$limit.' developers an email. Hopefully they’re excited about your idea and will reply to you soon. - The Dust Team. If you need any assistance, feel free to contact us at dust@dusthq.com and we\'ll get back to you!';
+                                $from = new SendGrid\Email("Dust", "noreply@dusthq.com");
+                                $to = new SendGrid\Email($senderName, $senderEmail);
+                                $content = new SendGrid\Content("text/plain", $body);
+                                $mail = new SendGrid\Mail($from, $subject, $to, $content);
+                                // $apiKey = getenv('SENDGRID_API_KEY');
+                                $apiKey='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';
+                                $sg = new \SendGrid($apiKey);
+                                $response = $sg->client->mail()->send()->post($mail);
                                 return "USERS_EMAILED";
                             }
                             else
