@@ -95,7 +95,6 @@ class userMaster extends adminMaster
             {
                 $um['admin_master_idadmin_master']=$admin;
             }
-            var_dump($um);
             return $um;
         }
         else
