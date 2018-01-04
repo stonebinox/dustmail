@@ -161,6 +161,7 @@ class emailMaster extends userMaster
                                         $status=$this->checkUserEmailHistory($userID,$toUserID,$subject);
                                         if($status=="NO_EMAIL_SENT")
                                         {
+                                            userMaster::__construct($userID);
                                             $senderName=userMaster::getUserName();
                                             $senderEmail=userMaster::getUserEmail();
                                             $body.=' To reply to '.$senderName.', please email '.$senderEmail.' instead of replying to this email directly. You cannot contact this sender by replying to this email.';
