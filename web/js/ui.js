@@ -96,6 +96,7 @@ function mover(layer){
 		else if(adminID==21){
 			$("#switch").html('Are you looking for a developer? <a href="#" ng-click="admin_id=11;signText=\'\';" onclick="mover(\'registration\')">Sign up</a> here.</a>');
 		}
+		$compile("#switch")($scope);
 	}
 	layer="#"+layer;
 	$(".form").removeAttr("active");
