@@ -90,7 +90,7 @@ class userMaster extends adminMaster
         {
             $adminID=$um['admin_master_idadmin_master'];
             adminMaster::__construct($adminID);
-            $admin=adminMaster::getAdminType();
+            $admin=adminMaster::getAdmin();
             if(is_array($admin))
             {
                 $um['admin_master_idadmin_master']=$admin;
