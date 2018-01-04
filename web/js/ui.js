@@ -149,6 +149,7 @@ function readParams(){
 			break;
 			case "PASSWORD_RESET":
 			suc='Your password was reset successfully.';
+			mover('login');
 			break;
 		}
 		if(validate(suc)){
