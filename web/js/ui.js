@@ -146,6 +146,9 @@ function readParams(){
 			$("#npassword2").parent().append('<input type="hidden" name="uid" id="uid" value="'+id+'">');
 			mover('confirmforgot');
 			break;
+			case "PASSWORD_RESET":
+			suc='Your password was reset successfully.';
+			break;
 		}
 		$("#message").html('<div class="alert alert-success"><strong>Success</strong> '+suc+'</div>');
 	}
