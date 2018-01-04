@@ -141,6 +141,11 @@ function readParams(){
 			mover('login');
 			angular.element(document.getElementById("login")).scope().getUser();
 			break;
+			case "RESET_PASSWORD":
+			var id=getUrlParameter("id");
+			$("#npassword2").parent().append('<input type="hidden" name="uid" id="uid" value="'+id+'">');
+			mover('confirmforgot');
+			break;
 		}
 		$("#message").html('<div class="alert alert-success"><strong>Success</strong> '+suc+'</div>');
 	}
