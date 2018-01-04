@@ -155,51 +155,55 @@ class emailMaster extends userMaster
                                 foreach($users as $user)
                                 {
                                     $toUserID=$user['iduser_master'];
-                                    $status=$this->checkUserEmailHistory($userID,$toUserID,$subject);
-                                    if($status=="NO_EMAIL_SENT")
+                                    $subFlag=$user['subscribe_flag'];
+                                    if($subFlag==1)
                                     {
-                                        $senderName=userMaster::getUserName();
-                                        $userEmail=$user['user_email'];
-                                        $userName=stripslashes($user['user_name']);
-                                        $from = new SendGrid\Email($senderName." via Dust", "dust@dusthq.com");
-                                        $to = new SendGrid\Email($userName, $userEmail);
-                                        $content = new SendGrid\Content("text/plain", $body);
-                                        $mail = new SendGrid\Mail($from, $subject, $to, $content);
-                                        // $apiKey = getenv('SENDGRID_API_KEY');
-                                        $apiKey='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';
-                                        $sg = new \SendGrid($apiKey);
-                                        $response = $sg->client->mail()->send()->post($mail);
-                                        $subject=secure($subject);
-                                        $in="INSERT INTO email_master (timestamp,user_master_iduser_master,email_user,email_subject) VALUES (NOW(),'$userID','$toUserID','$subject')";
-                                        $in=$app['db']->executeQuery($in);
-                                    }
-                                    elseif($status=="EMAIL_ALREADY_SENT")
-                                    {
-                                        do{
-                                            $randomUser=userMaster::getRandomUser($adminID);
-                                            if(is_array($randomUser))
-                                            {
-                                                $toUserID=$randomUser['iduser_master'];
-                                                $eStatus=$this->checkUserEmailHistory($userID,$toUserID,$subject);
-                                                if($eStatus=="NO_EMAIL_SENT")
+                                        $status=$this->checkUserEmailHistory($userID,$toUserID,$subject);
+                                        if($status=="NO_EMAIL_SENT")
+                                        {
+                                            $senderName=userMaster::getUserName();
+                                            $userEmail=$user['user_email'];
+                                            $userName=stripslashes($user['user_name']);
+                                            $from = new SendGrid\Email($senderName." via Dust", "dust@dusthq.com");
+                                            $to = new SendGrid\Email($userName, $userEmail);
+                                            $content = new SendGrid\Content("text/plain", $body);
+                                            $mail = new SendGrid\Mail($from, $subject, $to, $content);
+                                            // $apiKey = getenv('SENDGRID_API_KEY');
+                                            $apiKey='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';
+                                            $sg = new \SendGrid($apiKey);
+                                            $response = $sg->client->mail()->send()->post($mail);
+                                            $subject=secure($subject);
+                                            $in="INSERT INTO email_master (timestamp,user_master_iduser_master,email_user,email_subject) VALUES (NOW(),'$userID','$toUserID','$subject')";
+                                            $in=$app['db']->executeQuery($in);
+                                        }
+                                        elseif($status=="EMAIL_ALREADY_SENT")
+                                        {
+                                            do{
+                                                $randomUser=userMaster::getRandomUser($adminID);
+                                                if(is_array($randomUser))
                                                 {
-                                                    array_push($users,$randomUser);
-                                                    $continue=false;
-                                                }
-                                                elseif($eStatus=="EMAIL_ALREADY_SENT")
-                                                {
-                                                    $continue=true;
+                                                    $toUserID=$randomUser['iduser_master'];
+                                                    $eStatus=$this->checkUserEmailHistory($userID,$toUserID,$subject);
+                                                    if($eStatus=="NO_EMAIL_SENT")
+                                                    {
+                                                        array_push($users,$randomUser);
+                                                        $continue=false;
+                                                    }
+                                                    elseif($eStatus=="EMAIL_ALREADY_SENT")
+                                                    {
+                                                        $continue=true;
+                                                    }
+                                                    else
+                                                    {
+                                                        $continue=false;
+                                                    }
                                                 }
                                                 else
                                                 {
                                                     $continue=false;
                                                 }
-                                            }
-                                            else
-                                            {
-                                                $continue=false;
-                                            }
-                                        }while($continue);
+                                            }while($continue);
+                                        }
                                     }
                                 }
                                 return "USERS_EMAILED";
