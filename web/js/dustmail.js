@@ -339,6 +339,34 @@ app.controller("mail",function($scope,$compile,$http){
             }
         }
     };
+    $scope.validateReset=function(){
+        var email=$.trim($("#pass_email").val());
+        if(validate(email)){
+            $("#pass_email").parent().removeClass("has-error");
+            $http.get("user/resetPassword")
+            .then(function success(response){
+                response=$.trim(response);
+                switch(response){
+                    case "INVALID_PARAMETERS":
+                    default:
+                    messageBox("Problem","Something went wrong while sending you a reset link. Please try again later. THis is the error we see: "+response);
+                    break;
+                    case "RESET_LINK_SENT":
+                    case "INVALUD_USER_EMAIL":
+                    messageBox("Link Sent","If the email ID matches the one we have on our records, you'll receive an email with a reset link. Please check your email inbox.");
+                    $("#pass_email").val('');
+                    break;
+                }
+            },
+            function error(response){
+                console.log(response);
+                messageBox("Problem","Something went wrong while sending you a reset link. Please try again later.");
+            });
+        }
+        else{
+            $("#pass_email").parent().addClass("has-error");
+        }
+    };
 });
 window.resize=function(){
     var width=$(window).width();

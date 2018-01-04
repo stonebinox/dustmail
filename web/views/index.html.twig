@@ -155,7 +155,30 @@ Can we hop on a call and talk about this more?"></textarea>
                 </div>
                 <br>
                 <div class="text-right">
-                    <button type="button" class="button" id="passbut">Reset</button>
+                    <button type="button" class="button" id="passbut" ng-click="validateReset()">Send reset link</button>
+                </div>
+            </form>
+            <div style="height:50px;"></div>
+        </div>
+    </div>
+    <div class="form" id="confirmforgot">
+        <div class="container-fluid">
+            <br>
+            <h2 class="text-center">Reset your password</h2>
+            <hr>
+            <div class="message"></div>
+            <form>
+                <div class="form-group">
+                    <label for="npassword1">New password</label>
+                    <input type="password" name="npassword1" id="npassword1" class="form-control" placeholder="A minimum of 8 characters">
+                </div>
+                <div class="form-group">
+                    <label for="npassword2">Repeat password</label>
+                    <input type="password" name="npassword2" id="npassword2" class="form-control" placeholder="Repeat the new password">
+                </div>
+                <br>
+                <div class="text-right">
+                    <button type="button" class="button" id="resetbut">Reset</button>
                 </div>
             </form>
             <div style="height:50px;"></div>
