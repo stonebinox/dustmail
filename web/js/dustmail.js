@@ -252,11 +252,13 @@ app.controller("mail",function($scope,$compile,$http){
             var body=$.trim($("#desc").val());
             if(validate(body)){
                 $("#desc").parent().removeClass("has-error");
+                $("#bodymessage").html('');
                 var devcount=parseInt($scope.devcount);
                 $scope.saveRequest(subject,body);
             }
             else{
                 $("#desc").parent().addClass("has-error");
+                $("#bodymessage").html('Email body is required.');
             }
         }
         else{
@@ -295,7 +297,7 @@ app.controller("mail",function($scope,$compile,$http){
         }
         else{
             $scope.admin_id=11;
-            $scope.signText='an';
+            $scope.signText='';
             mover('registration');
         }
     };

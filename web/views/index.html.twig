@@ -21,9 +21,9 @@
                     <li><a href="https://facebook.com/thedustmakers" target="_blank"><img src="images/fb_icon.png" class="img-responsive" style="height:16px;" alt="Dust Facebook"></a></li>
                     <li><a href="https://twitter.com/thedustmakers" target="_blank"><img src="images/twitter_icon.png" class="img-responsive" style="width:20px;" alt="Dust Twitter"></a></li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right" ng-init="signText='an';">
-                    <li class="active"><a href="javascript:void(0)" style="background-color:#E64D1E;font-weight:bold;" onclick="mover('registration')" ng-click="admin_id=21;signText='a developer';" class="loginoptions">Developer sign up</a></li>
-                    <li><a href="javascript:void(0)" style="color:#ffffff;" onclick="mover('registration')" ng-click="admin_id=11;signText='an';" class="loginoptions">Sign Up</a></li>
+                <ul class="nav navbar-nav navbar-right" ng-init="signText='';">
+                    <li class="active"><a href="javascript:void(0)" style="background-color:#E64D1E;font-weight:bold;" onclick="mover('registration')" ng-click="admin_id=21;signText='as a developer';" class="loginoptions">Developer sign up</a></li>
+                    <li><a href="javascript:void(0)" style="color:#ffffff;" onclick="mover('registration')" ng-click="admin_id=11;signText='';" class="loginoptions">Sign Up</a></li>
                     <li><a href="javascript:void(0)" style="color:#ffffff;" onclick="mover('login')" class="loginoptions">Login</a></li>
                     <li style="display:none;"><a href="logout" style="color:#ffffff;" id="logoutbutton">Logout</a></li>
                 </ul>
@@ -49,6 +49,7 @@
                 <div class="form-group">
                     <label for="desc">Email body</label>
                     <textarea rows=6 name="desc" class="form-control" id="desc" placeholder="Keep it simple. Keep it short."></textarea>
+                    <div id="bodymessage" class="text-danger small" style="margin-top:3px;"></div>
                 </div>
                 <div class="form-group" ng-init="devcount=20">
                     <label for="devcount">Audience and budget</label>
@@ -70,7 +71,8 @@
     <div class="form" id="registration">
         <div class="container-fluid">
             <br>
-            <h2 class="text-center">Create {[{signText}]} account</h2>
+            <h2 class="text-center">Sign up{[{signText}]}</h2>
+            <div id="switch">Are you a developer? <a href="#" ng-click="admin_id=21;signText='as a developer';" onclick="mover('registration');">Sign up here</a></div>
             <hr>
             <div class="message"></div>
             <form autocomplete="off">
@@ -121,7 +123,7 @@
                 <br>
                 <div class="text-right">
                     <button type="button" class="button" ng-click="loginUser()" id="loginbut">Login</button><br><br>
-                    <a href="#!registration/21" ng-click="admin_id=21;signText='a developer';" onclick="mover('registration')">Create a developer account</a>&nbsp;&bull;&nbsp;<a href="#!registration/11" ng-click="admin_id=11;signText='an';" onclick="mover('registration')">Create an account</a>&nbsp;&bull;&nbsp;<a href="#" onclick="mover('forgot');">Forgot password?</a>
+                    <a href="#!registration/21" ng-click="admin_id=21;signText='as a developer';" onclick="mover('registration')">Create a developer account</a>&nbsp;&bull;&nbsp;<a href="#!registration/11" ng-click="admin_id=11;signText='';" onclick="mover('registration')">Create an account</a>&nbsp;&bull;&nbsp;<a href="#" onclick="mover('forgot');">Forgot password?</a>
                 </div>
             </form>
             <div style="height:50px;"></div>
