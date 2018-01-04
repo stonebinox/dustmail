@@ -1,3 +1,8 @@
+/*-------------------------------------
+Author: Dust Team
+Last Modified: 4/1/18 12:30
+Comments: Main JS file.
+-------------------------------------*/
 var app=angular.module("dust",[]);
 app.config(function($interpolateProvider){
     $interpolateProvider.startSymbol('{[{').endSymbol('}]}');

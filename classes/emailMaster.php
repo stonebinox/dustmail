@@ -2,7 +2,7 @@
 /*----------------------------------
 Author: Anoop Santhanam
 Date Created: 30/12/17 22:59
-Last modified: 30/12/17 22:59
+Last modified: 4/1/18 12:30
 Comments: Main class file for 
 email_master table.
 ---------------------------------*/

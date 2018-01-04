@@ -1,4 +1,9 @@
 <?php
+/*-----------------------------
+Author: Anoop Santhanam
+Last modified: 4/1/18 12:30
+Comments: Main controller file.
+-----------------------------*/
 ini_set('display_errors', 1);
 require_once __DIR__.'/../vendor/autoload.php';
 $app = require __DIR__.'/../src/app.php';

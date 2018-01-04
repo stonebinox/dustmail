@@ -1,3 +1,8 @@
+/*---------------------------------
+Author: Dust Team
+Last Modified: 4/1/18 12:30
+Comments: Main UI JS file.
+----------------------------------*/
 function messageBox(title,content,sizeFlag){
     title=$.trim(title);
 	var modal=document.getElementById("myModal");
