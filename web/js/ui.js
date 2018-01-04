@@ -151,5 +151,8 @@ function readParams(){
 			break;
 		}
 		$(".message").html('<div class="alert alert-success"><strong>Success</strong> '+suc+'</div>');
+		setTimeout(function(){
+			$(".message").html('');
+		},15000);
 	}
 }
