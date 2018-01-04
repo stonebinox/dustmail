@@ -22,7 +22,7 @@
                     <li><a href="https://twitter.com/thedustmakers" target="_blank"><img src="images/twitter_icon.png" class="img-responsive" style="width:20px;" alt="Dust Twitter"></a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right" ng-init="signText='';">
-                    <li class="active"><a href="javascript:void(0)" style="background-color:#E64D1E;font-weight:bold;" onclick="mover('registration')" ng-click="admin_id=21;signText='as a developer';" class="loginoptions">Developer sign up</a></li>
+                    <li class="active"><a href="javascript:void(0)" style="background-color:#E64D1E;font-weight:bold;" onclick="mover('registration')" ng-click="admin_id=21;signText=' as a developer';" class="loginoptions">Developer sign up</a></li>
                     <li><a href="javascript:void(0)" style="color:#ffffff;" onclick="mover('registration')" ng-click="admin_id=11;signText='';" class="loginoptions">Sign Up</a></li>
                     <li><a href="javascript:void(0)" style="color:#ffffff;" onclick="mover('login')" class="loginoptions">Login</a></li>
                     <li style="display:none;"><a href="logout" style="color:#ffffff;" id="logoutbutton">Logout</a></li>
@@ -72,7 +72,7 @@
         <div class="container-fluid">
             <br>
             <h2 class="text-center">Sign up{[{signText}]}</h2>
-            <div id="switch">Are you a developer? <a href="#" ng-click="admin_id=21;signText='as a developer';" onclick="mover('registration');">Sign up here</a></div>
+            <div id="switch" class="text-center">Are you a developer? <a href="#" ng-click="admin_id=21;signText=' as a developer';" onclick="mover('registration');">Sign up here</a></div>
             <hr>
             <div class="message"></div>
             <form autocomplete="off">
@@ -123,7 +123,7 @@
                 <br>
                 <div class="text-right">
                     <button type="button" class="button" ng-click="loginUser()" id="loginbut">Login</button><br><br>
-                    <a href="#!registration/21" ng-click="admin_id=21;signText='as a developer';" onclick="mover('registration')">Create a developer account</a>&nbsp;&bull;&nbsp;<a href="#!registration/11" ng-click="admin_id=11;signText='';" onclick="mover('registration')">Create an account</a>&nbsp;&bull;&nbsp;<a href="#" onclick="mover('forgot');">Forgot password?</a>
+                    <a href="#!registration/21" ng-click="admin_id=21;signText=' as a developer';" onclick="mover('registration')">Create a developer account</a>&nbsp;&bull;&nbsp;<a href="#!registration/11" ng-click="admin_id=11;signText='';" onclick="mover('registration')">Create an account</a>&nbsp;&bull;&nbsp;<a href="#" onclick="mover('forgot');">Forgot password?</a>
                 </div>
             </form>
             <div style="height:50px;"></div>
@@ -135,7 +135,7 @@
             <br>
             <br>
             <br>
-            <h2 class="text-center">Thank you for signing up as a developer.</h2>
+            <h2 class="text-center">Thank you for signing up  as a developer.</h2>
             <hr>
             <h5 class="text-center">Soon, you'll start to receive emails from other Dust users looking for developers. You don't need to do anything else for now.</div>
             <div style="height:50px;"></div>

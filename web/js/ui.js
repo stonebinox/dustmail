@@ -91,10 +91,10 @@ function mover(layer){
 	if(layer=='registration'){
 		var adminID=angular.element(document.getElementById("pass_email")).scope().admin_id;
 		if(adminID==11){
-			$("#switch").html('Are you a developer? <a href="#" ng-click="admin_id=21;signText=\'as a developer\';" onclick="mover(\'registration\')">Sign up</a> here.</a>');
+			$("#switch").html('Are you a developer? <a href="#" ng-click="admin_id=21;signText=\' as a developer\';" onclick="mover(\'registration\')">Sign up</a> here.</a>');
 		}
 		else if(adminID==21){
-			$("#switch").html('Are you a founder? <a href="#" ng-click="admin_id=11;signText=\'\';" onclick="mover(\'registration\')">Sign up</a> here.</a>');
+			$("#switch").html('Are you looking for a developer? <a href="#" ng-click="admin_id=11;signText=\'\';" onclick="mover(\'registration\')">Sign up</a> here.</a>');
 		}
 	}
 	layer="#"+layer;
