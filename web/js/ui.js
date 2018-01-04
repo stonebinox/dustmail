@@ -151,6 +151,9 @@ function readParams(){
 			suc='Your password was reset successfully.';
 			mover('login');
 			break;
+			case "USERS_EMAILED":
+			suc='Developers were emailed successfully! We\'ve shared your email ID with them so that they may contact you directly.';
+			break;
 		}
 		if(validate(suc)){
 			$(".message").html('<div class="alert alert-success"><strong>Success</strong> '+suc+'</div>');
