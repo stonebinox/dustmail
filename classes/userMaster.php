@@ -320,6 +320,7 @@ class userMaster extends adminMaster
             foreach($um as $user)
             {
                 $userID=$user['iduser_master'];
+                echo $userID.'<br>';
                 $this->__construct($userID);
                 $userData=$this->getUser();
                 if(is_array($userData))
