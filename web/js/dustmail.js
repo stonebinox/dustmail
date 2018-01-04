@@ -402,6 +402,9 @@ app.controller("mail",function($scope,$compile,$http){
             messageBox("Problem",'Something went wrong while resetting your password. Please contact support at <a href="mailto:dust@dusthq.com">dust@dusthq.com</a> and our password manager would help.');
         }
     };
+    $scope.compileSwitch=function(){
+        $compile("#switch")($scope);
+    };
 });
 window.resize=function(){
     var width=$(window).width();
