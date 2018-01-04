@@ -156,9 +156,9 @@ class emailMaster extends userMaster
                                 {
                                     $toUserID=$user['iduser_master'];
                                     $subFlag=$user['subscribe_flag'];
+                                    echo $toUserID.' '.$subFlag.'<br>';
                                     if($subFlag==1)
                                     {
-                                        echo $toUserID.'<br>';
                                         $status=$this->checkUserEmailHistory($userID,$toUserID,$subject);
                                         if($status=="NO_EMAIL_SENT")
                                         {
