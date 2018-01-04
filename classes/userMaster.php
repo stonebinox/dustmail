@@ -80,6 +80,28 @@ class userMaster extends adminMaster
             return "INVALID_USER_ID";
         }
     }
+    function getUserData($userID)
+    {
+        $userID=secure($userID);
+        $app=$this->app;
+        $um="SELECT * FROM user_master WHERE iduser_master='$userID'";
+        $um=$app['db']->fetchAssoc($um);
+        if(validate($um))
+        {
+            $adminID=$um['admin_master_idadmin_master'];
+            adminMaster::__construct($adminID);
+            $admin=adminMaster::getAdminType();
+            if(is_array($admin))
+            {
+                $um['admin_master_idadmin_master']=$admin;
+            }
+            return $um;
+        }
+        else
+        {
+            return "INVALID_USER_ID";
+        }
+    }
     function getUserIDFromEmail($userEmail)
     {
         $app=$this->app;
@@ -320,9 +342,8 @@ class userMaster extends adminMaster
             foreach($um as $user)
             {
                 $userID=$user['iduser_master'];
-                $this->__construct($userID);
-                echo $this->user_id.'<br>';
-                $userData=$this->getUser();
+                // $this->__construct($userID);
+                $userData=$this->getUserData($userID);
                 if(is_array($userData))
                 {
                     array_push($userArray,$userData);
