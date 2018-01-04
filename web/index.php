@@ -160,8 +160,8 @@ $app->post("/pay",function(Request $request) use($app){
             $emailResponse=$email->sendEmails($app['session']->get("uid"),$request->get("subject"),$request->get("body"),$request->get("devcount"));
             if($emailResponse=="USERS_EMAILED")
             {
-                return $app->redirect("/?suc=".$emailResponse);
-                // return "DONE";
+                // return $app->redirect("/?suc=".$emailResponse);
+                return "DONE";
             }
             else
             {
