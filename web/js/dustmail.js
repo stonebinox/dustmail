@@ -248,6 +248,7 @@ app.controller("mail",function($scope,$compile,$http){
         var subject=$.trim($("#subject").val());
         if(validate(subject)){
             $("#subject").parent().removeClass("has-error");
+            $("#subjectmessage").html('');
             var body=$.trim($("#desc").val());
             if(validate(body)){
                 $("#desc").parent().removeClass("has-error");
@@ -260,6 +261,7 @@ app.controller("mail",function($scope,$compile,$http){
         }
         else{
             $("#subject").parent().addClass("has-error");
+            $("#subjectmessage").html('Email subject is required.');
         }
     };
     $scope.saveRequest=function(subject,body){
