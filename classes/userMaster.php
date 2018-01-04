@@ -326,7 +326,7 @@ class userMaster extends adminMaster
         $limit=secure($limit);
         if((validate($limit))&&(is_numeric($limit))&&($limit>0))
         {
-            $um="SELECT iduser_master FROM user_master WHERE stat='1'";
+            $um="SELECT iduser_master FROM user_master WHERE stat='1' AND subscribe_flag='1'";
             if(validate($adminID))
             {
                 $adminID=secure($adminID);

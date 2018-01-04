@@ -155,7 +155,6 @@ class emailMaster extends userMaster
                                 foreach($users as $user)
                                 {
                                     $toUserID=$user['iduser_master'];
-                                    echo $toUserID.'<br>';
                                     $subFlag=$user['subscribe_flag'];
                                     if($subFlag==1)
                                     {
