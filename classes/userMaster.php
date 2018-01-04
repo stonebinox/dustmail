@@ -316,7 +316,6 @@ class userMaster extends adminMaster
             }
             $um.=" ORDER BY RAND() LIMIT $limit";
             $um=$app['db']->fetchAll($um);
-            var_dump($um);
             $userArray=array();
             foreach($um as $user)
             {
@@ -325,6 +324,7 @@ class userMaster extends adminMaster
                 $userData=$this->getUser();
                 if(is_array($userData))
                 {
+                    var_dump($userData);
                     array_push($userArray,$userData);
                 }
             }
