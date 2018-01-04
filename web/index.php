@@ -161,12 +161,10 @@ $app->post("/pay",function(Request $request) use($app){
             if($emailResponse=="USERS_EMAILED")
             {
                 return $app->redirect("/?suc=".$emailResponse);
-                // return "DONE";
             }
             else
             {
                 return $app->redirect("/?err=".$emailResponse);
-                // return $emailResponse;
             }
         }   
         else
