@@ -164,7 +164,8 @@ class emailMaster extends userMaster
                                             userMaster::__construct($userID);
                                             $senderName=userMaster::getUserName();
                                             $senderEmail=userMaster::getUserEmail();
-                                            $body.=' To reply to '.$senderName.', please email '.$senderEmail.' instead of replying to this email directly. You cannot contact this sender by replying to this email. If you need any assistance, feel free to contact us at dust@dusthq.com and we\'ll get back to you!';
+                                            $body.=' 
+To reply to '.$senderName.', please email '.$senderEmail.' instead of replying to this email directly. You cannot contact this sender by replying to this email. If you need any assistance, feel free to contact us at dust@dusthq.com and we\'ll get back to you!';
                                             $userEmail=$user['user_email'];
                                             $userName=stripslashes($user['user_name']);
                                             $from = new SendGrid\Email($senderName." via Dust", "noreply@dusthq.com");
@@ -215,7 +216,13 @@ class emailMaster extends userMaster
                                 $firstName=$e[0];
                                 $senderEmail=userMaster::getUserEmail();
                                 $subject='Thank you for your Dust order!';
-                                $body='Hello '.$firstName.'! Thank you for your order. You\'ve sent '.$limit.' developers an email. Hopefully they’re excited about your idea and will reply to you soon. - The Dust Team. If you need any assistance, feel free to contact us at dust@dusthq.com and we\'ll get back to you!';
+                                $body='Hello '.$firstName.'! 
+                                
+Thank you for your order. You\'ve sent '.$limit.' developers an email. Hopefully they’re excited about your idea and will reply to you soon. 
+
+The Dust Team. 
+
+If you need any assistance, feel free to contact us at dust@dusthq.com and we\'ll get back to you!';
                                 $from = new SendGrid\Email("Dust", "noreply@dusthq.com");
                                 $to = new SendGrid\Email($senderName, $senderEmail);
                                 $content = new SendGrid\Content("text/plain", $body);
