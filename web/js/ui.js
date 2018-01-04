@@ -143,6 +143,7 @@ function readParams(){
 			break;
 			case "RESET_PASSWORD":
 			var id=getUrlParameter("id");
+			suc='';
 			$("#npassword2").parent().append('<input type="hidden" name="uid" id="uid" value="'+id+'">');
 			mover('confirmforgot');
 			break;
@@ -150,9 +151,11 @@ function readParams(){
 			suc='Your password was reset successfully.';
 			break;
 		}
-		$(".message").html('<div class="alert alert-success"><strong>Success</strong> '+suc+'</div>');
-		setTimeout(function(){
-			$(".message").html('');
-		},15000);
+		if(validate(suc)){
+			$(".message").html('<div class="alert alert-success"><strong>Success</strong> '+suc+'</div>');
+			setTimeout(function(){
+				$(".message").html('');
+			},15000);
+		}
 	}
 }
