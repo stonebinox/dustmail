@@ -288,7 +288,7 @@ app.controller("mail",function($scope,$compile,$http){
                 $(hidden3).attr("value",$scope.devcount);
             $(form).append(hidden3);
             var amount=($scope.devcount/20)*100;
-            $(form).append('<script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="pk_test_AaNN3vmVBn3clhgdqGa9CMXX" data-amount="'+amount+'" data-name="Dust &amp; Co., Inc." data-description="Widget" data-image="https://stripe.com/img/documentation/checkout/marketplace.png" data-locale="auto"></script>');
+            $(form).append('<script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="pk_live_PSwDNF9BVOIuKl5BBzVXnXsa" data-amount="'+amount+'" data-name="Dust &amp; Co., Inc." data-description="Widget" data-image="https://stripe.com/img/documentation/checkout/marketplace.png" data-locale="auto"></script>');
             messageBox("Make Payment",form);
         }
         else{
