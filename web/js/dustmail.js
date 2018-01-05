@@ -419,6 +419,7 @@ app.controller("mail",function($scope,$compile,$http){
         $http.get("coupon/getRandomCoupon")
         .then(function success(response){
             response=response.data;
+            console.log(response);
             if(typeof response=="object"){
                 $scope.coupon=response;
                 $scope.showCoupon();
