@@ -429,7 +429,7 @@ app.controller("mail",function($scope,$compile,$http){
                 switch(response){
                     case "INVALID_PARAMETERS":
                     default:
-                    messageBox("Problem","Something went wrong while loading coupons. Please try again later. This is the error we see: "+response);
+                    // messageBox("Problem","Something went wrong while loading coupons. Please try again later. This is the error we see: "+response);
                     break;
                 }
             }
