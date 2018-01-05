@@ -68,8 +68,7 @@ class couponMaster extends emailMaster
     {
         $app=$this->app;
         $date=date("Y-m-d");
-        $cm="SELECT idcoupon_master FROM coupon_master WHERE stat='1' AND expiry<='$date' ORDER BY RAND() LIMIT 1";
-        echo $cm;
+        $cm="SELECT idcoupon_master FROM coupon_master WHERE stat='1' AND expiry>='$date' ORDER BY RAND() LIMIT 1";
         $cm=$app['db']->fetchAssoc($cm);
         if(validate($cm))
         {
