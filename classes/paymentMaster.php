@@ -6,7 +6,7 @@ Last modified: 4/1/18 12:30
 Comments: Main class file for 
 payment_master table.
 -------------------------------*/
-class paymentMaster extends emailMaster
+class paymentMaster extends couponMaster
 {
     public $app=NULL;
     public $paymentValid=false;
