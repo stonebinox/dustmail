@@ -13,12 +13,11 @@ app.controller("mail",function($scope,$compile,$http){
     $scope.userArray=[];
     $scope.checkURL=function(){
         var url=window.location.href;
-        console.log(url);
         if(url.indexOf("https://")==0){
-            console.log("Secure");
+            //do nothing
         }
         else{
-            console.log("Not secure");
+            window.location="https://www.dusthq.com/";
         }
     };
     $scope.loadMap=function(){
