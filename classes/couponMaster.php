@@ -6,11 +6,11 @@ Last modified: 5/1/18 08:56
 Comments: Main class file for 
 coupon_master table.
 ----------------------------*/
-class coupon_master extends emailMaster
+class couponMaster extends emailMaster
 {
     public $app=NULL;
     public $couponValid=false;
-    private $Coupon_id=NULL;
+    private $coupon_id=NULL;
     function __construct($couponID=NULL)
     {
         $this->app=$GLOBALS['app'];
