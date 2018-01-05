@@ -11,6 +11,16 @@ app.controller("mail",function($scope,$compile,$http){
     $scope.map=null;
     $scope.admin_id=null;
     $scope.userArray=[];
+    $scope.checkURL=function(){
+        var url=window.location.href;
+        console.log(url);
+        if(url.indexOf("https://")==0){
+            console.log("Secure");
+        }
+        else{
+            console.log("Not secure");
+        }
+    };
     $scope.loadMap=function(){
         var mapProp= {
             center:new google.maps.LatLng(51.508742,-0.120850),

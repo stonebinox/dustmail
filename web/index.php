@@ -301,14 +301,5 @@ $app->post("/user/savePassword",function(Request $request) use($app){
         return $app->redirect("/?err=INVALID_PARAMETERS");
     }
 });
-$app->get("/test",function() use($app){
-    if (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') {
-        return "SECURE";
-    }
-    else
-    {
-        return "NOT SECURE";
-    }
-});
 $app->run();
 ?>
