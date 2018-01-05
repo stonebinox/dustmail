@@ -64,6 +64,28 @@ class couponMaster extends emailMaster
             return "INVALID_COUPON_CODE";
         }
     }
+    function getCoupon()
+    {
+        if($this->couponValid)
+        {
+            $couponID=$this->coupon_id;
+            $app=$this->app;
+            $cm="SELECT * FROM coupon_master WHERE idcoupon_master='$couponID'";
+            $cm=$app['db']->fetchAssoc($cm);
+            if(validate($cm))
+            {
+                return $cm;
+            }
+            else
+            {
+                return "INVALID_COUPON_ID";
+            }
+        }
+        else
+        {
+            return "INVALID_COUPON_ID";
+        }
+    }
     function getRandomCoupon()
     {
         $app=$this->app;
