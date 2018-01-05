@@ -308,11 +308,11 @@ $app->get("/coupon/getRandomCoupon",function() use($app){
     require("../classes/couponMaster.php");
     $coupon=new couponMaster;
     $couponData=$coupon->getRandomCoupon();
-    if(is_array($coupon))
+    if(is_array($couponData))
     {
-        return json_encode($coupon);
+        return json_encode($couponData);
     }
-    return $coupon;
+    return $couponData;
 });
 $app->run();
 ?>
