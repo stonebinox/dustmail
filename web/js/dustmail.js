@@ -446,7 +446,7 @@ app.controller("mail",function($scope,$compile,$http){
             var couponCode=$scope.coupon.coupon_code;
             var couponExpiry=$scope.coupon.expiry;
             couponExpiry=dateFormat(couponExpiry);
-            $("#coupon").text('<span class="text-info">'+couponText+'&nbsp;&bull;&nbsp;<strong>'+couponCode+'</strong>&nbsp;&bull;&nbsp;Expires on <strong>'+couponExpiry+'</strong>');
+            $("#coupon").html('<span class="text-info">'+couponText+'&nbsp;&bull;&nbsp;<strong>'+couponCode+'</strong>&nbsp;&bull;&nbsp;Expires on <strong>'+couponExpiry+'</strong></span>');
         }
     };
 });
