@@ -301,5 +301,18 @@ $app->post("/user/savePassword",function(Request $request) use($app){
         return $app->redirect("/?err=INVALID_PARAMETERS");
     }
 });
+$app->get("/coupon/getRandomCoupon",function() use($app){
+    require("../classes/adminMaster.php");
+    require("../classes/userMaster.php");
+    require("../classes/emailMaster.php");
+    require("../classes/couponMaster.php");
+    $coupon=new couponMaster;
+    $couponData=$coupon->getRandomCoupon();
+    if(is_array($coupon))
+    {
+        return json_encode($coupon);
+    }
+    return $coupon;
+});
 $app->run();
 ?>

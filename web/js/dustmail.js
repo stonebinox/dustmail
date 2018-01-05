@@ -414,6 +414,40 @@ app.controller("mail",function($scope,$compile,$http){
     $scope.compileSwitch=function(){
         $compile("#switch")($scope);
     };
+    $scope.getRandomCoupon=function(){
+        $scope.coupon=null;
+        $http.get("coupon/getRandomCoupon")
+        .then(function success(response){
+            response=response.data;
+            if(typeof response=="object"){
+                $scope.coupon=response;
+                $scope.showCoupon();
+            }
+            else{
+                response=$.trim(response);
+                switch(response){
+                    case "INVALID_PARAMETERS":
+                    default:
+                    messageBox("Problem","Something went wrong while loading coupons. Please try again later. This is the error we see: "+response);
+                    break;
+                }
+            }
+        },
+        function error(response){
+            console.log(response);
+            messageBox("Problem","Something went wrong while loading coupons. Please try again later.");
+        });
+    };
+    $scope.showCoupon=function(){
+        if(validate($scope.coupon)){
+            var couponID=$scope.coupon.idcoupon_master;
+            var couponText=$scope.coupon.coupon_name;
+            var couponCode=$scope.coupon.coupon_code;
+            var couponExpiry=$scope.coupon.expiry;
+            couponExpiry=dateFormat(couponExpiry);
+            $("#coupon").text('<span class="text-info">'+couponText+'&nbsp;&bull;&nbsp;<strong>'+couponCode+'</strong>&nbsp;&bull;&nbsp;Expires on <strong>'+couponExpiry+'</strong>');
+        }
+    };
 });
 window.resize=function(){
     var width=$(window).width();

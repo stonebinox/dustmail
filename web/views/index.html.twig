@@ -62,7 +62,8 @@
                     </div>
                 </div>
                 <br>
-                <div class="text-right">
+                <div class="text-right" ng-init="getRandomCoupon()">
+                    <span id="coupon"></span>
                     <button type="button" class="button" ng-click="validateRequest()">Continue</button>
                 </div>
             </form>
