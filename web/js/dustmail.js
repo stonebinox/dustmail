@@ -452,6 +452,7 @@ app.controller("mail",function($scope,$compile,$http){
     $scope.coupon_id=null;
     $scope.checkCode=function(){
         var code=$.trim($("#couponecode").val());
+        console.log(code);
         $("#couponcode").parent().removeClass("has-success has-feedback");
         $("#couponcode").parent().find('span').remove();
         if(validate(code)){
