@@ -311,6 +311,12 @@ app.controller("mail",function($scope,$compile,$http){
                 else if(couponType=="Value"){
                     amount=amount-couponValue;
                 }
+                var hidden4=document.createElement("input");
+                $(hidden4).attr("type","hidden");
+                $(hidden4).attr("name","coupon_id");
+                $(hidden4).attr("id","coupon_id");
+                $(hidden4).attr("value",$scope.coupon_id.idcoupon_master);
+                $(form).append(hidden4);
             }
             amount=amount*100;
             $(form).append('<script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="pk_live_PSwDNF9BVOIuKl5BBzVXnXsa" data-amount="'+amount+'" data-name="Dust &amp; Co., Inc." data-description="Widget" data-image="https://stripe.com/img/documentation/checkout/marketplace.png" data-locale="auto"></script>');
