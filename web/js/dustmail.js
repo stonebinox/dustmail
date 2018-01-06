@@ -302,8 +302,8 @@ app.controller("mail",function($scope,$compile,$http){
             $(form).append(hidden3);
             var amount=$scope.devcount/20;
             if(validate($scope.coupon_id)){
-                var couponType=$scope.coupon_type;
-                var couponValue=parseFloat($scope.coupon_value);
+                var couponType=$scope.coupon_id.coupon_type;
+                var couponValue=parseFloat($scope.coupon_id.coupon_value);
                 if(couponType=="Percentage"){
                     var discount=amount*(couponValue/100);
                     amount=amount-discount;
