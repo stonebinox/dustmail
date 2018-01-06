@@ -452,14 +452,13 @@ app.controller("mail",function($scope,$compile,$http){
     $scope.coupon_id=null;
     $scope.checkCode=function(){
         var code=$.trim($("#couponcode").val());
-        console.log(code);
         $("#couponcode").parent().removeClass("has-success has-feedback");
         $("#couponcode").parent().find('span').remove();
         if(validate(code)){
+            code=code.toUpperCase();
             $http.get("coupon/getCouponID/"+code)
             .then(function success(response){
                 response=$.trim(response.data);
-                console.log(response);
                 switch(response){
                     case "INVALID_PARAMETERS":
                     default:
