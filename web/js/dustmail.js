@@ -207,7 +207,6 @@ app.controller("mail",function($scope,$compile,$http){
         $http.get("user/getUser")
         .then(function success(response){
             response=response.data;
-            console.log(response);
             if(typeof response=="object"){
                 $scope.user=response;
                 $scope.loginStatus=true;
@@ -215,16 +214,6 @@ app.controller("mail",function($scope,$compile,$http){
             }
             else{
                 response=$.trim(response);
-                // switch(response){
-                //     case "INVALID_PARAMETERS":
-                //     default:
-                //     messageBox("Problem","Something went wrong while getting user information. Please try again later. This is the error we see: "+response);
-                //     break;
-                //     case "INVALID_USER_ID":
-                //     messageBox("Invalid User","Your account is invalid or doesn't exist. Please refresh the page and try again.");
-                //     break;
-                // }
-                //do nothing
             }
         },
         function error(response){
@@ -281,7 +270,6 @@ app.controller("mail",function($scope,$compile,$http){
             localStorage.setItem("body",body);
         }
         if($scope.loginStatus){
-            console.log("pay up!");
             var form=document.createElement("form");
             $(form).attr("method","post");
             $(form).attr("action","pay");
@@ -317,6 +305,7 @@ app.controller("mail",function($scope,$compile,$http){
                 $(hidden4).attr("id","coupon_id");
                 $(hidden4).attr("value",$scope.coupon_id.idcoupon_master);
                 $(form).append(hidden4);
+                $(form).append('<div class="alert alert-success"><strong>Coupon Applied</strong> The coupon code has been applied!</div>');
             }
             amount=amount*100;
             $(form).append('<script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="pk_live_PSwDNF9BVOIuKl5BBzVXnXsa" data-amount="'+amount+'" data-name="Dust &amp; Co., Inc." data-description="Widget" data-image="https://stripe.com/img/documentation/checkout/marketplace.png" data-locale="auto"></script>');
