@@ -300,7 +300,19 @@ app.controller("mail",function($scope,$compile,$http){
                 $(hidden3).attr("name","devcount");
                 $(hidden3).attr("value",$scope.devcount);
             $(form).append(hidden3);
-            var amount=($scope.devcount/20)*100;
+            var amount=$scope.devcount/20;
+            if(validate($scope.coupon_id)){
+                var couponType=$scope.coupon_type;
+                var couponValue=parseFloat($scope.coupon_value);
+                if(couponType=="Percentage"){
+                    var discount=amount*(couponValue/100);
+                    amount=amount-discount;
+                }
+                else if(couponType=="Value"){
+                    amount=amount-couponValue;
+                }
+            }
+            amount=amount*100;
             $(form).append('<script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="pk_live_PSwDNF9BVOIuKl5BBzVXnXsa" data-amount="'+amount+'" data-name="Dust &amp; Co., Inc." data-description="Widget" data-image="https://stripe.com/img/documentation/checkout/marketplace.png" data-locale="auto"></script>');
             messageBox("Make Payment",form);
         }
@@ -419,7 +431,6 @@ app.controller("mail",function($scope,$compile,$http){
         $http.get("coupon/getRandomCoupon")
         .then(function success(response){
             response=response.data;
-            console.log(response);
             if(typeof response=="object"){
                 $scope.coupon=response;
                 $scope.showCoupon();
@@ -456,27 +467,27 @@ app.controller("mail",function($scope,$compile,$http){
         $("#couponcode").parent().find('span').remove();
         if(validate(code)){
             code=code.toUpperCase();
-            $http.get("coupon/getCouponID/"+code)
+            $http.get("coupon/getCouponFromCode/"+code)
             .then(function success(response){
-                response=$.trim(response.data);
-                switch(response){
-                    case "INVALID_PARAMETERS":
-                    default:
-                    if(!isNaN(response)){
-                        $scope.coupon_id=parseInt(response);
-                        $("#couponcode").parent().addClass("has-success has-feedback");
-                        $("#couponcode").parent().append('<span class="glyphicon glyphicon-ok form-control-feedback"></span>');
-                    }
-                    else{
-                        messageBox("Problem","Something went wrong while checking this coupon code. Please try again later. This is the error we see: "+response);
-                    }
-                    break;
-                    case "INVALID_COUPON_CODE":
-                    messageBox("Invalid Code","The coupon code is invalid.");
-                    $("#couponcode").val('');
-                    break;
+                response=response.data;
+                if(typeof response=="object"){
+                    $scope.coupon_id=response;
+                    $("#couponcode").parent().addClass("has-success has-feedback");
+                    $("#couponcode").parent().append('<span class="glyphicon glyphicon-ok form-control-feedback"></span>');
                 }
-
+                else{
+                    response=$.trim(response);
+                    switch(response){
+                        case "INVALID_PARAMETERS":
+                        default:
+                        messageBox("Problem","Something went wrong while checking this coupon code. Please try again later. This is the error we see: "+response);
+                        break;
+                        case "INVALID_COUPON_CODE":
+                        messageBox("Invalid Code","The coupon code is invalid.");
+                        $("#couponcode").val('');
+                        break;
+                    }
+                }
             },
             function error(response){
                 console.log(response);

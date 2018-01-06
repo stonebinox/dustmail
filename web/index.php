@@ -315,7 +315,7 @@ $app->get("/coupon/getRandomCoupon",function() use($app){
     }
     return $couponData;
 });
-$app->get("/coupon/getCouponID/{code}",function($code) use($app){
+$app->get("/coupon/getCouponFromCode/{code}",function($code) use($app){
     if(validate($code))
     {
         require("../classes/adminMaster.php");
@@ -324,6 +324,16 @@ $app->get("/coupon/getCouponID/{code}",function($code) use($app){
         require("../classes/couponMaster.php");
         $coupon=new couponMaster;
         $couponID=$coupon->getCouponIDByCode($code);
+        if(is_numeric($couponID))
+        {
+            $coupon=new couponMaster($couponID);
+            $couponData=$coupon->getCoupon();
+            if(is_array($couponData))
+            {
+                return json_encode($couponData);
+            }
+            return $couponData;
+        }
         return $couponID;
     }
     else
