@@ -22,6 +22,12 @@
                     <li><a href="https://twitter.com/thedustmakers" target="_blank"><img src="images/twitter_icon.png" class="img-responsive" style="width:20px;" alt="Dust Twitter"></a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right" ng-init="signText='';">
+                    <li><a href="#" style="color:#ffffff;">Broadcast lists <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" id="devbroadcast" ng-click="admin_id=11;" onclick="mover('find')">Broadcast to developers</a></li>
+                            <li><a href="#" id="nondevbroadcast" ng-click="admin_id=21;" onclick="mover('findfounders')">Broadcast to non-developers</a></li>
+                        </ul>
+                    </li>
                     <li class="active"><a href="javascript:void(0)" style="background-color:#E64D1E;font-weight:bold;" onclick="mover('registration')" ng-click="admin_id=21;signText=' as a developer';" class="loginoptions">Developer sign up</a></li>
                     <li><a href="javascript:void(0)" style="color:#ffffff;" onclick="mover('registration')" ng-click="admin_id=11;signText='';" class="loginoptions">Sign Up</a></li>
                     <li><a href="javascript:void(0)" style="color:#ffffff;" onclick="mover('login')" class="loginoptions">Login</a></li>
@@ -69,6 +75,48 @@
                 <br>
                 <div class="text-right" ng-init="getRandomCoupon()">
                     <button type="button" class="button" ng-click="validateRequest()">Continue</button>
+                </div>
+            </form>
+            <div style="height:50px;"></div>
+        </div>
+    </div>
+    <div class="form" id="findfounders">
+        <div class="container-fluid">
+            <br>
+            <h2 class="text-center">Email Awesome non-developers for $1.</h2>
+            <h5 class="text-center">They've got credentials from top institutions like these.</h5>
+            <hr>
+            <div id="credlist"></div>
+            <hr>
+            <div class="message"></div>
+            <form>
+                <div class="form-group">
+                    <label for="devsubject">Email subject</label>
+                    <input type="text" name="devsubject" class="form-control" id="devsubject" placeholder="Need help on a project? Check out things I've built.">
+                    <div id="devsubjectmessage" class="text-danger small" style="margin-top:3px;"></div>
+                </div>
+                <div class="form-group">
+                    <label for="devdesc">Email body</label>
+                    <textarea rows=6 name="devdesc" class="form-control" id="devdesc" placeholder="Keep it simple. Keep it short."></textarea>
+                    <div id="devbodymessage" class="text-danger small" style="margin-top:3px;"></div>
+                </div>
+                <div class="form-group" ng-init="nondevcount=20">
+                    <label for="nondevcount">Audience and budget</label>
+                    <div class="well" style="background-color:#ffffff;box-shadow:0px 0px 6px #cccccc;border:1px solid #CBCBCB;">
+                        <p class="text-center lead">Email {[{nondevcount}]} non-developers for ${[{nondevcount/20}]}</p>
+                        <input type="range" name="nondevcount" id="nondevcount" ng-model="nondevcount" min=20 max=200 step=20>
+                        <br>
+                        <p class="text-center" id="devcoupon"></p>
+                        <br>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="devcouponcode">Coupon code</label>
+                    <input type="text" name="devcouponcode" class="form-control" id="devcouponcode" placeholder="CODE" ng-blur="checkCode()">
+                </div>
+                <br>
+                <div class="text-right" ng-init="getRandomCoupon()">
+                    <button type="button" class="button">Coming soon</button>
                 </div>
             </form>
             <div style="height:50px;"></div>
