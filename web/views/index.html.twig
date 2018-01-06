@@ -64,7 +64,7 @@
                 </div>
                 <div class="form-group">
                     <label for="couponcode">Coupon code</label>
-                    <input type="text" name="couponcode" class="form-control" id="couponcode" placeholder="CODE">
+                    <input type="text" name="couponcode" class="form-control" id="couponcode" placeholder="CODE" ng-blur="checkCode()">
                 </div>
                 <br>
                 <div class="text-right" ng-init="getRandomCoupon()">

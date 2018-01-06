@@ -137,6 +137,7 @@ $app->post("/pay",function(Request $request) use($app){
         require("../classes/adminMaster.php");
         require("../classes/userMaster.php");
         require("../classes/emailMaster.php");
+        require("../classes/couponMaster.php");
         require("../classes/paymentMaster.php");
         // $amount=$request->get("amount");
         \Stripe\Stripe::setApiKey("sk_live_liv6NPpN0jZTmFAC6pRiLXgX");

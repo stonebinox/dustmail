@@ -449,6 +449,19 @@ app.controller("mail",function($scope,$compile,$http){
             $("#coupon").html('<span class="small text-info">'+couponText+'&nbsp;&bull;&nbsp;<strong>'+couponCode+'</strong>&nbsp;&bull;&nbsp;Expires on <strong>'+couponExpiry+'</strong></span>');
         }
     };
+    $scope.checkCode=function(){
+        var code=$.trim($("#couponecode").val());
+        if(validate(code)){
+            $http.get("coupon/validate/"+code)
+            .then(function success(response){
+                response=response.data;
+
+            },
+            function error(response){
+                console.log(response);
+            });
+        }
+    };
 });
 window.resize=function(){
     var width=$(window).width();
