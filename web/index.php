@@ -139,11 +139,30 @@ $app->post("/pay",function(Request $request) use($app){
         require("../classes/emailMaster.php");
         require("../classes/couponMaster.php");
         require("../classes/paymentMaster.php");
-        // $amount=$request->get("amount");
         \Stripe\Stripe::setApiKey("sk_live_liv6NPpN0jZTmFAC6pRiLXgX");
-        $amount=($request->get("devcount")/20)*100;
-        // Token is created using Checkout or Elements!
-        // Get the payment token ID submitted by the form:
+        $couponID=NULL;
+        $amount=$request->get("devcount")/20;
+        if($request->get*("coupon_id"))
+        {
+            $couponID=secure($request->get("coupon_id"));
+            $coupon=new couponMaster($couponID);
+            $couponData=$coupon->getCoupon();
+            if(is_array($couponData))
+            {
+                $couponType=$couponData['coupon_type'];
+                $couponValue=$couponData['coupon_value'];
+                if($couponType=="Percentage")
+                {
+                    $discount=$amount*($couponValue/100);
+                    $amount=$amount-$discount;
+                }
+                elseif($couponType=="Value")
+                {
+                    $amount=$amount-$couponValue;
+                }
+            }
+        }
+        $amount=$amount*100;
         $token = $request->get('stripeToken');
         
         // Charge the user's card:
