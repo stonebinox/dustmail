@@ -315,5 +315,21 @@ $app->get("/coupon/getRandomCoupon",function() use($app){
     }
     return $couponData;
 });
+$app->get("/coupon/getCouponID/{code}",function($code) use($app){
+    if(validate($code))
+    {
+        require("../classes/adminMaster.php");
+        require("../classes/userMaster.php");
+        require("../classes/emailMaster.php");
+        require("../classes/couponMaster.php");
+        $coupon=new couponMaster;
+        $couponID=$coupon->getCouponIDByCode($code);
+        return $couponID;
+    }
+    else
+    {
+        return "INVALID_COUPON_CODE";
+    }
+});
 $app->run();
 ?>

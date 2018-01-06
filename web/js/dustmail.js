@@ -449,16 +449,38 @@ app.controller("mail",function($scope,$compile,$http){
             $("#coupon").html('<span class="small text-info">'+couponText+'&nbsp;&bull;&nbsp;<strong>'+couponCode+'</strong>&nbsp;&bull;&nbsp;Expires on <strong>'+couponExpiry+'</strong></span>');
         }
     };
+    $scope.coupon_id=null;
     $scope.checkCode=function(){
         var code=$.trim($("#couponecode").val());
+        $("#couponcode").parent().removeClass("has-success has-feedback");
+        $("#couponcode").parent().find('span').remove();
         if(validate(code)){
-            $http.get("coupon/validate/"+code)
+            $http.get("coupon/getCouponID/"+code)
             .then(function success(response){
-                response=response.data;
+                response=$.trim(response.data);
+                console.log(response);
+                switch(response){
+                    case "INVALID_PARAMETERS":
+                    default:
+                    if(!isNaN(response)){
+                        $scope.coupon_id=parseInt(response);
+                        $("#couponcode").parent().addClass("has-success has-feedback");
+                        $("#couponcode").parent().append('<span class="glyphicon glyphicon-ok form-control-feedback"></span>');
+                    }
+                    else{
+                        messageBox("Problem","Something went wrong while checking this coupon code. Please try again later. This is the error we see: "+response);
+                    }
+                    break;
+                    case "INVALID_COUPON_CODE":
+                    messageBox("Invalid Code","The coupon code is invalid.");
+                    $("#couponcode").val('');
+                    break;
+                }
 
             },
             function error(response){
                 console.log(response);
+                messageBox("Problem","Something went wrong while checking this coupon code. Please try again later.");
             });
         }
     };
