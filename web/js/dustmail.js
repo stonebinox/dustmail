@@ -495,6 +495,85 @@ app.controller("mail",function($scope,$compile,$http){
             });
         }
     };
+    $scope.validateDevRequest=function(){
+        var subject=$.trim($("#devsubject").val());
+        if(validate(subject)){
+            $("#devsubject").parent().removeClass("has-error");
+            $("#devsubjectmessage").html('');
+            var body=$.trim($("#devdesc").val());
+            if(validate(body)){
+                $("#devdesc").parent().removeClass("has-error");
+                $("#devbodymessage").html('');
+                var nondevcount=parseInt($scope.nondevcount);
+                $scope.saveDevRequest(subject,body);
+            }
+            else{
+                $("#devdesc").parent().addClass("has-error");
+                $("#devbodymessage").html('Email body is required.');
+            }
+        }
+        else{
+            $("#devsubject").parent().addClass("has-error");
+            $("#devsubjectmessage").html('Email subject is required.');
+        }
+    };
+    $scope.saveDevRequest=function(subject,body){
+        if (typeof(Storage) !== "undefined") {
+            localStorage.setItem("subject", subject);
+            localStorage.setItem("body",body);
+        }
+        if($scope.loginStatus){
+            var form=document.createElement("form");
+            $(form).attr("method","post");
+            $(form).attr("action","pay");
+                var hidden1=document.createElement("input");
+                $(hidden1).attr("type","hidden");
+                $(hidden1).attr("name","subject");
+                $(hidden1).attr("value",subject);
+            $(form).append(hidden1);
+                var hidden2=document.createElement("input");
+                $(hidden2).attr("type","hidden");
+                $(hidden2).attr("name","body");
+                $(hidden2).attr("value",body);
+            $(form).append(hidden2);
+                var hidden3=document.createElement("input");
+                $(hidden3).attr("type","hidden");
+                $(hidden3).attr("name","nondevcount");
+                $(hidden3).attr("value",$scope.devcount);
+            $(form).append(hidden3);
+            var amount=$scope.devcount/20;
+            if(validate($scope.coupon_id)){
+                var couponType=$scope.coupon_id.coupon_type;
+                var couponValue=parseFloat($scope.coupon_id.coupon_value);
+                if(couponType=="Percentage"){
+                    var discount=amount*(couponValue/100);
+                    amount=amount-discount;
+                }
+                else if(couponType=="Value"){
+                    amount=amount-couponValue;
+                }
+                var text='';
+                if(amount==0){
+                    text='Your order is free. We still need you to just validate your card details to ensure you\'re not a spammer.';
+                }
+                var hidden4=document.createElement("input");
+                $(hidden4).attr("type","hidden");
+                $(hidden4).attr("name","coupon_id");
+                $(hidden4).attr("id","coupon_id");
+                $(hidden4).attr("value",$scope.coupon_id.idcoupon_master);
+                $(form).append(hidden4);
+                $(form).append('<div class="alert alert-success"><strong>Coupon Applied</strong> The coupon code has been applied! '+text+'</div>');
+            }
+            amount=amount*100;
+            $(form).append('<script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="pk_live_PSwDNF9BVOIuKl5BBzVXnXsa" data-amount="'+amount+'" data-name="Dust &amp; Co., Inc." data-description="Widget" data-image="images/dust-logo.png" data-locale="auto"></script>');
+            messageBox("Make Payment",form);
+        }
+        else{
+            $scope.admin_id=21;
+            $scope.signText='';
+            mover('registration');
+        }
+    };
 });
 window.resize=function(){
     var width=$(window).width();
