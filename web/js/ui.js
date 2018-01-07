@@ -96,11 +96,18 @@ function mover(layer){
 		else if(adminID==21){
 			$("#switch").html('Are you looking for a developer? <a href="#" ng-click="admin_id=11;signText=\'\';" onclick="mover(\'registration\')">Sign up here.</a>');
 		}
-		// angular.element(document.getElementById("pass_email")).scope().compileSwitch();
 	}
 	layer="#"+layer;
 	$(".form").removeAttr("active");
 	$(layer).attr("active","true");
+	switch(layer){
+		case "find":
+		angular.element(document.getElementById(layer)).scope().hitMonitor(11);
+		break;
+		case "findfounders":
+		angular.element(document.getElementById(layer)).scope().hitMonitor(1);
+		break;
+	}
 }
 var getUrlParameter = function getUrlParameter(sParam) {
 	var sPageURL = decodeURIComponent(window.location.search.substring(1)),

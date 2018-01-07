@@ -589,6 +589,16 @@ app.controller("mail",function($scope,$compile,$http){
             mover('registration');
         }
     };
+    $scope.hitMonitor=function(monitor){
+        $http.get("monitor/hitMonitor/"+monitor)
+        .then(function success(response){
+            response=response.data;
+            console.log(response);
+        },
+        function error(response){
+            console.log(response);
+        });
+    };
 });
 window.resize=function(){
     var width=$(window).width();

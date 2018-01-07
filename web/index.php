@@ -358,5 +358,11 @@ $app->get("/coupon/getCouponFromCode/{code}",function($code) use($app){
         return "INVALID_COUPON_CODE";
     }
 });
+$app->get("/monitor/hitMonitor/{monitorID}",function($monitorID) use($app){
+    require("../classes/monitorMaster.php");
+    $monitor=new monitorMaster($monitorID);
+    $response=$monitor->hitMonitor();
+    return $response;
+});
 $app->run();
 ?>
