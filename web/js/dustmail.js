@@ -232,15 +232,15 @@ app.controller("mail",function($scope,$compile,$http){
                     mover('findfounders');
                 });
                 if(validate(localStorage.getItem("subject"))){
-                    $("#subject").val(localStorage.getItem("subject"));
-                    $("#desc").val(localStorage.getItem("body"));
+                    $("#devsubject").val(localStorage.getItem("subject"));
+                    $("#devdesc").val(localStorage.getItem("body"));
                 }
             }
             else if(adminID==11){
                 mover("find");
                 if(validate(localStorage.getItem("subject"))){
-                    $("#devsubject").val(localStorage.getItem("subject"));
-                    $("#devdesc").val(localStorage.getItem("body"));
+                    $("#subject").val(localStorage.getItem("subject"));
+                    $("#desc").val(localStorage.getItem("body"));
                 }
             }
             $(".loginoptions").parent().css("display","none");
