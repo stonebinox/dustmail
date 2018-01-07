@@ -97,15 +97,16 @@ function mover(layer){
 			$("#switch").html('Are you looking for a developer? <a href="#" ng-click="admin_id=11;signText=\'\';" onclick="mover(\'registration\')">Sign up here.</a>');
 		}
 	}
+	var layername=layer;
 	layer="#"+layer;
 	$(".form").removeAttr("active");
 	$(layer).attr("active","true");
-	switch(layer){
+	switch(layername){
 		case "find":
-		angular.element(document.getElementById(layer)).scope().hitMonitor(11);
+		angular.element(document.getElementById(layername)).scope().hitMonitor(11);
 		break;
 		case "findfounders":
-		angular.element(document.getElementById(layer)).scope().hitMonitor(1);
+		angular.element(document.getElementById(layername)).scope().hitMonitor(1);
 		break;
 	}
 }
