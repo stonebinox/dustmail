@@ -22,6 +22,7 @@
                     <li><a href="https://twitter.com/thedustmakers" target="_blank"><img src="images/twitter_icon.png" class="img-responsive" style="width:20px;" alt="Dust Twitter"></a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right" ng-init="signText='';">
+                    <li><a href="#" style="color:#ffffff;" data-toggle="tooltip" title="Filter through profiles" data-placement="auto">Filters</a></li>
                     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:#ffffff;">Broadcast lists <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="#" id="devbroadcast" ng-click="admin_id=11;" onclick="mover('find')">Broadcast to developers</a></li>
@@ -32,7 +33,7 @@
                     <li><a href="javascript:void(0)" style="color:#ffffff;" onclick="mover('registration')" ng-click="admin_id=11;signText='';" class="loginoptions">Sign Up</a></li>
                     <li><a href="javascript:void(0)" style="color:#ffffff;" onclick="mover('login')" class="loginoptions">Login</a></li>
                     <li style="display:none;"><a href="logout" style="color:#ffffff;" id="logoutbutton">Logout</a></li>
-                    <li><a href="mailto:dust@dusthq.com" style="color:#ffffff;">Contact us</a></li>
+                    <li><a href="mailto:dust@dusthq.com" style="color:#ffffff;" data-toggle="tooltip" title="dust@dusthq.com" data-placement="auto">Contact us</a></li>
                 </ul>
             </div>
         </div>
@@ -241,5 +242,12 @@
     <div class="container-fluid">
         <div id="myModal" class="modal fade" role="dialog"></div>
     </div>
+    <script type="text/javascript">
+    <!--
+    $('[data-toggle="tooltip"]').tooltip({
+        trigger:'hover'
+    });
+    //-->
+    </script>
 </body>
 {% endblock %}
