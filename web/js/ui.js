@@ -175,7 +175,7 @@ function readParams(){
 			mover('login');
 			break;
 			case "USERS_EMAILED":
-			suc='Developers were emailed successfully! We\'ve shared your email ID with them so that they may contact you directly.';
+			suc='Users were emailed successfully! We\'ve shared your email ID with them so that they may contact you directly.';
 			break;
 		}
 		if(validate(suc)){
