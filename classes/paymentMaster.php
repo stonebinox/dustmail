@@ -51,7 +51,7 @@ class paymentMaster extends couponMaster
             return false;
         }
     }
-    function addPayment($userID,$amount,$token)
+    function addPayment($userID,$amount,$token,$couponID=NULL)
     {
         $userID=secure($userID);
         $app=$this->app;
@@ -64,7 +64,16 @@ class paymentMaster extends couponMaster
                 $token=secure($token);
                 if(validate($token))
                 {
-                    $in="INSERT INTO payment_master (timestamp,user_master_iduser_master,amount,stripe_token) VALUES (NOW(),'$userID','$amount','$token')";
+                    if(validate($couponID))
+                    {
+                        $couponID=secure($couponID);
+                        couponMaster::__construct($couponID);
+                        if(!$this->couponValid)
+                        {
+                            $couponID=NULL;
+                        }
+                    }
+                    $in="INSERT INTO payment_master (timestamp,user_master_iduser_master,amount,stripe_token,coupon_master_idcoupon_master) VALUES (NOW(),'$userID','$amount','$token','$couponID')";
                     $in=$app['db']->executeQuery($in);
                     return "PAYMENT_ADDED";
                 }

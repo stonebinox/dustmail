@@ -541,6 +541,11 @@ app.controller("mail",function($scope,$compile,$http){
                 $(hidden3).attr("name","nondevcount");
                 $(hidden3).attr("value",$scope.devcount);
             $(form).append(hidden3);
+                var hidden5=document.createElement("input");
+                $(hidden5).attr("type","hidden");
+                $(hidden5).attr("name","admin_id");
+                $(hidden5).attr("value",$scope.admin_id);
+            $(form).append(hidden5);
             var amount=$scope.devcount/20;
             if(validate($scope.coupon_id)){
                 var couponType=$scope.coupon_id.coupon_type;
@@ -565,7 +570,7 @@ app.controller("mail",function($scope,$compile,$http){
                 $(form).append('<div class="alert alert-success"><strong>Coupon Applied</strong> The coupon code has been applied! '+text+'</div>');
             }
             amount=amount*100;
-            $(form).append('<script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="pk_live_PSwDNF9BVOIuKl5BBzVXnXsa" data-amount="'+amount+'" data-name="Dust &amp; Co., Inc." data-description="Widget" data-image="images/dust-logo.png" data-locale="auto"></script>');
+            $(form).append('<script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="pk_test_AaNN3vmVBn3clhgdqGa9CMXX" data-amount="'+amount+'" data-name="Dust &amp; Co., Inc." data-description="Widget" data-image="images/dust-logo.png" data-locale="auto"></script>');
             messageBox("Make Payment",form);
         }
         else{

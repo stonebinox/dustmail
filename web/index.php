@@ -132,17 +132,17 @@ $app->get("/logout",function() use($app){
     }
 });
 $app->post("/pay",function(Request $request) use($app){
-    if(($app['session']->get("uid"))&&($request->get("stripeToken"))&&($request->get("subject"))&&($request->get("body"))&&($request->get("devcount")))
+    if(($app['session']->get("uid"))&&($request->get("stripeToken"))&&($request->get("subject"))&&($request->get("body"))&&($request->get("devcount"))&&($request->get("admin_id")))
     {
         require("../classes/adminMaster.php");
         require("../classes/userMaster.php");
         require("../classes/emailMaster.php");
         require("../classes/couponMaster.php");
         require("../classes/paymentMaster.php");
-        \Stripe\Stripe::setApiKey("sk_live_liv6NPpN0jZTmFAC6pRiLXgX");
+        \Stripe\Stripe::setApiKey("sk_test_0AkRhm58Zu4HwoPOLNM0uANj");
         $couponID=NULL;
         $amount=$request->get("devcount")/20;
-        if($request->get*("coupon_id"))
+        if($request->get("coupon_id"))
         {
             $couponID=secure($request->get("coupon_id"));
             $coupon=new couponMaster($couponID);
@@ -164,8 +164,6 @@ $app->post("/pay",function(Request $request) use($app){
         }
         $amount=$amount*100;
         $token = $request->get('stripeToken');
-        
-        // Charge the user's card:
         $charge = \Stripe\Charge::create(array(
         "amount" => $amount,
         "currency" => "usd",
@@ -182,7 +180,7 @@ $app->post("/pay",function(Request $request) use($app){
         if($response=="PAYMENT_ADDED")
         {
             $email=new emailMaster;
-            $emailResponse=$email->sendEmails($app['session']->get("uid"),$request->get("subject"),$request->get("body"),$request->get("devcount"));
+            $emailResponse=$email->sendEmails($app['session']->get("uid"),$request->get("subject"),$request->get("body"),$request->get("devcount"),$request->get("admin_id"));
             if($emailResponse=="USERS_EMAILED")
             {
                 return $app->redirect("/?suc=".$emailResponse);
