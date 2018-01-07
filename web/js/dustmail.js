@@ -518,7 +518,6 @@ app.controller("mail",function($scope,$compile,$http){
         }
     };
     $scope.saveDevRequest=function(subject,body){
-        console.log("here");
         if (typeof(Storage) !== "undefined") {
             localStorage.setItem("subject", subject);
             localStorage.setItem("body",body);
