@@ -231,16 +231,20 @@ app.controller("mail",function($scope,$compile,$http){
                 $("#logo").click(function(){
                     mover('findfounders');
                 });
+                if(validate(localStorage.getItem("subject"))){
+                    $("#subject").val(localStorage.getItem("subject"));
+                    $("#desc").val(localStorage.getItem("body"));
+                }
             }
             else if(adminID==11){
                 mover("find");
+                if(validate(localStorage.getItem("subject"))){
+                    $("#devsubject").val(localStorage.getItem("subject"));
+                    $("#devdesc").val(localStorage.getItem("body"));
+                }
             }
             $(".loginoptions").parent().css("display","none");
             $("#logoutbutton").parent().css("display","block");
-            if(validate(localStorage.getItem("subject"))){
-                $("#subject").val(localStorage.getItem("subject"));
-                $("#desc").val(localStorage.getItem("body"));
-            }
         }
     };
     $scope.validateRequest=function(){
