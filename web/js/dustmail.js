@@ -599,6 +599,9 @@ app.controller("mail",function($scope,$compile,$http){
             console.log(response);
         });
     };
+    $scope.validateFilter=function(){
+        var search=$.trim($("#skilltype").val());
+    };
 });
 window.resize=function(){
     var width=$(window).width();
