@@ -293,6 +293,11 @@ app.controller("mail",function($scope,$compile,$http){
                 $(hidden3).attr("name","devcount");
                 $(hidden3).attr("value",$scope.devcount);
             $(form).append(hidden3);
+                var hidden5=document.createElement("input");
+                $(hidden5).attr("type","hidden");
+                $(hidden5).attr("name","admin_id");
+                $(hidden5).attr("value",$scope.admin_id);
+            $(form).append(hidden5);
             var amount=$scope.devcount/20;
             if(validate($scope.coupon_id)){
                 var couponType=$scope.coupon_id.coupon_type;
@@ -522,6 +527,7 @@ app.controller("mail",function($scope,$compile,$http){
         }
     };
     $scope.saveDevRequest=function(subject,body){
+        console.log("here");
         if (typeof(Storage) !== "undefined") {
             localStorage.setItem("subject", subject);
             localStorage.setItem("body",body);
@@ -550,7 +556,7 @@ app.controller("mail",function($scope,$compile,$http){
                 $(hidden5).attr("name","admin_id");
                 $(hidden5).attr("value",$scope.admin_id);
             $(form).append(hidden5);
-            var amount=$scope.devcount/20;
+            var amount=$scope.nondevcount/20;
             if(validate($scope.coupon_id)){
                 var couponType=$scope.coupon_id.coupon_type;
                 var couponValue=parseFloat($scope.coupon_id.coupon_value);
@@ -579,7 +585,7 @@ app.controller("mail",function($scope,$compile,$http){
         }
         else{
             $scope.admin_id=21;
-            $scope.signText='';
+            $scope.signText=' as a developer';
             mover('registration');
         }
     };
