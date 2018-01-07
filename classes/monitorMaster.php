@@ -60,6 +60,7 @@ class monitorMaster
             $hits=$this->getMonitorHits();
             if(is_numeric($hits))
             {
+                $app=$this->app;
                 $hits+=1;
                 $up="UPDATE monitor_master SET hits='$hits' WHERE idmonitor_master='$monitorID'";
                 $up=$app['db']->executeUpdate($up);
