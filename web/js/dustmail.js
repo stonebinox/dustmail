@@ -548,7 +548,7 @@ app.controller("mail",function($scope,$compile,$http){
             $(form).append(hidden2);
                 var hidden3=document.createElement("input");
                 $(hidden3).attr("type","hidden");
-                $(hidden3).attr("name","nondevcount");
+                $(hidden3).attr("name","devcount");
                 $(hidden3).attr("value",$scope.devcount);
             $(form).append(hidden3);
                 var hidden5=document.createElement("input");
