@@ -73,8 +73,16 @@ class paymentMaster extends couponMaster
                             $couponID=NULL;
                         }
                     }
-                    $in="INSERT INTO payment_master (timestamp,user_master_iduser_master,amount,stripe_token,coupon_master_idcoupon_master) VALUES (NOW(),'$userID','$amount','$token','$couponID')";
+                    $in="INSERT INTO payment_master (timestamp,user_master_iduser_master,amount,stripe_token) VALUES (NOW(),'$userID','$amount','$token')";
                     $in=$app['db']->executeQuery($in);
+                    if(validate($couponID))
+                    {
+                        $pm="SELECT idpayment_master FROM payment_master WHERE stat='1' AND user_master_iduser_master='$userID' ORDER BY idpayment_master DESC LIMIT 1";
+                        $pm=$app['db']->fetchAssoc($pm);
+                        $paymentID=$pm['idpayment_master'];
+                        $up="UPDATE payment_master SET coupon_master_idcoupon_master='$couponID' WHERE idpayment_master='$paymentID'";
+                        $up=$app['db']->executeUpdate($up);
+                    }
                     return "PAYMENT_ADDED";
                 }
                 else
