@@ -488,8 +488,14 @@ app.controller("mail",function($scope,$compile,$http){
                 response=response.data;
                 if(typeof response=="object"){
                     $scope.coupon_id=response;
-                    $("#couponcode").parent().addClass("has-success has-feedback");
-                    $("#couponcode").parent().append('<span class="glyphicon glyphicon-ok form-control-feedback"></span>');
+                    if(validate($.trim($("#couponcode").val()))){
+                        $("#couponcode").parent().addClass("has-success has-feedback");
+                        $("#couponcode").parent().append('<span class="glyphicon glyphicon-ok form-control-feedback"></span>');
+                    }
+                    else{
+                        $("#devcouponcode").parent().addClass("has-success has-feedback");
+                        $("#devcouponcode").parent().append('<span class="glyphicon glyphicon-ok form-control-feedback"></span>');
+                    }
                 }
                 else{
                     response=$.trim(response);
