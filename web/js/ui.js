@@ -176,6 +176,8 @@ function readParams(){
 			break;
 			case "USERS_EMAILED":
 			suc='Users were emailed successfully! We\'ve shared your email ID with them so that they may contact you directly.';
+			localStorage.removeItem("subject");
+			localStorage.removeItem("body");
 			break;
 		}
 		if(validate(suc)){
