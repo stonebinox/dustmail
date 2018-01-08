@@ -62,33 +62,30 @@ class paymentMaster extends couponMaster
             if((validate($amount))&&(is_numeric($amount))&&($amount>=0))
             {
                 $token=secure($token);
-                if(validate($token))
+                if(!validate($token))
                 {
-                    if(validate($couponID))
-                    {
-                        $couponID=secure($couponID);
-                        couponMaster::__construct($couponID);
-                        if(!$this->couponValid)
-                        {
-                            $couponID=NULL;
-                        }
-                    }
-                    $in="INSERT INTO payment_master (timestamp,user_master_iduser_master,amount,stripe_token) VALUES (NOW(),'$userID','$amount','$token')";
-                    $in=$app['db']->executeQuery($in);
-                    if(validate($couponID))
-                    {
-                        $pm="SELECT idpayment_master FROM payment_master WHERE stat='1' AND user_master_iduser_master='$userID' ORDER BY idpayment_master DESC LIMIT 1";
-                        $pm=$app['db']->fetchAssoc($pm);
-                        $paymentID=$pm['idpayment_master'];
-                        $up="UPDATE payment_master SET coupon_master_idcoupon_master='$couponID' WHERE idpayment_master='$paymentID'";
-                        $up=$app['db']->executeUpdate($up);
-                    }
-                    return "PAYMENT_ADDED";
+                    $token="FREE";
                 }
-                else
+                if(validate($couponID))
                 {
-                    return "INVALID_STRIPE_TOKEN";
+                    $couponID=secure($couponID);
+                    couponMaster::__construct($couponID);
+                    if(!$this->couponValid)
+                    {
+                        $couponID=NULL;
+                    }
                 }
+                $in="INSERT INTO payment_master (timestamp,user_master_iduser_master,amount,stripe_token) VALUES (NOW(),'$userID','$amount','$token')";
+                $in=$app['db']->executeQuery($in);
+                if(validate($couponID))
+                {
+                    $pm="SELECT idpayment_master FROM payment_master WHERE stat='1' AND user_master_iduser_master='$userID' ORDER BY idpayment_master DESC LIMIT 1";
+                    $pm=$app['db']->fetchAssoc($pm);
+                    $paymentID=$pm['idpayment_master'];
+                    $up="UPDATE payment_master SET coupon_master_idcoupon_master='$couponID' WHERE idpayment_master='$paymentID'";
+                    $up=$app['db']->executeUpdate($up);
+                }
+                return "PAYMENT_ADDED";
             }
             else
             {

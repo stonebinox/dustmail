@@ -147,9 +147,6 @@ function readParams(){
 			case "PASSWORD_MISMATCH":
 			err='Password mismatch. Please ensure the passwords match each other.';
 			break;
-			case "INVALID_STRIPE_TOKEN":
-			err='Your payment was not processed. Something went wrong. Please contact us at <a href="mailto:dust@dusthq.com">dust@dusthq.com</a>.';
-			break;
 		}
 		$(".message").html('<div class="alert alert-danger"><strong>Error</strong> '+err+'</div>');
 		setTimeout(function(){
