@@ -298,6 +298,7 @@ app.controller("mail",function($scope,$compile,$http){
                 $(hidden5).attr("name","admin_id");
                 $(hidden5).attr("value",$scope.admin_id);
             $(form).append(hidden5);
+            console.log(subject,body,$scope.devcount,$scope.admin_id);
             var amount=$scope.devcount/20;
             if(validate($scope.coupon_id)){
                 var couponType=$scope.coupon_id.coupon_type;
