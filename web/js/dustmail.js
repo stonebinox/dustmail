@@ -563,13 +563,14 @@ app.controller("mail",function($scope,$compile,$http){
                 var hidden3=document.createElement("input");
                 $(hidden3).attr("type","hidden");
                 $(hidden3).attr("name","devcount");
-                $(hidden3).attr("value",$scope.devcount);
+                $(hidden3).attr("value",$scope.nondevcount);
             $(form).append(hidden3);
                 var hidden5=document.createElement("input");
                 $(hidden5).attr("type","hidden");
                 $(hidden5).attr("name","admin_id");
                 $(hidden5).attr("value",$scope.admin_id);
             $(form).append(hidden5);
+            console.log($scope.admin_id);
             var amount=$scope.nondevcount/20;
             if(validate($scope.coupon_id)){
                 var couponType=$scope.coupon_id.coupon_type;
