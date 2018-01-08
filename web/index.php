@@ -139,7 +139,7 @@ $app->post("/pay",function(Request $request) use($app){
         require("../classes/emailMaster.php");
         require("../classes/couponMaster.php");
         require("../classes/paymentMaster.php");
-        \Stripe\Stripe::setApiKey("sk_live_liv6NPpN0jZTmFAC6pRiLXgX");
+        \Stripe\Stripe::setApiKey("sk_test_0AkRhm58Zu4HwoPOLNM0uANj");
         $couponID=NULL;
         $amount=$request->get("devcount")/20;
         if($request->get("coupon_id"))
