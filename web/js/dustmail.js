@@ -546,6 +546,7 @@ app.controller("mail",function($scope,$compile,$http){
             localStorage.setItem("body",body);
         }
         if($scope.loginStatus){
+            $scope.admin_id=11;
             var form=document.createElement("form");
             $(form).attr("method","post");
             $(form).attr("action","pay");
