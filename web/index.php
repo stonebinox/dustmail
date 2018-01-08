@@ -162,17 +162,20 @@ $app->post("/pay",function(Request $request) use($app){
                 }
             }
         }
-        $amount=$amount*100;
-        $token = $request->get('stripeToken');
-        $charge = \Stripe\Charge::create(array(
-        "amount" => $amount,
-        "currency" => "usd",
-        "description" => "Dust email campaign",
-        "source" => $token,
-        ));
-        if($charge->failure_code!=NULL)
+        if($amount>0)
         {
-            return $app->redirect("/?err=PAYMENT_ERROR_".$charge->failure_message);
+            $amount=$amount*100;
+            $token = $request->get('stripeToken');
+            $charge = \Stripe\Charge::create(array(
+            "amount" => $amount,
+            "currency" => "usd",
+            "description" => "Dust email campaign",
+            "source" => $token,
+            ));
+            if($charge->failure_code!=NULL)
+            {
+                return $app->redirect("/?err=PAYMENT_ERROR_".$charge->failure_message);
+            }
         }
         $payment=new paymentMaster;
         $amount=$amount/100;
