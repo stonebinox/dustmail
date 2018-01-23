@@ -47,6 +47,7 @@ app.controller("mail",function($scope,$compile,$http){
         text+='</table>';
         $("#credlist").html(text);
         $("#devcredlist").html(text);
+        $scope.getAllUsers();
     };
     $scope.getCurrentLocation=function(){
         if (navigator.geolocation) {
