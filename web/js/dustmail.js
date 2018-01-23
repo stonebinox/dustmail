@@ -33,8 +33,8 @@ app.controller("mail",function($scope,$compile,$http){
  
         mapboxgl.accessToken = 'pk.eyJ1IjoiYW5vb3BzYW50aGFuYW0iLCJhIjoiY2pjcm1yMjV1MDIxOTMzcWRmdWl0NjJwOSJ9.7FByZ_tK8AZYwRrvN7sztQ';
         $scope.map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/dark-v9'
+            container: 'map',
+            style: 'mapbox://styles/mapbox/dark-v9'
         });
         $("#map").css({
             width: width+"px",
