@@ -109,6 +109,10 @@ function mover(layer){
 		angular.element(document.getElementById(layername)).scope().hitMonitor(1);
 		break;
 	}
+	$("#choices").css({
+		top:"110%",
+		left:"30%"
+	});
 }
 var getUrlParameter = function getUrlParameter(sParam) {
 	var sPageURL = decodeURIComponent(window.location.search.substring(1)),
