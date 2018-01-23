@@ -29,7 +29,7 @@ app.controller("mail",function($scope,$compile,$http){
         // $scope.map=new google.maps.Map(document.getElementById("map"),mapProp);
         // var width=$(window).width();
         // var height=$(window).height();
-        var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
+        // var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
  
         mapboxgl.accessToken = 'pk.eyJ1IjoiYW5vb3BzYW50aGFuYW0iLCJhIjoiY2pjcm1yMjV1MDIxOTMzcWRmdWl0NjJwOSJ9.7FByZ_tK8AZYwRrvN7sztQ';
         $scope.map = new mapboxgl.Map({
