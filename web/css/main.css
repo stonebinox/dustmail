@@ -49,8 +49,7 @@ h5{
     position:fixed;
     top:51px;
     height:auto;
-    overflow-x:hidden;
-    overflow-y:auto;
+    overflow:hidden;
     left:125%;
     box-shadow:0px 0px 10px #ffffff;
     padding-left:15px;
@@ -68,6 +67,10 @@ h5{
 }
 .form[active="true"]{
     left:30%;
+}
+.form:hover{
+    overflow-x:hidden;
+    overflow-y:auto;
 }
 #logo{
     position:fixed;
