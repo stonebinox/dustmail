@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 {% block content %}
-<body ng-app="dust" ng-controller="mail" onload="mover('find');readParams();" ng-init="checkURL();loadMap();getUser();" >
+<body ng-app="dust" ng-controller="mail" onload="mover('home');readParams();" ng-init="checkURL();loadMap();getUser();" >
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             {# <div class="navbar-header">
@@ -263,6 +263,19 @@
                     <button type="button" class="button" id="skillsearch">Search</button>
                 </div>
             </form>
+            <div style="height:50px;"></div>
+        </div>
+    </div>
+    <div class="form" id="home">
+        <div class="container-fluid">
+            <br>
+            <h2 class="text-center">Welcome to Dust!</h2>
+            <hr>
+            <div class="message"></div>
+            <div class="row">
+                <div class="col-sm-6">Are you a developer?</div>
+                <div class="col-sm-6">Are you a non-developer?</div>
+            </div>
             <div style="height:50px;"></div>
         </div>
     </div>
