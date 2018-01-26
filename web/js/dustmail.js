@@ -418,11 +418,10 @@ app.controller("mail",function($scope,$compile,$http){
                         },
                         "layout": {
                             "icon-image": "{icon}-15",
-                            "text-field": "Developer",
+                            "text-field": userName,
                             "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
                             "text-offset": [0, 0.6],
-                            "text-anchor": "top",
-                            "color": "#ffffff"
+                            "text-anchor": "top"
                         }
                     });
                 }
