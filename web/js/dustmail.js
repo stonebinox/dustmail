@@ -54,7 +54,7 @@ app.controller("mail",function($scope,$compile,$http){
         text+='</table>';
         $("#credlist").html(text);
         $("#devcredlist").html(text);
-        // $scope.getAllUsers();
+        $scope.getAllUsers();
     };
     $scope.getCurrentLocation=function(){
         if (navigator.geolocation) {
@@ -378,11 +378,49 @@ app.controller("mail",function($scope,$compile,$http){
                 var admin=user.admin_master_idadmin_master;
                 var adminID=admin.idadmin_master;
                 if(adminID==21){
-                    var position={lat: parseFloat(latitude), lng: parseFloat(longitude)};
-                    var marker = new google.maps.Marker({
-                        position: position,
-                        map: $scope.map,
-                        title: userName
+                    // var position={lat: parseFloat(latitude), lng: parseFloat(longitude)};
+                    // var marker = new google.maps.Marker({
+                    //     position: position,
+                    //     map: $scope.map,
+                    //     title: userName
+                    // });
+                    $scope.map.addLayer({
+                        "id": "points",
+                        "type": "symbol",
+                        "source": {
+                            "type": "geojson",
+                            "data": {
+                                "type": "FeatureCollection",
+                                "features": [{
+                                    "type": "Feature",
+                                    "geometry": {
+                                        "type": "Point",
+                                        "coordinates": [parseFloat(latitude), parseFloat(longitude)]
+                                    },
+                                    "properties": {
+                                        "title": "Developer",
+                                        "icon": "monument"
+                                    }
+                                }, {
+                                    "type": "Feature",
+                                    "geometry": {
+                                        "type": "Point",
+                                        "coordinates": [parseFloat(latitude), parseFloat(longitude)]
+                                    },
+                                    "properties": {
+                                        "title": "Developer",
+                                        "icon": "harbor"
+                                    }
+                                }]
+                            }
+                        },
+                        "layout": {
+                            "icon-image": "{icon}-15",
+                            "text-field": "Developer",
+                            "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+                            "text-offset": [0, 0.6],
+                            "text-anchor": "top"
+                        }
                     });
                 }
             }
