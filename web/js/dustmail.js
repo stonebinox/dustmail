@@ -398,20 +398,22 @@ app.controller("mail",function($scope,$compile,$http){
                                         "coordinates": [parseFloat(latitude), parseFloat(longitude)]
                                     },
                                     "properties": {
-                                        "title": "Developer",
+                                        "title": userName,
                                         "icon": "monument"
                                     }
-                                }, {
-                                    "type": "Feature",
-                                    "geometry": {
-                                        "type": "Point",
-                                        "coordinates": [parseFloat(latitude), parseFloat(longitude)]
-                                    },
-                                    "properties": {
-                                        "title": "Developer",
-                                        "icon": "harbor"
-                                    }
-                                }]
+                                }
+                                // , {
+                                //     "type": "Feature",
+                                //     "geometry": {
+                                //         "type": "Point",
+                                //         "coordinates": [parseFloat(latitude), parseFloat(longitude)]
+                                //     },
+                                //     "properties": {
+                                //         "title": "Developer",
+                                //         "icon": "harbor"
+                                //     }
+                                // }
+                                ]
                             }
                         },
                         "layout": {
@@ -419,7 +421,8 @@ app.controller("mail",function($scope,$compile,$http){
                             "text-field": "Developer",
                             "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
                             "text-offset": [0, 0.6],
-                            "text-anchor": "top"
+                            "text-anchor": "top",
+                            "text-color": "#ffffff"
                         }
                     });
                 }
