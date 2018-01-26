@@ -385,7 +385,7 @@ app.controller("mail",function($scope,$compile,$http){
                     //     title: userName
                     // });
                     $scope.map.addLayer({
-                        "id": "points",
+                        "id": "points"+i,
                         "type": "symbol",
                         "source": {
                             "type": "geojson",
