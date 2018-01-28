@@ -399,30 +399,18 @@ app.controller("mail",function($scope,$compile,$http){
                                     },
                                     "properties": {
                                         "title": userName,
-                                        "icon": "monument"
+                                        "description": 'Developer'
                                     }
-                                }
-                                // , {
-                                //     "type": "Feature",
-                                //     "geometry": {
-                                //         "type": "Point",
-                                //         "coordinates": [parseFloat(latitude), parseFloat(longitude)]
-                                //     },
-                                //     "properties": {
-                                //         "title": "Developer",
-                                //         "icon": "harbor"
-                                //     }
-                                // }
-                                ]
+                                }]
                             }
-                        },
-                        "layout": {
-                            "icon-image": "{icon}-15",
-                            "text-field": userName,
-                            "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
-                            "text-offset": [0, 0.6],
-                            "text-anchor": "top"
                         }
+                        // "layout": {
+                        //     "icon-image": "{icon}-15",
+                        //     "text-field": userName,
+                        //     "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+                        //     "text-offset": [0, 0.6],
+                        //     "text-anchor": "top"
+                        // }
                     });
                 }
             }
